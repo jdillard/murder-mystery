@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>{{ .Title }} - Whatcom Murder Mystery</title>
+  <meta charset="UTF-8">
+  <title>{{ .Title }} - Whatcom Murder Mystery</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- Local CSS -->
-<link rel="stylesheet" href="/css/style.css">
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .footer {
+      background-image: url("/murder-mystery/images/portraits/{{ .Params.portrait_image }}");
+      background-position: center {{ .Params.portrait_alignment }};
+      background-size: {{ .Params.portrait_zoom }} auto;
+    }
+  </style>
 </head>
 <body>
   <div class="header">

@@ -3,6 +3,7 @@ title: "John de Mattos"
 subtitle: "Lumberman & Saloon Owner"
 portrait_image: "John_de_Mattos.jpeg"
 portrait_alignment: "12%"
+portrait_zoom: "100%"
 resources:
   - url: "https://www.historylink.org/File/22507"
 ---
