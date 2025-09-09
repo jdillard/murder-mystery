@@ -1,4 +1,6 @@
-baseURL = 'https://jdillard.github.io/murder-mystery'
+baseURL = 'https://jdillard.github.io/murder-mystery/'
+relativeURLs = true
+canonifyURLs = true
 languageCode = 'en-us'
 title = 'Whatcom Murder Mystery'
 
