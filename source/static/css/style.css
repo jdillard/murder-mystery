@@ -253,11 +253,11 @@ body blockquote {
   }
 
   .header img.left {
-    transform: translateY(-50%) translateX(-15%) scaleX(-1) rotate(90deg);
+    transform: translateY(-50%) translateX(-25%) scaleX(-1) rotate(90deg);
   }
 
   .header img.right {
-    transform: translateX(15%) rotate(90deg);
+    transform: translateX(25%) rotate(90deg);
   }
 
   /* Body adjustments for mobile */
@@ -313,7 +313,7 @@ body blockquote {
 
 @media screen and (max-width: 480px) {
   body.cover {
-    padding: 1rem 0.5rem;
+    padding: 0 1cm;
   }
 
   h1 {
