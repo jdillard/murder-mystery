@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Whatcom Murder Mystery Instructions</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Local DecoNeue font -->
+<style>
+  @font-face {
+    font-family: 'DecoNeue';
+    src: url('static/fonts/DecoNeue/deconeue_light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+</style>
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 210mm;
+    height: 297mm;
+    font-family: 'EB Garamond', serif;
+    background-color: #ffffff;
+    color: #222;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  /* Header */
+  .header {
+    width: 100%;
+    background-color: #f6efe6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem 0;
+    clip-path: inset(0 0  -90px 0); /* top right bottom left */
+    margin-bottom: .4cm;
+  }
+
+  .header h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 26pt;
+    line-height: 27pt;
+    max-width: 18rem;
+    margin: 0;
+    z-index: 2;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .header h2 {
+    font-family: 'DecoNeue', sans-serif;
+    font-size: 11pt;
+    text-align: center;
+    margin: 0.5cm 0;
+    letter-spacing: 1pt;
+    margin-top: 0;
+  }
+
+  .header img.fan {
+    position: absolute;
+    width: 67mm;
+    max-height: 60mm;
+  }
+
+  .header img.left {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-29%) scaleX(-1) rotate(90deg);
+  }
+
+  .header img.right {
+    right: 0;
+    transform: translateX(29%) rotate(90deg); /* flip horizontally to face outward */
+  }
+
+  /* Body */
+  .body {
+    width: 100%;
+    max-width: 170mm;
+  }
+
+  .body h2 {
+    font-family: 'DecoNeue', sans-serif;
+    font-size: 32pt;
+    letter-spacing: .3rem;
+    text-align: center;
+    margin-bottom: 0.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .body h3.subbtitle {
+    text-align: center;
+    margin-top: 0;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .body p {
+    font-size: 10pt;
+    line-height: 1.5;
+    margin-bottom: 0.5cm;
+    text-align: left;
+  }
+
+  body ul {
+    padding-left: 12pt;
+    font-size: 10pt;
+  }
+
+  body li {
+    margin: 4pt 0;
+  }
+
+  body blockquote {
+    background-color: #f6efe6ff;
+    padding: 0.1rem 2.2rem;
+    font-style: italic;
+  }
+
+  .footer {
+    width: 100%;
+    height: 3cm;
+    background-image: url(static/images/portraits/Ella_Rhoads_Higginson.jpg);
+    background-size: 130% auto;
+    background-position: center 21%;
+    border-top: 10px double #ffffff;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="static/images/fan_motif.svg" class="fan left" alt="Left Fan">
+    <div>
+      <h2>Early Twentieth Century</h2>
+      <h1>Whatcom Murder Mystery</h1>
+    </div>
+    <img src="static/images/fan_motif.svg" class="fan right" alt="Right Fan">
+  </div>
+
+  <!-- Body -->
+  <div class="body">
+    <h2>Ella Higginson</h2>
+    <h3 class="subbtitle">Local Poet and Writer</h3>
+    <p>Ella Higginson was one of the Pacific Northwest’s most celebrated writers, and later became Washington State’s first Poet Laureate. Her poems and stories, many published in national magazines, brought Bellingham literary recognition in an age dominated by industry. Known for her wit and strong voice, Higginson gave the Northwest cultural prestige, proving that the region’s wealth wasn’t only measured in timber or copper, but also in words.</p>
+    <ul>
+    <li><strong>How You See Yourself:</strong> The poet of Bellingham, the cultural heart of a town obsessed with money. You know your words carry influence and you are well connected in social circles.</li>
+    <li><strong>Personality Traits:</strong> Charming, Witty, clever, observant. You drop truths in poetic turns of phrase.</li>
+    <li><strong>Motives/Secrets:</strong> You feel slighted by the men of industry — especially Larrabee, who dismissed your art as trivial. But you also know how to read people better than they realize.</li>
+    <li><strong>Roleplaying Tips:</strong> Speak in witty remarks and metaphors. Ask questions others overlook. Make observations that unsettle people — half-poem, half-accusation.</li>
+    </ul>
+
+    <h3>Introduction</h3>
+    <blockquote>
+    <p>"I’m Ella Higginson, Bellingham’s poet and humble chronicler of the Northwest. While others at this table measure wealth in timber, fish, or copper, I measure it in words — though even poets know that power and money shape the stories that endure."</p>
+    </blockquote>
+
+    <h3>Hidden Secrets</h3>
+    <ul>
+    <li>Larrabee once dismissed your literary contributions as frivolous while funding men’s projects lavishly. Perhaps you’re tired of wealthy businessmen ignoring the arts.</li>
+    <li>You recently wrote a bitter poem that could be read as a veiled threat to someone powerful.</li>
+    </ul>
+
+    <h3>More resources</h3>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Ella_Rhoads_Higginson" rel="nofollow">https://en.wikipedia.org/wiki/Ella_Rhoads_Higginson</a></li>
+    </ul>
+  </div>
+
+  <div class="footer"></div>
+</body>
+</html>
+

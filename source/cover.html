@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Murder Mystery A4 Page</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Local DecoNeue font -->
+  <style>
+    @font-face {
+      font-family: 'DecoNeue';
+      src: url('static/fonts/DecoNeue/deconeue_light.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 210mm;
+      height: 297mm;
+      background-color: #f6efe6ff;
+      font-family: 'EB Garamond', serif;
+      color: #222;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0, 2cm;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 68pt;
+      line-height: 70pt;
+      text-align: center;
+      margin: 1cm 0;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-family: 'DecoNeue', sans-serif;
+      font-size: 24pt;
+      text-align: center;
+      margin: 0.5cm 0;
+      letter-spacing: 1pt;
+    }
+
+    p {
+      font-size: 14pt;
+      margin: 0.5cm 0;
+      text-align: center;
+      max-width: 170mm;
+    }
+
+    .fan {
+      width: 180mm; /* adjust size */
+      max-height: 80mm;
+    }
+
+    .fan.bottom {
+      transform: rotate(180deg);
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Fan Motif -->
+  <img src="static/images/fan_motif.svg" class="fan top" alt="Top Fan Motif">
+
+  <div>
+    <h2>Early Twentieth Century</h2>
+    <h1>Whatcom Murder Mystery</h1>
+  </div>
+
+  <!-- Bottom Fan Motif -->
+  <img src="static/images/fan_motif.svg" class="fan bottom" alt="Bottom Fan Motif">
+
+</body>
+</html>
+
