@@ -7,157 +7,10 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- Local DecoNeue font -->
-<style>
-  @font-face {
-    font-family: 'DecoNeue';
-    src: url('/murder-mystery/fonts/DecoNeue/deconeue_light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-</style>
-
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 210mm;
-    height: 297mm;
-    font-family: 'EB Garamond', serif;
-    background-color: #ffffff;
-    color: #222;
-  }
-
-  @page {
-    size: A4;
-    margin: 0;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-  }
-
-  /* Header */
-  .header {
-    width: 100%;
-    background-color: #f6efe6ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 2rem 0;
-    clip-path: inset(0 0  -90px 0); /* top right bottom left */
-    margin-bottom: .4cm;
-  }
-
-  .header h1 {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 26pt;
-    line-height: 27pt;
-    max-width: 18rem;
-    margin: 0;
-    z-index: 2;
-    text-align: center;
-    font-weight: 500;
-  }
-
-  .header h1 a {
-    text-decoration: none;
-    color: #333333;
-  }
-
-  .header h2 {
-    font-family: 'DecoNeue', sans-serif;
-    font-size: 11pt;
-    text-align: center;
-    margin: 0.5cm 0;
-    letter-spacing: 1pt;
-    margin-top: 0;
-  }
-
-  .header img.fan {
-    position: absolute;
-    width: 67mm;
-    max-height: 60mm;
-  }
-
-  .header img.left {
-    left: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) translateX(-29%) scaleX(-1) rotate(90deg);
-  }
-
-  .header img.right {
-    right: 0;
-    transform: translateX(29%) rotate(90deg); /* flip horizontally to face outward */
-  }
-
-  /* Body */
-  .body {
-    width: 100%;
-    max-width: 170mm;
-  }
-
-  .body h2 {
-    font-family: 'DecoNeue', sans-serif;
-    font-size: 32pt;
-    letter-spacing: .3rem;
-    text-align: center;
-    margin-bottom: 0.2rem;
-    margin-top: 1.5rem;
-  }
-
-  .body h2 a {
-    text-decoration: none;
-    color: #333333;
-  }
-
-  .body h3.subtitle {
-    text-align: center;
-    margin-top: 0;
-    font-weight: 100;
-    font-style: italic;
-  }
-
-  .body p {
-    font-size: 10pt;
-    line-height: 1.5;
-    margin-bottom: 0.5cm;
-    text-align: left;
-  }
-
-  body ul {
-    padding-left: 12pt;
-    font-size: 10pt;
-  }
-
-  body li {
-    margin: 4pt 0;
-  }
-
-  body blockquote {
-    background-color: #f6efe6ff;
-    padding: 0.1rem 2.2rem;
-    font-style: italic;
-  }
-
-  .footer {
-    width: 100%;
-    height: 4cm;
-    background-image: url("/murder-mystery/images/portraits/{{ .Params.portrait_image }}");
-    background-size: 130% auto;
-    background-position: center {{ .Params.portrait_alignment }};
-    border-top: 10px double #ffffff;
-  }
-</style>
+<!-- Local CSS -->
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-
-  <!-- Header -->
   <div class="header">
     <img src="/images/fan_motif.svg" class="fan left" alt="Left Fan">
     <div>
@@ -166,8 +19,6 @@
     </div>
     <img src="/images/fan_motif.svg" class="fan right" alt="Right Fan">
   </div>
-
-  <!-- Body -->
   <div class="body">
     <h2><a href="/characters/">{{ .Title }}</a></h2>
     <h3 class="subtitle">{{ .Params.subtitle }}</h3>
@@ -183,7 +34,6 @@
     </ul>
     {{ end }}
   </div>
-
   <div class="footer"></div>
 </body>
 </html>

@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'DecoNeue';
+  src: url('/murder-mystery/fonts/DecoNeue/deconeue_light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 210mm;
+  height: 297mm;
+  font-family: 'EB Garamond', serif;
+  color: #333;
+}
+
+body.cover {
+  background-color: #f6efe6ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 68pt;
+  line-height: 70pt;
+  text-align: center;
+  margin: 1cm 0;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: 'DecoNeue', sans-serif;
+  font-size: 24pt;
+  text-align: center;
+  margin: 0.5cm 0;
+  letter-spacing: 1pt;
+}
+
+p {
+  font-size: 14pt;
+  margin: 0.5cm 0;
+  text-align: center;
+  max-width: 170mm;
+}
+
+.fan {
+  width: 180mm; /* adjust size */
+  max-height: 80mm;
+}
+
+.fan.bottom {
+  transform: rotate(180deg);
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background-color: #f6efe6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem 0;
+  clip-path: inset(0 0  -90px 0); /* top right bottom left */
+  margin-bottom: .4cm;
+}
+
+.header h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 26pt;
+  line-height: 27pt;
+  max-width: 18rem;
+  margin: 0;
+  z-index: 2;
+  text-align: center;
+  font-weight: 500;
+}
+
+.header h1 a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.header h2 {
+  font-family: 'DecoNeue', sans-serif;
+  font-size: 11pt;
+  text-align: center;
+  margin: 0.5cm 0;
+  letter-spacing: 1pt;
+  margin-top: 0;
+}
+
+.header img.fan {
+  position: absolute;
+  width: 67mm;
+  max-height: 60mm;
+}
+
+.header img.left {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-29%) scaleX(-1) rotate(90deg);
+}
+
+.header img.right {
+  right: 0;
+  transform: translateX(29%) rotate(90deg); /* flip horizontally to face outward */
+}
+
+/* Body */
+.body {
+  width: 100%;
+  max-width: 170mm;
+  padding: 0 2cm; 
+}
+
+.body h2 {
+  font-family: 'DecoNeue', sans-serif;
+  font-size: 32pt;
+  letter-spacing: .3rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  margin-top: 1.5rem;
+}
+
+.body h2 a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.body h3.subtitle {
+  text-align: center;
+  margin-top: 0;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.body p {
+  font-size: 10pt;
+  line-height: 1.5;
+  margin-bottom: 0.5cm;
+  text-align: left;
+}
+
+body ul {
+  padding-left: 12pt;
+  font-size: 10pt;
+}
+
+body li {
+  margin: 4pt 0;
+}
+
+body blockquote {
+  background-color: #f6efe6ff;
+  padding: 0.1rem 2.2rem;
+  font-style: italic;
+}
+
+.footer {
+  width: 100%;
+  height: 4cm;
+  background-image: url("/murder-mystery/images/portraits/{{ .Params.portrait_image }}");
+  background-size: 130% auto;
+  background-position: center {{ .Params.portrait_alignment }};
+  border-top: 10px double #ffffff;
+}
+
+/* character list */
+.character-list{
+	list-style:none;
+	padding:0
+}
+.character-list li{
+	margin:1rem 0;
+	padding:1rem;
+	background-color:#f6efe6;
+	border-radius:5px
+}
+.character-list a{
+	text-decoration:none;
+	color:#222;
+	font-size:12pt;
+	font-weight:700
+}
+.character-list a:hover{
+	text-decoration:underline
+}
+.character-subtitle{
+	font-style:italic;
+	color:#666;
+	margin-top:.25rem
+}
