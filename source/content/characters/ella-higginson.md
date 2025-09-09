@@ -2,6 +2,7 @@
 title: "Ella Higginson"
 subtitle: "Local Poet and Writer"
 portrait_image: "Ella_Rhoads_Higginson.jpg"
+portrait_alignment: "21%"
 resources:
   - url: "https://en.wikipedia.org/wiki/Ella_Rhoads_Higginson"
 ---

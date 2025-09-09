@@ -147,10 +147,10 @@
 
   .footer {
     width: 100%;
-    height: 3cm;
+    height: 4cm;
     background-image: url("/murder-mystery/images/portraits/{{ .Params.portrait_image }}");
     background-size: 130% auto;
-    background-position: center 21%;
+    background-position: center {{ .Params.portrait_alignment }};
     border-top: 10px double #ffffff;
   }
 </style>
