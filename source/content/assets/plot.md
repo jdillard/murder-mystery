@@ -78,11 +78,3 @@ Shock, then suspicion. Each player now leans into their hidden motives. Guests r
 The murderer confesses (voluntarily or after being cornered). [material needed]
 
 Wrap with a brief epilogue of what becomes of each character. [material needed]
-
-## Extra Spice Ideas
-
-### Props
-
-* A diary with ripped-out pages.
-* A suspicious bottle with poison label removed.
-* Newspaper clippings about labor unrest or bankruptcies.
