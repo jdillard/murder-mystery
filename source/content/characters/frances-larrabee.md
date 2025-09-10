@@ -10,18 +10,18 @@ resources:
 
 Frances Payne Larrabee, wife of C.X., was one of the city's most respected social leaders. Beyond her role as hostess, she advocated for education, the arts, and public parks. After her husband's death, she carried forward his legacy, ensuring the donation of 20 acres of land that became the core of Larrabee State Park. She represents the quieter but deeply influential civic contributions of women in the region's history.
 
-### Character card
+## Character card
 
 * **How You See Yourself:** A gracious lady of society, but also the true steward of your husband's legacy. You believe culture, charity, and beauty matter more than money.
 * **Personality Traits:** Calm, observant, dignified. Not flashy, but strong when pressed.
 * **Motives/Secrets:** You secretly worry your husband's ambitions have gone too far. You resent his obsession with business over family and the community's softer needs.
 * **Roleplaying Tips:** Speak warmly of your charitable work, but hint at unease about the men's squabbles. Drop subtle suspicions without seeming confrontational.
 
-### Introduction
+## Introduction
 
 > "I'm Frances Larrabee, proud to call Fairhaven my home. My husband and I have devoted ourselves to this community, especially through Larrabee Park. I only hope his business pursuits don't overshadow the charitable causes dearest to me."
 
-### Hidden Motive
+## Hidden Motive
 
 * Resents her husband's absences and rumored affairs.
 * Fears his financial ruin will also ruin her standing in society.

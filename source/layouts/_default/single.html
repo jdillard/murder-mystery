@@ -10,13 +10,6 @@
 
   <!-- Local CSS -->
   <link rel="stylesheet" href="/css/style.css">
-  <style>
-    .footer {
-      background-image: url("/murder-mystery/images/portraits/{{ .Params.portrait_image }}");
-      background-position: center {{ .Params.portrait_alignment }};
-      background-size: {{ .Params.portrait_zoom }} auto;
-    }
-  </style>
 </head>
 <body>
   <div class="header">
@@ -28,20 +21,12 @@
     <img src="/images/fan_motif.svg" class="fan right" alt="Right Fan">
   </div>
   <div class="body">
-    <h1 class="subtitle"><a href="/characters/">{{ .Title }}</a></h1>
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.subtitle }}
     <h3 class="subtitle">{{ .Params.subtitle }}</h3>
+    {{ end }}
     
     {{ .Content }}
-
-    {{ if .Params.resources }}
-    <h3>More resources</h3>
-    <ul>
-      {{ range .Params.resources }}
-      <li><a href="{{ .url }}" rel="nofollow">{{ .url }}</a></li>
-      {{ end }}
-    </ul>
-    {{ end }}
   </div>
-  <div class="footer"></div>
 </body>
 </html>

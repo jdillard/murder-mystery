@@ -23,13 +23,25 @@ body.cover {
   box-sizing: border-box;
 }
 
-h1 {
+body.cover h1 {
   font-family: 'Cinzel Decorative', cursive;
   font-size: 68pt;
   line-height: 70pt;
   text-align: center;
   margin: 1cm 0;
   font-weight: 500;
+}
+
+body h1 {
+  font-family: 'DecoNeue', sans-serif;
+  font-size: 36pt;
+  text-align: center;
+  margin: 0.5cm 0;
+  letter-spacing: 1pt;
+}
+
+body h1.subtitle {
+  margin-bottom: 0;
 }
 
 h1 a {
@@ -126,11 +138,11 @@ p {
 
 .body h2 {
   font-family: 'DecoNeue', sans-serif;
-  font-size: 32pt;
-  letter-spacing: .3rem;
+  font-size: 24pt;
+  letter-spacing: .2rem;
   text-align: center;
-  margin-bottom: 0.2rem;
-  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 .body h2 a {
