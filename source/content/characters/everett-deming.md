@@ -4,6 +4,10 @@ subtitle: "Cannery Executive"
 portrait_image: "Everett_Deming.jpg"
 portrait_alignment: "29%"
 portrait_zoom: "100%"
+clue_pack:
+  clue_1: "Larrabee attempted to buy your cannery; Bennett knew of the attempt."
+  clue_2: "You saw Bennett pacing near the study, looking tense."
+  clue_3: "A diary fragment mentions a 'heated conversation' between Bennett and Larrabee."
 resources:
   - url: "https://fairhavenhistory.com/west/pacific-american-fisheries-paf/"
 ---

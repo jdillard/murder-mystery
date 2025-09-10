@@ -4,6 +4,10 @@ subtitle: "Lumberman & Saloon Owner"
 portrait_image: "John_de_Mattos.jpeg"
 portrait_alignment: "12%"
 portrait_zoom: "100%"
+clue_pack:
+  clue_1: "Bennett had spoken privately with Larrabee about timber contracts."
+  clue_2: "You noticed Bennett leaving the room with his hands slightly ink-stained."
+  clue_3: "Someone whispers that Bennett has long held a grudge against Larrabee."
 resources:
   - url: "https://www.historylink.org/File/22507"
 ---

@@ -4,6 +4,10 @@ subtitle: "The Farmer's Daughter, Ferndale"
 portrait_image: "Lottie_Roeder_Roth.jpg"
 portrait_alignment: "38%"
 portrait_zoom: "100%"
+clue_pack:
+  clue_1: "You overheard Bennett remarking to someone about 'putting Larrabee in his place.'"
+  clue_2: "Bennett was near your family's land documents earlier; suspicious."
+  clue_3: "You see Bennett acting nervous after the scream."
 resources:
   - url: "https://www.whatcomtalk.com/2025/01/08/lottie-roeder-roth-the-history-and-aftermath-of-bellinghams-pioneer-historian/"
 ---

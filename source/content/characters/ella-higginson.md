@@ -4,6 +4,10 @@ subtitle: "Local Poet and Writer"
 portrait_image: "Ella_Rhoads_Higginson.jpg"
 portrait_alignment: "21%"
 portrait_zoom: "100%"
+clue_pack:
+  clue_1: "Bennett seemed unusually agitated when Larrabee discussed cultural funding."
+  clue_2: "You see Bennett holding a small vial that could contain poison near the study."
+  clue_3: "Fragments of Bennett's handwritten notes reference a 'final solution' to a problem with Larrabee."
 resources:
   - url: "https://en.wikipedia.org/wiki/Ella_Rhoads_Higginson"
 ---

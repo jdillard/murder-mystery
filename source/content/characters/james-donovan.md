@@ -4,6 +4,10 @@ subtitle: "The Banker"
 portrait_image: "James_Donovan.jpg"
 portrait_alignment: "29%"
 portrait_zoom: "100%"
+clue_pack:
+  clue_1: "You overhear Bennett speaking sharply to Larrabee about debts."
+  clue_2: "In Larrabee's files, you see a note referencing a meeting with Bennett the night before."
+  clue_3: "You spot Bennett near the study around the time of the murder."
 resources:
   - url: "https://en.m.wikipedia.org/wiki/J._J._Donovan"
 ---

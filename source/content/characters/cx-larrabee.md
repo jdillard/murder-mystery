@@ -4,6 +4,10 @@ subtitle: "The Victim"
 portrait_image: "cx_larrabee.jpg"
 portrait_alignment: "33%"
 portrait_zoom: "100%"
+clue_pack:
+  clue_1: "I will announce a major new project tonight — some of you will not like it."
+  clue_2: "A spilled note near my study reads: 'Bennett will regret doubting me.'"
+  clue_3: "Fragments of a letter hint at secret meetings with Bennett in the past week."
 resources:
   - url: "https://en.m.wikipedia.org/wiki/C._X._Larrabee"
   - url: "https://fairhavenhistory.com/characters/cx-larrabee/"

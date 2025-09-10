@@ -4,6 +4,10 @@ subtitle: "The Railroad Baron"
 portrait_image: "Nelson_Bennett.jpg"
 portrait_alignment: "27%"
 portrait_zoom: "100%"
+clue_pack:
+  clue_1: "You are secretly furious that Larrabee cut you out of the railroad deal."
+  clue_2: "You notice an opportunity during dinner — a chance to poison Larrabee's drink unnoticed."
+  clue_3: "Later, you must keep your composure while subtly redirecting suspicion onto others."
 resources:
   - url: "https://en.m.wikipedia.org/wiki/Nelson_Bennett"
   - url: "http://www.stumpranchonline.com/skagitjournal/Washington/Whatcom/Fairhaven/Wilkeson12-Bennett.html"

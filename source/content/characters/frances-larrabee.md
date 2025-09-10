@@ -4,6 +4,10 @@ subtitle: "The Wife"
 portrait_image: "Frances_Larrabee.jpg"
 portrait_alignment: "31%"
 portrait_zoom: "100%"
+clue_pack:
+  clue_1: "You heard your husband and Bennett arguing privately today."
+  clue_2: "You notice a faint smudge of Bennett's ink on a cancelled contract in your husband's study."
+  clue_3: "Someone mentions seeing Bennett leave the study just before the scream."
 resources:
   - url: "https://edgemoorneighborhood.com/who-was-frances-larrabee/"
 ---
