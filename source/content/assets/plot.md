@@ -37,7 +37,15 @@ Once all guests have arrived:
 
 During appetizers/soup C.X. Larrabee makes a dramatic announcement about his **new venture** (railroad expansion, cannery buyouts, copper scheme — you pick).
 
-> "You are all gathered at my home… we shall enjoy a fine dinner and discuss the exciting news I have tonight. [material needed]"
+> "My dear friends, you are all gathered at my home tonight not merely for the pleasure of your company — though that is considerable — but because each of you has played a role in shaping Whatcom County's destiny. As we dine, I wish to share with you the most ambitious undertaking of my career: a grand consolidation of our region's timber, mining, and railroad interests under a single enterprise — **The Bellingham Bay Development Corporation**.
+>
+> This venture will require the acquisition of several key properties and partnerships. Nelson, your railroad expertise will be invaluable, though I'm afraid our previous arrangements will need... restructuring. James, your banking connections are essential, and I trust we can resolve certain outstanding obligations through this new partnership. Miss Roth, your family's timber holdings are precisely what we need to complete our vision — I'm confident we can reach terms that serve everyone's interests.
+>
+> Some of you may find these changes... challenging. But progress demands sacrifice from all of us. Those who embrace this new direction will prosper beyond their wildest dreams. Those who resist..."
+>
+> *[Larrabee raises his glass with a knowing smile]*
+>
+> "Well, let us simply say that Whatcom County has no room for those who cannot see the future clearly. To the Bellingham Bay Development Corporation — and to those wise enough to join me!"
 
 At this point, you slip short secret notes/cards (see clue packs) to each character — little rumors or discoveries they can use later 
 
