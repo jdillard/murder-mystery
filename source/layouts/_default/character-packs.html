@@ -92,7 +92,7 @@
       {{ .Content }}
     </div>
 
-    {{ $characters := site.GetPage "/characters" }}
+    {{ $characters := site.GetPage "/info/characters" }}
     {{ range $characters.Pages.ByTitle }}
     <div class="character-pack">
       <div class="character-name">{{ .Title }}</div>
