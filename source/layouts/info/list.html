@@ -29,8 +29,8 @@
       {{ range .Pages }}
       <li>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
-        {{ if .Params.subtitle }}
-        <div class="character-subtitle">{{ .Params.subtitle }}</div>
+        {{ if .Summary }}
+        <div class="character-subtitle">{{ .Summary }}</div>
         {{ end }}
       </li>
       {{ end }}
