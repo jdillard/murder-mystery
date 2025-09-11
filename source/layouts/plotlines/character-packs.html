@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} - Whatcom Murder Mystery</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .character-pack {
+      page-break-before: always;
+      margin-bottom: 2em;
+      padding: 1.5em;
+      border: 2px solid #8B4513;
+      border-radius: 10px;
+      background-color: #fdfcf8;
+    }
+    .character-name {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 0.3em;
+      text-align: center;
+      color: #8B4513;
+    }
+    .character-subtitle {
+      font-style: italic;
+      font-size: 1.2em;
+      text-align: center;
+      margin-bottom: 1.5em;
+      color: #666;
+    }
+    .section {
+      margin: 1.5em 0;
+      padding: 1em;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .section-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 1em;
+      color: #8B4513;
+      border-bottom: 2px solid #8B4513;
+      padding-bottom: 0.3em;
+    }
+    .character-list li {
+      list-style: none;
+      margin: 0.5em 0;
+    }
+    .introduction {
+      font-style: italic;
+      font-size: 1.1em;
+      background-color: #f0f8ff;
+      padding: 1em;
+      border-left: 4px solid #4682B4;
+      margin: 1em 0;
+    }
+    .hidden-content {
+      background-color: #fff5f5;
+      border-left: 4px solid #DC143C;
+    }
+    @media print {
+      .character-pack {
+        page-break-before: always;
+        margin: 0;
+        border: 2px solid #000;
+      }
+      .header {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="/images/fan_motif.svg" class="fan left" alt="Left Fan">
+    <div>
+      <h2>Early Twentieth Century</h2>
+      <h1><a href="/">Whatcom Murder Mystery</a></h1>
+    </div>
+    <img src="/images/fan_motif.svg" class="fan right" alt="Right Fan">
+  </div>
+  <div class="body">
+    <h1>{{ .Title }}</h1>
+    
+    <div class="timing-info">
+      {{ .Content }}
+    </div>
+
+    {{ $characters := .Site.Data.characters }}
+    {{ range $characters }}
+    <div class="character-pack">
+      <div class="character-name">{{ .title }}</div>
+      {{ if .subtitle }}
+      <div class="character-subtitle">{{ .subtitle }}</div>
+      {{ end }}
+      
+      <div class="section">
+        <div class="section-title">Character Card</div>
+        {{ if .character_card }}
+        <ul>
+          {{ range .character_card }}
+          <li>{{ .item | markdownify }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      
+      <div class="section">
+        <div class="section-title">Introduction</div>
+        {{ if .introduction }}
+        <div class="introduction">"{{ .introduction }}"</div>
+        {{ end }}
+      </div>
+      
+      <div class="section hidden-content">
+        <div class="section-title">Hidden Secrets & Motives</div>
+        {{ if .hidden_secrets }}
+        <ul>
+          {{ range .hidden_secrets }}
+          <li>{{ .item | markdownify }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</body>
+</html>

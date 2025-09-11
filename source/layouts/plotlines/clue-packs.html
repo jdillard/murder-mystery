@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} - Whatcom Murder Mystery</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .clue-pack {
+      page-break-before: always;
+      margin-bottom: 2em;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .character-name {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+    .character-subtitle {
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .clue {
+      margin: 1em 0;
+      padding: 0.5em;
+      background-color: #f9f9f9;
+      border-left: 3px solid #8B4513;
+    }
+    .clue-title {
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+    .timing-info {
+      background-color: #f0f0f0;
+      padding: 1em;
+      margin-bottom: 2em;
+      border-radius: 5px;
+    }
+    @media print {
+      .clue-pack {
+        page-break-before: always;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="/images/fan_motif.svg" class="fan left" alt="Left Fan">
+    <div>
+      <h2>Early Twentieth Century</h2>
+      <h1><a href="/">Whatcom Murder Mystery</a></h1>
+    </div>
+    <img src="/images/fan_motif.svg" class="fan right" alt="Right Fan">
+  </div>
+  <div class="body">
+    <h1>{{ .Title }}</h1>
+    
+    <div class="timing-info">
+      {{ .Content }}
+    </div>
+
+    {{ $characters := .Site.Data.characters }}
+    {{ range $characters }}
+    {{ if .clue_pack }}
+    <div class="clue-pack">
+      <div class="character-name">{{ .title }}</div>
+      {{ if .subtitle }}
+      <div class="character-subtitle">{{ .subtitle }}</div>
+      {{ end }}
+      
+      {{ if .clue_pack.clue_1 }}
+      <div class="clue">
+        <div class="clue-title">Clue 1 (Act II) - After Larrabee's announcement:</div>
+        {{ .clue_pack.clue_1 }}
+      </div>
+      {{ end }}
+      
+      {{ if .clue_pack.clue_2 }}
+      <div class="clue">
+        <div class="clue-title">Clue 2 (Act III) - After murder discovery:</div>
+        {{ .clue_pack.clue_2 }}
+      </div>
+      {{ end }}
+      
+      {{ if .clue_pack.clue_3 }}
+      <div class="clue">
+        <div class="clue-title">Clue 3 (Act IV) - During investigation:</div>
+        {{ .clue_pack.clue_3 }}
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</body>
+</html>

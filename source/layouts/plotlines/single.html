@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="plotline-single">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    
+    <div class="assets-list">
+        <h2>Assets</h2>
+        {{ $assetPath := printf "%sassets/" .File.Dir }}
+        {{ range $.Site.Pages }}
+            {{ if and (hasPrefix .File.Dir $assetPath) (ne .File.LogicalName "_index.md") }}
+            <div class="asset-link">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                {{ if .Summary }}
+                    <p>{{ .Summary }}</p>
+                {{ end }}
+            </div>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}
