@@ -37,7 +37,13 @@ Once all guests have arrived:
 
 During appetizers/soup C.X. Larrabee makes a dramatic announcement about his **new venture** (railroad expansion, cannery buyouts, copper scheme — you pick).
 
-> "My dear friends, you are all gathered at my home tonight not merely for the pleasure of your company — though that is considerable — but because each of you has played a role in shaping Whatcom County's destiny. As we dine, I wish to share with you the most ambitious undertaking of my career: a grand consolidation of our region's timber, mining, and railroad interests under a single enterprise — **The Bellingham Bay Development Corporation**.
+> "My dear friends, you are all gathered at my home tonight not merely for the pleasure of your company — though that is considerable — but because each of you has played a role in shaping Whatcom County's destiny. Such as James Donovan advocating for cooperation between our communities and helping rally the support that made unity possible, and Nelson Bennett who saw the potential to create great communities around our bay, we have witnessed history unfold before our very eyes.
+>
+> We all remember the struggles of recent years — the boom times having cooled, the competition between Whatcom, Sehome, Bellingham, and Fairhaven was holding our entire region back. We were weakening ourselves through division.
+>
+> But look what we accomplished through unity! The consolidation of our communities into the great city of Bellingham has proven the wisdom of setting aside petty rivalries. By unifying our resources and strengthening our collective appeal to industry, we have created something far greater than the sum of its parts.
+>
+> Now, I propose we apply that same proven principle to commerce itself. As we dine, I wish to share with you the most ambitious undertaking of my career: a grand consolidation of our region's timber, mining, and railroad interests under a single enterprise — **The Bellingham Bay Development Corporation**. Just as our communities succeeded through unity, so too must our commercial enterprises unite under a single, coordinated purpose.
 >
 > This venture will require the acquisition of several key properties and partnerships. Nelson, your railroad expertise will be invaluable, though I'm afraid our previous arrangements will need... restructuring. James, your banking connections are essential, and I trust we can resolve certain outstanding obligations through this new partnership. Miss Roth, your family's timber holdings are precisely what we need to complete our vision — I'm confident we can reach terms that serve everyone's interests.
 >
