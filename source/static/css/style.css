@@ -211,6 +211,22 @@ body blockquote {
 	margin-top:.25rem
 }
 
+.nav {
+  text-align: center;
+}
+
+.nav a {
+  font-family: 'DecoNeue', sans-serif;
+  font-size: 17pt;
+  text-align: center;
+  margin: 0.5cm 0;
+  letter-spacing: 1pt;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 900;
+  margin: 0 1rem;
+}
+
 /* Mobile Responsive Styles - Only apply to screens, not print */
 @media screen and (max-width: 768px) {
   html, body {
