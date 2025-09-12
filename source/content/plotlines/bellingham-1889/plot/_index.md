@@ -4,7 +4,7 @@ title: "Plot Outline"
 
 - **Duration**: about 2.5–3 hours
 - **Setting**: Food courses with clue rounds naturally built in.
-- **Set**: Roeder House (The Larrabee residence)
+- **Set**: Roeder House
 
 ## Arrival and Introductions
 
@@ -15,7 +15,7 @@ title: "Plot Outline"
 As guests arrive:
 
 - Serve drinks and small appetizers
-- Guests arrive at the Larrabee home for a formal dinner.
+- Guests arrive at the Roeder home for a formal dinner.
   - Encourage light conversation in character — mingle, establish relationships, and subtle tension.
   - Non-prying small talk until all guests arrive
 - Answer any gameplay questions
@@ -34,28 +34,27 @@ Once all guests have arrived:
 ## ACT I: First Course and Announcement
 
 - **Duration**: 20min
+- **Host Note:** Before the game begins, randomly select which character will make this announcement. Inform that player privately that they should deliver this speech during the first course.
 
-During appetizers/soup C.X. Larrabee makes a dramatic announcement about his **new venture** (railroad expansion, cannery buyouts, copper scheme — you pick).
+During appetizers/soup **[RANDOMLY SELECTED CHARACTER]** makes an announcement on behalf of the Roeder family.
 
-> "My dear friends, you are all gathered at my home tonight not merely for the pleasure of your company — though that is considerable — but because each of you has played a role in shaping Whatcom County's destiny. Such as James Donovan advocating for cooperation between our communities and helping rally the support that made unity possible, and Nelson Bennett who saw the potential to create great communities around our bay.
+> "My dear friends, I've been asked by the Roeder family to speak on their behalf this evening, as they're dealing with some family matters at the moment.
 >
-> We all remember the struggles of recent years — the boom times having cooled, the competition between Whatcom, Sehome, Bellingham, and Fairhaven was holding our entire region back. We were weakening ourselves through division.
+> You are all gathered here tonight to celebrate Bellingham's remarkable recent consolidation and the successes that have followed. We all remember the struggles of recent years — the boom times having cooled, the competition between Whatcom, Sehome, Bellingham, and Fairhaven was holding our entire region back. We were weakening ourselves through division.
 >
 > But look what we accomplished through unity! The consolidation of our communities into the great city of Bellingham has proven the wisdom of setting aside petty rivalries. By unifying our resources and strengthening our collective appeal to industry, we have created something far greater than the sum of its parts.
 >
-> Now, I also have a proposal to make, I wish to share with you the most ambitious undertaking of my career: a grand consolidation of our region's timber, mining, and railroad interests under a single enterprise — **The Bellingham Bay Development Corporation**. Just as our communities succeeded through unity, so too must our commercial enterprises unite under a single, coordinated purpose.
+> Each of you has played a vital role in this transformation. James Donovan advocating for cooperation between our communities, Nelson Bennett who saw the potential to create great communities around our bay, Miss Roth whose family's timber interests have flourished in this unified market. The Roeder family wanted to personally honor these partnerships and celebrate our shared prosperity.
 >
-> This venture will require the acquisition of several key properties and partnerships. Nelson, your railroad expertise will be invaluable, though I'm afraid our previous arrangements will need... restructuring. James, your banking connections are essential, and I trust we can resolve certain outstanding obligations through this new partnership. Miss Roth, your family's timber holdings are precisely what we need to complete our vision — I'm confident we can reach terms that serve everyone's interests.
+> The opportunities ahead of us are tremendous. With our unified city, we can attract greater investment, expand our industries, and secure Bellingham's position as the premier destination on Puget Sound. Some of you may find upcoming changes in our business arrangements... challenging, but progress demands adaptation from all of us. Those who embrace this new direction will prosper beyond their wildest dreams.
 >
-> Some of you may find these changes... challenging. But progress demands sacrifice from all of us. Those who embrace this new direction will prosper beyond their wildest dreams. Those who resist..."
+> *[Raises glass with a confident smile]*
 >
-> *[Larrabee raises his glass with a knowing smile]*
->
-> "Well, let us simply say that Whatcom County has no room for those who cannot see the future clearly. To the Bellingham Bay Development Corporation — and to those wise enough to join me!"
+> To Bellingham's bright future, and to those wise enough to seize the opportunities before us!"
 
 At this point, you slip short secret notes/cards (see clue packs) to each character — little rumors or discoveries they can use later
 
-(example: Donovan gets a card saying *“You overheard Larrabee telling Bennett he will never see his money back.”*).
+(example: Donovan gets a card saying *"You overheard Heinrich telling Bennett he will never see his money back."*).
 
 Allow guests to mingle and gossip, dropping hints about motives. Encourage subtle in-character accusations or jealous remarks. This news threatens at least 2–3 characters directly. Arguments or icy exchanges may follow. Encourage guests to start gossiping and hinting at grudges (“I hear Mr. Donovan has lent quite a sum to our host…”).
 
@@ -74,9 +73,9 @@ As guests are finishing their appetizers and mingling, the murder occurs:
 
 ### The Discovery
 
-The announcement should be made with dramatic tension by the ghost of C.X. Larrabee:
+The announcement should be made with dramatic tension by the ghost of Heinrich Roeder (the family patriarch):
 
-> *[C.X. Larrabee's ghost, appearing ethereal and mournful]*
+> *[Heinrich Roeder's ghost, appearing ethereal and mournful]*
 >
 > "My dear friends... I'm afraid I bring the most dreadful news. I have been... murdered. Struck down in my own study with a decorative letter opener from my desk."
 >
@@ -84,7 +83,7 @@ The announcement should be made with dramatic tension by the ghost of C.X. Larra
 >
 > "My earthly form lies cold in my private study, a brandy glass overturned, spilling across my business papers. There are signs of a brief struggle - my killer did not expect such resistance. The door was locked from inside - the key found in my vest pocket."
 >
-> "The constable cannot reach us tonight due to the storm, and the roads are treacherous. Until morning, I'm afraid you are all... confined to this house with my murderer. My study has been secured, but I must ask from beyond - did any of you see who visited me after I made my announcement this evening?"
+> "The constable cannot reach us tonight due to the storm, and the roads are treacherous. Until morning, I'm afraid you are all... confined to this house with my murderer. My study has been secured, but I must ask from beyond - did any of you see who visited me after the announcement this evening?"
 >
 > "I shall remain among you as a spirit observer, watching as justice unfolds. Find my killer, dear friends... find them before dawn breaks."
 
@@ -129,7 +128,7 @@ The investigation should feel organic while maintaining structure. Guide guests 
 
 ### Round 1 – Alibis and Initial Theories (15min)
 
-> "[Frances Larrabee] Given our situation, I believe we must conduct our own investigation. Perhaps if we each share our whereabouts during the time in question, we can begin to understand what happened to my dear husband. Each character should explain their movements after Larrabee's announcement."
+> "[Any character can deliver this] Given our situation, I believe we must conduct our own investigation. Perhaps if we each share our whereabouts during the time in question, we can begin to understand what happened to Heinrich. Each character should explain their movements after the announcement this evening."
 
 **Process:**
 - Host should note contradictions without immediately pointing them out
@@ -137,9 +136,9 @@ The investigation should feel organic while maintaining structure. Guide guests 
 
 **Key Alibis to Track:**
 
-- **Bennett (guilty):** "I stepped out for fresh air on the terrace - needed to think about his proposal"
+- **Bennett (guilty):** "I stepped out for fresh air on the terrace - needed to think about the evening's discussions"
 - **Donovan:** "I was in the library, reviewing some papers I brought"
-- **Frances Larrabee:** "I was instructing the cook about the next course"
+- **Lottie Roth:** "I was in the garden, getting some fresh air after the announcement"
 - Others should have plausible but not ironclad alibis
 
 **Host's Role:** Ask follow-up questions: "Miss Roth, did you see anyone else when you were in the garden?" "Mr. Bennett, how long were you outside? Anyone see you return?"
@@ -153,7 +152,7 @@ The investigation should feel organic while maintaining structure. Guide guests 
 **Evidence to Reveal:**
 - Muddy footprints leading from the terrace door to the study
 - A torn piece of fabric caught on the study window latch
-- Larrabee's appointment book showing "Bennett - private meeting - 8:30"
+- Heinrich's appointment book showing "Bennett - private meeting - 8:30"
 - A partially burned letter in the fireplace (related to railroad debts)
 - Signs that someone searched through desk papers before the murder
 
@@ -191,25 +190,24 @@ The investigation should feel organic while maintaining structure. Guide guests 
 
 **Final Evidence Presentation:**
 
-> "I'm afraid there's one final piece of evidence that has come to light. When examining Mr. Larrabee's study more closely, we found this telegram hidden beneath other papers on his desk..."
+> "I'm afraid there's one final piece of evidence that has come to light. When examining Heinrich's study more closely, we found this telegram hidden beneath other papers on his desk..."
 
 **The Damning Evidence:**
 A telegram reading: *"RAILROAD BONDS WORTHLESS STOP INVESTORS DEMANDING IMMEDIATE REPAYMENT STOP BENNETT LIABLE FOR FULL AMOUNT STOP FEDERAL INVESTIGATION PENDING"*
 
 ### Bennett's Confession
 
-> *[Bennett, defeated]* "Yes... yes, it's true. I killed C.X. Larrabee, but you must understand - he was going to destroy me! Those railroad bonds he convinced me to purchase were worthless paper. He knew it, and yet he demanded I invest everything I had saved for my family's future. When he announced tonight that our 'previous arrangements would need restructuring,' he was essentially telling me I would never see a penny of my money again. Worse, he was planning to use my ruin as a stepping stone for his new venture."
+> *[Bennett, defeated]* "Yes... yes, it's true. I killed Heinrich Roeder, but you must understand - he was going to destroy me! Those railroad bonds he convinced me to purchase were worthless paper. He knew it, and yet he demanded I invest everything I had saved for my family's future. When the announcement was made tonight about upcoming changes in business arrangements, I knew what it meant - I would never see a penny of my money again. Worse, Heinrich was planning to use my ruin to consolidate more power for the Roeder family enterprises."
 >
-> "I didn't plan to kill him. I went to his study to demand the truth about those bonds. When I confronted him with what I'd learned, he laughed. He said that business was about knowing when to cut losses - and that I was simply a loss he was cutting. He actually offered to 'keep me on' as a junior partner in his new venture, knowing I'd be working essentially for free to pay off debts for his worthless investments. When I refused and threatened to expose him... he said no one would believe a bankrupt railroad man over C.X. Larrabee. That's when I... I grabbed the letter opener - it happened so quickly."
+> "I didn't plan to kill him. I went to his study to demand the truth about those bonds. When I confronted him with what I'd learned, he laughed. He said that business was about knowing when to cut losses - and that I was simply a loss he was cutting. He actually offered to let me 'work off' my debts by essentially becoming an indentured servant to the Roeder family enterprises. When I refused and threatened to expose him... he said no one would believe a bankrupt railroad man over Heinrich Roeder. That's when I... I grabbed the letter opener - it happened so quickly."
 
 ### Character Epilogues
 
 > "And so ends this tragic evening. While we await the proper authorities, let us reflect on how greed and deception can poison even the most civilized of gatherings."
 >
 > - **Nelson Bennett:** Will face trial for murder, but the questionable business practices may be taken into account
-> - **James Donovan:** Recovers his loans through Larrabee's estate, continues banking
-> - **Frances Larrabee:** Inherits the estate, moves to Seattle for a fresh start
-> - **Lottie Roth:** Keeps her family's timber holdings, eventually becomes a successful businesswoman
+> - **James Donovan:** Recovers his loans through the Roeder estate, continues banking
+> - **Lottie Roth:** As a Roeder family member, inherits part of the family enterprises and becomes a successful businesswoman
 > - **Other characters:** Brief, satisfying conclusions based on their revealed motives
 >
 > "To truth revealed, and to the hope that justice, however delayed, eventually finds us all."
