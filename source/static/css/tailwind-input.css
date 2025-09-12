@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'DecoNeue';
+  src: url('/murder-mystery/fonts/DecoNeue/deconeue_light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
+
+@layer components {
+  /* Custom component classes for complex layouts */
+  .fan-transform-left {
+    transform: translateY(-50%) translateX(-29%) scaleX(-1) rotate(90deg);
+  }
+  
+  .fan-transform-right {
+    transform: translateX(29%) rotate(90deg);
+  }
+  
+  .header-clip {
+    clip-path: inset(0 0 -90px 0);
+  }
+}

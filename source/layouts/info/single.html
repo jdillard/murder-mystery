@@ -9,35 +9,38 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Local CSS -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/tailwind.css">
   <style>
     .footer {
       background-image: url("/murder-mystery/images/portraits/{{ .Params.portrait_image }}");
       background-position: center {{ .Params.portrait_alignment }};
       background-size: {{ .Params.portrait_zoom }} auto;
+      width: 100%;
+      height: 4cm;
+      border-top: 10px double #ffffff;
     }
   </style>
 </head>
-<body>
-  <div class="header">
-    <img src="/images/fan_motif.svg" class="fan left" alt="Left Fan">
+<body class="m-0 p-0 w-a4 h-a4 font-garamond text-dark">
+  <div class="w-full bg-vintage-cream flex items-center justify-center relative p-2rem header-clip mb-0_4cm">
+    <img src="/images/fan_motif.svg" class="absolute w-fan-sm max-h-fan-sm left-0 top-1_2 fan-transform-left" alt="Left Fan">
     <div>
-      <h2>Early Twentieth Century</h2>
-      <h1><a href="/">Whatcom Murder Mystery</a></h1>
+      <h2 class="font-deco text-11pt text-center m-0_5cm tracking-1pt mt-0">Early Twentieth Century</h2>
+      <h1 class="font-cinzel text-26pt leading-27pt max-w-18rem m-0 z-2 text-center font-500"><a href="/" class="no-underline text-dark">Whatcom Murder Mystery</a></h1>
     </div>
-    <img src="/images/fan_motif.svg" class="fan right" alt="Right Fan">
+    <img src="/images/fan_motif.svg" class="absolute w-fan-sm max-h-fan-sm right-0 fan-transform-right" alt="Right Fan">
   </div>
-  <div class="body">
-    <h1 class="subtitle"><a href="/info/characters/">{{ .Title }}</a></h1>
-    <h3 class="subtitle">{{ .Params.subtitle }}</h3>
+  <div class="w-full max-w-content px-2cm">
+    <h1 class="font-deco text-36pt text-center m-0_5cm tracking-1pt mb-0"><a href="/info/characters/" class="no-underline text-dark">{{ .Title }}</a></h1>
+    <h3 class="text-center mt-0 font-100 italic">{{ .Params.subtitle }}</h3>
     
     {{ .Content }}
 
     {{ if .Params.resources }}
     <h3>More resources</h3>
-    <ul>
+    <ul class="pl-12pt text-10pt">
       {{ range .Params.resources }}
-      <li><a href="{{ .url }}" rel="nofollow">{{ .url }}</a></li>
+      <li class="mb-2pt"><a href="{{ .url }}" rel="nofollow" class="text-dark hover:underline">{{ .url }}</a></li>
       {{ end }}
     </ul>
     {{ end }}

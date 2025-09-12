@@ -1,0 +1,223 @@
+/* Tailwind CSS converted from original styles */
+
+@font-face {
+  font-family: 'DecoNeue';
+  src: url('/murder-mystery/fonts/DecoNeue/deconeue_light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+/* Base styles using Tailwind-like utility classes */
+.w-a4 { width: 210mm; }
+.h-a4 { height: 297mm; }
+.w-content { width: 170mm; }
+.max-w-content { max-width: 170mm; }
+.w-fan { width: 180mm; }
+.max-h-fan { max-height: 80mm; }
+.w-fan-sm { width: 67mm; }
+.max-h-fan-sm { max-height: 60mm; }
+
+.bg-vintage-cream { background-color: #f6efe6; }
+.text-dark { color: #333; }
+.text-gray { color: #666; }
+.text-black { color: #222; }
+
+.font-garamond { font-family: 'EB Garamond', serif; }
+.font-cinzel { font-family: 'Cinzel Decorative', cursive; }
+.font-deco { font-family: 'DecoNeue', sans-serif; }
+
+.text-68pt { font-size: 68pt; line-height: 70pt; }
+.text-36pt { font-size: 36pt; }
+.text-26pt { font-size: 26pt; line-height: 27pt; }
+.text-24pt { font-size: 24pt; }
+.text-17pt { font-size: 17pt; }
+.text-14pt { font-size: 14pt; }
+.text-12pt { font-size: 12pt; }
+.text-11pt { font-size: 11pt; }
+.text-10pt { font-size: 10pt; }
+.text-9pt { font-size: 9pt; }
+
+.leading-70pt { line-height: 70pt; }
+.leading-38pt { line-height: 38pt; }
+.leading-30pt { line-height: 30pt; }
+.leading-27pt { line-height: 27pt; }
+.leading-22pt { line-height: 22pt; }
+.leading-20pt { line-height: 20pt; }
+
+.tracking-1pt { letter-spacing: 1pt; }
+.tracking-0_2rem { letter-spacing: 0.2rem; }
+.tracking-0_1rem { letter-spacing: 0.1rem; }
+.tracking-0_05rem { letter-spacing: 0.05rem; }
+
+.m-1cm { margin: 1cm; }
+.m-0_5cm { margin: 0.5cm; }
+.mt-1cm { margin-top: 1cm; }
+.mt-2rem { margin-top: 2rem; }
+.mt-1rem { margin-top: 1rem; }
+.mt-0_5rem { margin-top: 0.5rem; }
+.mt-0_25rem { margin-top: 0.25rem; }
+.mb-1_5rem { margin-bottom: 1.5rem; }
+.mb-0_5cm { margin-bottom: 0.5cm; }
+.mb-0_4cm { margin-bottom: 0.4cm; }
+.mb-0_25rem { margin-bottom: 0.25rem; }
+.mb-0_2rem { margin-bottom: 0.2rem; }
+.mb-0_5rem { margin-bottom: 0.5rem; }
+.mb-1rem { margin-bottom: 1rem; }
+.mb-2rem { margin-bottom: 2rem; }
+
+.p-2rem { padding: 2rem; }
+.p-1rem { padding: 1rem; }
+.p-0_75rem { padding: 0.75rem; }
+.p-0_5rem { padding: 0.5rem; }
+.px-2cm { padding-left: 2cm; padding-right: 2cm; }
+.px-1rem { padding-left: 1rem; padding-right: 1rem; }
+.py-0 { padding-top: 0; padding-bottom: 0; }
+.pl-12pt { padding-left: 12pt; }
+.pl-16pt { padding-left: 16pt; }
+
+/* Layout utilities */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.items-center { align-items: center; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+
+/* Position utilities */
+.relative { position: relative; }
+.absolute { position: absolute; }
+.top-1_2 { top: 50%; }
+.left-0 { left: 0; }
+.right-0 { right: 0; }
+
+/* Transform utilities */
+.rotate-180 { transform: rotate(180deg); }
+.rotate-90 { transform: rotate(90deg); }
+.scale-x-neg-1 { transform: scaleX(-1); }
+.transform-y-neg-50 { transform: translateY(-50%); }
+
+/* Custom transform combinations */
+.fan-transform-left {
+  transform: translateY(-50%) translateX(-29%) scaleX(-1) rotate(90deg);
+}
+.fan-transform-right {
+  transform: translateX(29%) rotate(90deg);
+}
+
+/* Clip path utilities */
+.header-clip { clip-path: inset(0 0 -90px 0); }
+
+/* Box sizing */
+.box-border { box-sizing: border-box; }
+
+/* Z-index */
+.z-2 { z-index: 2; }
+
+/* Border radius */
+.rounded-5px { border-radius: 5px; }
+
+/* Font weights */
+.font-100 { font-weight: 100; }
+.font-500 { font-weight: 500; }
+.font-700 { font-weight: 700; }
+.font-900 { font-weight: 900; }
+
+/* Font styles */
+.italic { font-style: italic; }
+
+/* Text decoration */
+.no-underline { text-decoration: none; }
+.underline { text-decoration: underline; }
+
+/* List styles */
+.list-none { list-style: none; }
+
+/* Width and height utilities */
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.w-auto { width: auto; }
+.h-auto { height: auto; }
+.min-h-screen { min-height: 100vh; }
+.min-h-full { min-height: 100vh; }
+
+/* Viewport units */
+.w-screen { width: 100vw; }
+.w-90vw { width: 90vw; }
+
+/* Max widths */
+.max-w-280px { max-width: 280px; }
+.max-w-18rem { max-width: 18rem; }
+.max-w-10rem { max-width: 10rem; }
+.max-w-none { max-width: none; }
+
+/* Heights */
+.h-4cm { height: 4cm; }
+.h-3rem { height: 3rem; }
+
+/* Borders */
+.border-t-10-double-white { border-top: 10px double #ffffff; }
+
+/* Line heights */
+.leading-1_5 { line-height: 1.5; }
+.leading-1_6 { line-height: 1.6; }
+
+/* Hover states */
+.hover\:underline:hover { text-decoration: underline; }
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .sm\:w-screen { width: 100vw; }
+  .sm\:h-auto { height: auto; }
+  .sm\:min-h-screen { min-height: 100vh; }
+  .sm\:px-1rem { padding-left: 1rem; padding-right: 1rem; }
+  .sm\:py-2rem { padding-top: 2rem; padding-bottom: 2rem; }
+  .sm\:text-36pt { font-size: 36pt; line-height: 38pt; }
+  .sm\:text-20pt { font-size: 20pt; line-height: 22pt; }
+  .sm\:text-18pt { font-size: 18pt; }
+  .sm\:text-14pt { font-size: 14pt; }
+  .sm\:text-12pt { font-size: 12pt; }
+  .sm\:text-10pt { font-size: 10pt; }
+  .sm\:w-90vw { width: 90vw; }
+  .sm\:max-w-280px { max-width: 280px; }
+  .sm\:w-40mm { width: 40mm; }
+  .sm\:max-h-35mm { max-height: 35mm; }
+  .sm\:px-1rem { padding-left: 1rem; padding-right: 1rem; }
+  .sm\:leading-1_6 { line-height: 1.6; }
+}
+
+@media screen and (max-width: 480px) {
+  .xs\:px-1cm { padding-left: 1cm; padding-right: 1cm; }
+  .xs\:text-28pt { font-size: 28pt; line-height: 30pt; }
+  .xs\:text-18pt { font-size: 18pt; line-height: 20pt; }
+  .xs\:text-16pt { font-size: 16pt; }
+  .xs\:text-11pt { font-size: 11pt; }
+  .xs\:text-9pt { font-size: 9pt; }
+  .xs\:max-w-10rem { max-width: 10rem; }
+}
+
+/* Blockquotes */
+blockquote {
+  background-color: #f6efe6;
+  padding: 0.1rem 2.2rem;
+  font-style: italic;
+}
+
+/* Print styles */
+@media print {
+  .print\:w-a4 { width: 210mm; }
+  .print\:h-a4 { height: 297mm; }
+}
+
+/* Mobile responsive blockquotes */
+@media screen and (max-width: 768px) {
+  blockquote {
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+  }
+}

@@ -8,32 +8,32 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- Local CSS -->
-<link rel="stylesheet" href="/css/style.css">
+<!-- Tailwind CSS -->
+<link rel="stylesheet" href="/css/tailwind.css">
 </head>
-<body>
-  <div class="header">
-    <img src="/images/fan_motif.svg" class="fan left" alt="Left Fan">
+<body class="m-0 p-0 w-a4 h-a4 font-garamond text-dark">
+  <div class="w-full bg-vintage-cream flex items-center justify-center relative p-2rem header-clip mb-0_4cm">
+    <img src="/images/fan_motif.svg" class="absolute w-fan-sm max-h-fan-sm left-0 top-1_2 fan-transform-left" alt="Left Fan">
     <div>
-      <h2>Early Twentieth Century</h2>
-      <h1><a href="/">Whatcom Murder Mystery</a></h1>
+      <h2 class="font-deco text-11pt text-center m-0_5cm tracking-1pt mt-0">Early Twentieth Century</h2>
+      <h1 class="font-cinzel text-26pt leading-27pt max-w-18rem m-0 z-2 text-center font-500"><a href="/" class="no-underline text-dark">Whatcom Murder Mystery</a></h1>
     </div>
-    <img src="/images/fan_motif.svg" class="fan right" alt="Right Fan">
+    <img src="/images/fan_motif.svg" class="absolute w-fan-sm max-h-fan-sm right-0 fan-transform-right" alt="Right Fan">
   </div>
-  <div class="body">
-    <h2>{{ .Title }}</h2>
+  <div class="w-full max-w-content px-2cm">
+    <h2 class="font-deco text-24pt tracking-0_2rem text-center mb-1_5rem mt-2rem">{{ .Title }}</h2>
     
     {{ .Content }}
 
-    <ul class="character-list">
+    <ul class="list-none p-0">
       {{ range .Site.Data.characters }}
-      <li>
-        <strong>{{ .title }}</strong>
+      <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
+        <strong class="no-underline text-black text-12pt font-700">{{ .title }}</strong>
         {{ if .subtitle }}
-        <div class="character-subtitle">{{ .subtitle }}</div>
+        <div class="italic text-gray mt-0_25rem">{{ .subtitle }}</div>
         {{ end }}
         {{ if .description }}
-        <p>{{ .description | truncate 200 }}</p>
+        <p class="text-10pt leading-1_5 mb-0_5cm text-left">{{ .description | truncate 200 }}</p>
         {{ end }}
       </li>
       {{ end }}
