@@ -1,12 +1,8 @@
 ---
 title: "Bellingham 1889"
+plot_key: "bellingham-1889"
+layout: "single"
 ---
-
-A murder mystery set in 1889 Bellingham, Washington. Dive into the secrets and scandals of the Pacific Northwest's past.
-
-- **Duration**: about 2.5–3 hours
-- **Setting**: Food courses with clue rounds naturally built in.
-- **Set**: Roeder House
 
 **[Character Packs](character-packs/)** - Print one pack per guest and distribute at the beginning of the game.
 
