@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} - Whatcom Murder Mystery</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="/css/tailwind.css">
+  <style>
+    .section {
+      margin: 1.5em 0;
+      padding: 1em;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .section-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 1em;
+      color: #8B4513;
+      border-bottom: 2px solid #8B4513;
+      padding-bottom: 0.3em;
+    }
+    .character-list li {
+      list-style: none;
+      margin: 0.5em 0;
+    }
+    .introduction {
+      font-style: italic;
+      font-size: 1.1em;
+      background-color: #f0f8ff;
+      padding: 1em;
+      border-left: 4px solid #4682B4;
+      margin: 1em 0;
+    }
+    .hidden-content {
+      background-color: #fff5f5;
+      border-left: 4px solid #DC143C;
+    }
+    @media print {
+      .character-pack {
+        page-break-before: always;
+        margin: 0;
+        border: 2px solid #000;
+      }
+      .header {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body class="m-0 p-0 w-a4 h-a4 font-garamond text-dark">
+  <div class="w-full bg-vintage-cream flex items-center justify-center relative p-2rem header-clip mb-0_4cm">
+    <img src="/images/fan_motif.svg" class="absolute w-fan-sm max-h-fan-sm left-0 top-1_2 fan-transform-left" alt="Left Fan">
+    <div>
+      <h2 class="font-deco text-11pt text-center m-0_5cm tracking-1pt mt-0">Early Twentieth Century</h2>
+      <h1 class="font-cinzel text-26pt leading-27pt max-w-18rem m-0 z-2 text-center font-500"><a href="/" class="no-underline text-dark">Whatcom Murder Mystery</a></h1>
+    </div>
+    <img src="/images/fan_motif.svg" class="absolute w-fan-sm max-h-fan-sm right-0 fan-transform-right" alt="Right Fan">
+  </div>
+  <div class="w-full max-w-content px-2cm">
+    {{ $characterData := index .Site.Data.characters .Params.character_key }}
+    {{ if $characterData }}
+      <h1 class="font-deco text-24pt tracking-0_2rem text-center mb-1_5rem mt-2rem">{{ $characterData.title }}</h1>
+
+      <div class="section">
+        <div class="section-title">Character Card</div>
+        {{ if $characterData.character_card }}
+        <ul>
+          {{ range $characterData.character_card }}
+          <li>{{ .item | markdownify }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+
+      <div class="section">
+        <div class="section-title">Introduction</div>
+        {{ if $characterData.introduction }}
+        <div class="introduction">"{{ $characterData.introduction }}"</div>
+        {{ end }}
+      </div>
+
+      <div class="section hidden-content">
+        <div class="section-title">Hidden Secrets & Motives</div>
+        {{ if $characterData.hidden_secrets }}
+        <ul>
+          {{ range $characterData.hidden_secrets }}
+          <li>{{ .item | markdownify }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+
+      <div class="section hidden-content">
+        <div class="section-title">Clues</div>
+        {{ if $characterData.clue_pack }}
+        <ul>
+          {{ if $characterData.clue_pack.clue_1 }}
+          <li><strong>Clue 1 (Act II)</strong>: {{ $characterData.clue_pack.clue_1 }}</li>
+          {{ end }}
+
+          {{ if $characterData.clue_pack.clue_2 }}
+          <li><strong>Clue 2 (Act III)</strong>: {{ $characterData.clue_pack.clue_2 }}</li>
+          {{ end }}
+
+          {{ if $characterData.clue_pack.clue_3 }}
+          <li><strong>Clue 3 (Act IV)</strong>: {{ $characterData.clue_pack.clue_3 }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    {{ else }}
+    <p>Character data not found.</p>
+    {{ end }}
+  </div>
+</body>
+</html>

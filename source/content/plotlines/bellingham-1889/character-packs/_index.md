@@ -19,8 +19,3 @@ These clues are distributed to guests during different acts of the murder myster
 - **Clue 3 (Act IV):** Hand out during the investigation/debate round.
 
 All clues are **subtle and partially incriminating**, so the guests can piece things together without it being obvious from the start. Other suspects remain suspicious due to red herrings (notes, proximity, overheard arguments).
-
-**Key Information:**
-
-- **Victim**: Magnate
-- **Murderer**: Railroad Baron
