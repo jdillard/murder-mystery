@@ -26,12 +26,17 @@
     {{ .Content }}
 
     <ul class="list-none p-0">
-      {{ range .Pages }}
+      {{ range $key, $plotline := .Site.Data.plotlines }}
       <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
-        <a href="{{ .Permalink }}" class="no-underline text-black text-12pt font-700 hover:underline">{{ .Title }}</a>
-        {{ if .Summary }}
-        <div class="italic text-gray mt-0_25rem">{{ .Summary }}</div>
-        {{ end }}
+        <a href="/plotlines/{{ $key }}/" class="no-underline text-black text-12pt font-700 hover:underline">{{ $plotline.title }}</a>
+        <div class="mt-0_5rem">
+          <div class="text-10pt text-gray mb-0_25rem">{{ $plotline.description }}</div>
+          <div class="text-9pt text-gray">
+            <span class="font-600">Duration:</span> {{ $plotline.duration }} |
+            <span class="font-600">Characters:</span> 4 - {{ len $plotline.characters }} |
+            <span class="font-600">Ages:</span> {{ $plotline.ages }}
+          </div>
+        </div>
       </li>
       {{ end }}
     </ul>
