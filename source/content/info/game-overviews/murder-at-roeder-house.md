@@ -1,5 +1,5 @@
 ---
-title: "Bellingham 1889"
+title: "Murder at Roeder House"
 ---
 
 This immersive murder mystery dinner experience takes place in the historic setting of early 1900s Bellingham, centered around the tragic death of C.X. Larrabee at the Roeder House. Guests will enjoy a multi-course meal while investigating clues, questioning suspects, and working to solve the mystery before the evening concludes.
