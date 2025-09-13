@@ -37,6 +37,17 @@
         <li><strong>Characters</strong>: {{ $data.characters.total }} total ({{ $data.characters.murderer }} murderer, {{ $data.characters.suspects }} suspects)</li>
     </ul>
 
+    <h3 class="font-deco text-18pt tracking-0_2rem mb-1rem mt-2rem">Character List</h3>
+    <ul class="list-none p-0">
+      {{ range $key, $character := .Site.Data.characters }}
+        {{ if in $data.characters.list $key }}
+        <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
+          <strong class="no-underline text-black text-12pt font-700"><a href="/info/characters/{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.title }}</a></strong>
+        </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+
     {{ .Content }}
   </div>
 </body>
