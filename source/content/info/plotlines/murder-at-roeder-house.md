@@ -14,7 +14,4 @@ This immersive murder mystery dinner experience takes place in the historic sett
 
 **Time**: Early 1900s
 
-**Characters**: 8 total (1 victim, 1 murderer, 6 suspects)
-
-- 7 male characters
-- 3 female characters
+**Characters**: 8 total (1 murderer, 7 suspects)
