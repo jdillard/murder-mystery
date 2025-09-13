@@ -25,16 +25,6 @@
     
     {{ .Content }}
 
-    <ul class="list-none p-0">
-      {{ range .Pages }}
-      <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
-        <a href="{{ .Permalink }}" class="no-underline text-black text-12pt font-700 hover:underline">{{ .Title }}</a>
-        {{ if .Summary }}
-        <div class="italic text-gray mt-0_25rem">{{ .Summary }}</div>
-        {{ end }}
-      </li>
-      {{ end }}
-    </ul>
   </div>
 </body>
 </html>
