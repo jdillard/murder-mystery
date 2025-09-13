@@ -12,6 +12,7 @@ build/
 
 # Environments
 hugo
+node_modules
 
 # Built site
 public/
