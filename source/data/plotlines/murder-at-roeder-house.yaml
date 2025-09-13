@@ -1,15 +1,21 @@
 title: "Murder at Roeder House"
-description: "A murder mystery set in 1889 Bellingham, Washington. Dive into the secrets and scandals of the Pacific Northwest's past."
-duration: "about 2.5–3 hours"
-setting: "Food courses with clue rounds naturally built in."
-location: "Roeder House"
+description: "This immersive murder mystery dinner experience takes place in the historic setting of early 1900s Bellingham, centered around the tragic death of C.X. Larrabee at the Roeder House. Guests will enjoy a multi-course meal while investigating clues, questioning suspects, and working to solve the mystery before the evening concludes."
+duration: "About 2.5–3 hours"
+setting: "Food courses with clue rounds naturally built in"
+set: "Roeder House (The Larrabee residence)"
+location: "Bellingham/Whatcom"
+time: "Early 1900s"
 ages: "15+"
 characters:
-  - cannery-executive
-  - landowner
-  - lumberman
-  - magnate
-  - poet
-  - railroad-baron
-  - the-banker
-  - the-partner
+  total: 8
+  murderer: 1
+  suspects: 7
+  list:
+    - cannery-executive
+    - landowner
+    - lumberman
+    - magnate
+    - poet
+    - railroad-baron
+    - the-banker
+    - the-partner
