@@ -68,6 +68,8 @@
     {{ if $characterData }}
       <h1 class="font-deco text-24pt tracking-0_2rem text-center mb-1_5rem mt-2rem">{{ $characterData.title }}</h1>
 
+      {{ partial "clue-distribution-info.html" . }}
+
       <div class="section">
         <div class="section-title">Character Card</div>
         {{ if $characterData.character_card }}
