@@ -87,7 +87,7 @@
   </div>
   <div class="w-full max-w-content px-2cm">
     <h1 class="font-deco text-36pt text-center m-0_5cm tracking-1pt">{{ .Title }}</h1>
-    
+
     <div class="timing-info">
       {{ .Content }}
     </div>
@@ -99,7 +99,7 @@
       {{ if .subtitle }}
       <div class="character-subtitle">{{ .subtitle }}</div>
       {{ end }}
-      
+
       <div class="section">
         <div class="section-title">Character Card</div>
         {{ if .character_card }}
@@ -110,14 +110,14 @@
         </ul>
         {{ end }}
       </div>
-      
+
       <div class="section">
         <div class="section-title">Introduction</div>
         {{ if .introduction }}
         <div class="introduction">"{{ .introduction }}"</div>
         {{ end }}
       </div>
-      
+
       <div class="section hidden-content">
         <div class="section-title">Hidden Secrets & Motives</div>
         {{ if .hidden_secrets }}
@@ -127,6 +127,24 @@
           {{ end }}
         </ul>
         {{ end }}
+      </div>
+
+      <div class="section hidden-content">
+        <div class="section-title">Clues</div>
+          {{ if .clue_pack }}
+          <ul>
+            {{ if .clue_pack.clue_1 }}
+            <li><strong>Clue 1 (Act II)</strong>: {{ .clue_pack.clue_1 }}</li>
+            {{ end }}
+
+            {{ if .clue_pack.clue_2 }}
+            <li><strong>Clue 2 (Act III)</strong>: {{ .clue_pack.clue_2 }}</li>
+            {{ end }}
+
+            {{ if .clue_pack.clue_3 }}
+            <li><strong>Clue 3 (Act IV)</strong>: {{ .clue_pack.clue_3 }}</li>
+            {{ end }}
+          {{ end }}
       </div>
     </div>
     {{ end }}
