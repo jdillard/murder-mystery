@@ -7,7 +7,7 @@ These clue packs are distributed to guests during different acts of the murder m
 
 **Timing:**
 
-- **Clue 1 (Act II):** Hand out after Larrabee's announcement, during first course.
+- **Clue 1 (Act II):** Hand out after Magnate's announcement, during first course.
 - **Clue 2 (Act III):** Hand out right after the murder discovery.
 - **Clue 3 (Act IV):** Hand out during the investigation/debate round.
 
@@ -15,5 +15,5 @@ All clues are **subtle and partially incriminating**, so the guests can piece th
 
 **Key Information:**
 
-- **Victim**: C.X. Larrabee
-- **Murderer**: Nelson Bennett
+- **Victim**: Magnate
+- **Murderer**: Railroad Baron

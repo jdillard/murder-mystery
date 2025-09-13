@@ -44,7 +44,7 @@ During appetizers/soup **[RANDOMLY SELECTED CHARACTER]** makes an announcement o
 >
 > But look what we accomplished through unity! The consolidation of our communities into the great city of Bellingham has proven the wisdom of setting aside petty rivalries. By unifying our resources and strengthening our collective appeal to industry, we have created something far greater than the sum of its parts.
 >
-> Each of you has played a vital role in this transformation. James Donovan advocating for cooperation between our communities, Nelson Bennett who saw the potential to create great communities around our bay, Miss Roth whose family's timber interests have flourished in this unified market. The Roeder family wanted to personally honor these partnerships and celebrate our shared prosperity.
+> Each of you has played a vital role in this transformation. The Banker advocating for cooperation between our communities, Railroad Baron who saw the potential to create great communities around our bay, Farmer's Daughter whose family's timber interests have flourished in this unified market. The Roeder family wanted to personally honor these partnerships and celebrate our shared prosperity.
 >
 > The opportunities ahead of us are tremendous. With our unified city, we can attract greater investment, expand our industries, and secure Bellingham's position as the premier destination on Puget Sound. Some of you may find upcoming changes in our business arrangements... challenging, but progress demands adaptation from all of us. Those who embrace this new direction will prosper beyond their wildest dreams.
 >
@@ -56,7 +56,7 @@ At this point, you slip short secret notes/cards (see clue packs) to each charac
 
 (example: Donovan gets a card saying *"You overheard Heinrich telling Bennett he will never see his money back."*).
 
-Allow guests to mingle and gossip, dropping hints about motives. Encourage subtle in-character accusations or jealous remarks. This news threatens at least 2–3 characters directly. Arguments or icy exchanges may follow. Encourage guests to start gossiping and hinting at grudges (“I hear Mr. Donovan has lent quite a sum to our host…”).
+Allow guests to mingle and gossip, dropping hints about motives. Encourage subtle in-character accusations or jealous remarks. This news threatens at least 2–3 characters directly. Arguments or icy exchanges may follow. Encourage guests to start gossiping and hinting at grudges (“I hear The Banker has lent quite a sum to our host…”).
 
 ## Act II: The Murder
 
@@ -116,7 +116,7 @@ Serve the first course while allowing hushed conversations and nervous speculati
 - Form temporary alliances
 - Begin revealing their hidden motives through worried confessions
 
-**Host's Role:** Subtly guide conversations if energy drops, but don't solve the mystery for them. Ask leading questions: "Did anyone else notice how quickly Mr. Bennett excused himself after dinner?" or "Miss Roth, you seemed quite upset by the business announcement..."
+**Host's Role:** Subtly guide conversations if energy drops, but don't solve the mystery for them. Ask leading questions: "Did anyone else notice how quickly Railroad Baron excused himself after dinner?" or "Farmer's Daughter, you seemed quite upset by the business announcement..."
 
 ## Act III: Investigation and Debate
 
@@ -141,7 +141,7 @@ The investigation should feel organic while maintaining structure. Guide guests 
 - **Lottie Roth:** "I was in the garden, getting some fresh air after the announcement"
 - Others should have plausible but not ironclad alibis
 
-**Host's Role:** Ask follow-up questions: "Miss Roth, did you see anyone else when you were in the garden?" "Mr. Bennett, how long were you outside? Anyone see you return?"
+**Host's Role:** Ask follow-up questions: "Farmer's Daughter, did you see anyone else when you were in the garden?" "Railroad Baron, how long were you outside? Anyone see you return?"
 
 ### Round 2 – Physical Evidence and New Clues (20min)
 
@@ -174,7 +174,7 @@ The investigation should feel organic while maintaining structure. Guide guests 
 **Host's Management:**
 - Keep discussions civil but intense
 - Redirect if conversations stagnate
-- Ask probing questions: "Mr. Bennett, that's quite a strong reaction. Why does this accusation trouble you so?"
+- Ask probing questions: "Railroad Baron, that's quite a strong reaction. Why does this accusation trouble you so?"
 - Plant seeds of doubt: "Interesting that three different people claim to have been alone..."
 
 **Red Herring Management:**
@@ -205,8 +205,8 @@ A telegram reading: *"RAILROAD BONDS WORTHLESS STOP INVESTORS DEMANDING IMMEDIAT
 
 > "And so ends this tragic evening. While we await the proper authorities, let us reflect on how greed and deception can poison even the most civilized of gatherings."
 >
-> - **Nelson Bennett:** Will face trial for murder, but the questionable business practices may be taken into account
-> - **James Donovan:** Recovers his loans through the Roeder estate, continues banking
+> - **Railroad Baron:** Will face trial for murder, but the questionable business practices may be taken into account
+> - **The Banker:** Recovers his loans through the Roeder estate, continues banking
 > - **Lottie Roth:** As a Roeder family member, inherits part of the family enterprises and becomes a successful businesswoman
 > - **Other characters:** Brief, satisfying conclusions based on their revealed motives
 >
