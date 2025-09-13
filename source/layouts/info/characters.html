@@ -28,7 +28,7 @@
     <ul class="list-none p-0">
       {{ range .Site.Data.characters }}
       <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
-        <strong class="no-underline text-black text-12pt font-700">{{ .title }}</strong>
+        <strong class="no-underline text-black text-12pt font-700"><a href="/info/characters/{{ .title | lower | replaceRE " " "-" | replaceRE "the-" "" }}" class="no-underline text-black hover:underline">{{ .title }}</a></strong>
         {{ if .subtitle }}
         <div class="italic text-gray mt-0_25rem">{{ .subtitle }}</div>
         {{ end }}
