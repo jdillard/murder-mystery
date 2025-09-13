@@ -14,19 +14,3 @@ A rough-and-tumble lumber industry mogul who built their fortune from the ground
 ## Historical Inspiration
 
 John P. de Mattos was a timber baron who played a major role in shaping Bellingham's lumber trade. Timber was the backbone of Whatcom County's economy, supplying mills, railroads, and shipping. De Mattos built a fortune in lumber, representing both the opportunities and controversies of the resource-driven economy — where fortunes were made at great environmental and social cost.
-
-## Character Introduction
-
-"I am the Lumberman — timber has been my business since I was young. Fairhaven and Bellingham rise on wood, and I've supplied more than most. There's profit yet in these forests, if only politicians and speculators would stay out of the way."
-
-## How You See Yourself
-
-An immigrant who made their fortune in timber and local businesses — straightforward, hardworking, and indispensable.
-
-## Personality Traits
-
-Jovial, blunt, gruff, no-nonsense. You speak like a lumberjack, not a poet. Respected in the working-class community, proud of your rise.
-
-## Motives & Secrets
-
-Larrabee has interfered with your lumber rights before, costing you money. You're still bitter about it.

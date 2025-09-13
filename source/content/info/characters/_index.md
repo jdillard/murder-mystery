@@ -1,5 +1,5 @@
 ---
-title: "Characters"
+title: "All Characters"
 layout: "characters"
 ---
 
