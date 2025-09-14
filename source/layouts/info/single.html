@@ -46,7 +46,14 @@
     <h3>More resources</h3>
     <ul class="pl-12pt text-10pt">
       {{ range .Params.resources }}
-      <li class="mb-2pt"><a href="{{ .url }}" rel="nofollow" class="text-dark hover:underline">{{ .url }}</a></li>
+      <li class="mb-2pt">
+        {{ if .url }}
+          <a href="{{ .url }}" rel="nofollow" class="text-dark hover:underline">{{ if .title }}{{ .title }}{{ else }}{{ .url }}{{ end }}</a>
+        {{ else }}
+          {{ .title }}
+        {{ end }}
+        {{ if .note }}<br><em class="text-9pt">{{ .note }}</em>{{ end }}
+      </li>
       {{ end }}
     </ul>
     {{ end }}

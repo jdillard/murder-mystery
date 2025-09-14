@@ -7,6 +7,14 @@ portrait_alignment: "29%"
 portrait_zoom: "100%"
 resources:
   - url: "https://en.m.wikipedia.org/wiki/J._J._Donovan"
+    title: "J._J._Donovan"
+  - url: "https://www.livebellinghamnow.com/blog/bellingham-then-now-jj-donovan-house/af40b50d-030d-45d4-afbb-e2c626bfe2db"
+    title: "Bellingham Then & Now: J.J. Donovan House"
+  - book: "Bellingham Centennial: Exploring the Foundations of Our Community"
+    note: "Academic research collection available at Western Libraries Archives & Special Collections"
+  - book: "Selected Writings of Ella Higginson: Inventing Pacific Northwest Literature"
+    author: "Edited by Laura Laffrado"
+    note: "Published by Whatcom County Historical Society, includes historical context of Donovan's era"
 ---
 
 A smooth-talking financial power broker who operates at the intersection of law, politics, and money. This character built their influence through strategic loans, political connections, and real estate deals. Their charm masks a calculating nature and deep fear of financial ruin.

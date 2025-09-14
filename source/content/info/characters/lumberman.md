@@ -7,6 +7,17 @@ portrait_alignment: "12%"
 portrait_zoom: "100%"
 resources:
   - url: "https://www.historylink.org/File/22507"
+    title: ""
+    note: ""
+  - url: "https://heritageresources.omeka.net/exhibits/show/centennial/industry/timber"
+    title: "Timber Industry - Bellingham Centennial Exhibition"
+    note: ""
+  - url: ""
+    title: "The Timber Baron of Wilock: A Saga of the Rise and the Fall of the Timber Industry by Wayne W. Galvin, James Backman"
+    note: "Comprehensive study of Pacific Northwest timber barons and industry practices"
+  - url: ""
+    title: "History of Whatcom County by Lottie Roeder Roth (1926)"
+    note: "Two-volume foundational text covering pioneer families and lumber industry development"
 ---
 
 A rough-and-tumble lumber industry mogul who built their fortune from the ground up through hard work and shrewd business. This character represents the working-class backbone of the economy, unafraid to speak bluntly and fight for their interests against more refined competitors.
