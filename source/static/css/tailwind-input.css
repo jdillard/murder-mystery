@@ -8,9 +8,10 @@
 }
 
 @layer base {
-  @page {
-    size: A4;
-    margin: 0;
+  /* Mobile-first base styles */
+  body {
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 

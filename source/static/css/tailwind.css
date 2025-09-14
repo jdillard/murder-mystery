@@ -7,10 +7,6 @@
   font-style: normal;
 }
 
-@page {
-  size: A4;
-  margin: 0;
-}
 
 /* Base styles using Tailwind-like utility classes */
 .w-a4 { width: 210mm; }
@@ -170,54 +166,150 @@
 /* Hover states */
 .hover\:underline:hover { text-decoration: underline; }
 
-/* Media queries for responsive design */
-@media screen and (max-width: 768px) {
-  .sm\:w-screen { width: 100vw; }
-  .sm\:h-auto { height: auto; }
-  .sm\:min-h-screen { min-height: 100vh; }
-  .sm\:px-1rem { padding-left: 1rem; padding-right: 1rem; }
-  .sm\:py-2rem { padding-top: 2rem; padding-bottom: 2rem; }
-  .sm\:text-36pt { font-size: 36pt; line-height: 38pt; }
-  .sm\:text-20pt { font-size: 20pt; line-height: 22pt; }
-  .sm\:text-18pt { font-size: 18pt; }
-  .sm\:text-14pt { font-size: 14pt; }
-  .sm\:text-12pt { font-size: 12pt; }
-  .sm\:text-10pt { font-size: 10pt; }
-  .sm\:w-90vw { width: 90vw; }
-  .sm\:max-w-280px { max-width: 280px; }
-  .sm\:w-40mm { width: 40mm; }
-  .sm\:max-h-35mm { max-height: 35mm; }
-  .sm\:px-1rem { padding-left: 1rem; padding-right: 1rem; }
-  .sm\:leading-1_6 { line-height: 1.6; }
+/* Mobile-first responsive utilities (default mobile styles) */
+.mobile\:w-screen { width: 100vw; }
+.mobile\:h-auto { height: auto; }
+.mobile\:min-h-screen { min-height: 100vh; }
+.mobile\:px-1rem { padding-left: 1rem; padding-right: 1rem; }
+.mobile\:py-2rem { padding-top: 2rem; padding-bottom: 2rem; }
+.mobile\:text-28pt { font-size: 28pt; line-height: 30pt; }
+.mobile\:text-18pt { font-size: 18pt; line-height: 20pt; }
+.mobile\:text-16pt { font-size: 16pt; }
+.mobile\:text-14pt { font-size: 14pt; }
+.mobile\:text-12pt { font-size: 12pt; }
+.mobile\:text-11pt { font-size: 11pt; }
+.mobile\:text-10pt { font-size: 10pt; }
+.mobile\:text-9pt { font-size: 9pt; }
+.mobile\:w-90vw { width: 90vw; }
+.mobile\:max-w-280px { max-width: 280px; }
+.mobile\:max-w-10rem { max-width: 10rem; }
+.mobile\:leading-1_6 { line-height: 1.6; }
+
+/* Additional mobile base styles */
+.w-40mm { width: 40mm; }
+.max-h-35mm { max-height: 35mm; }
+.p-1rem { padding: 1rem; }
+.mt-1rem { margin-top: 1rem; }
+.mb-1rem { margin-bottom: 1rem; }
+.mb-0_5rem { margin-bottom: 0.5rem; }
+.m-0_25rem { margin: 0.25rem; }
+.text-20pt { font-size: 20pt; }
+.leading-20pt { line-height: 20pt; }
+.tracking-0_1rem { letter-spacing: 0.1rem; }
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .md\:w-a4 { width: 210mm; }
+  .md\:h-a4 { height: 297mm; }
+  .md\:w-content { width: 170mm; }
+  .md\:max-w-content { max-width: 170mm; }
+  .md\:w-fan { width: 180mm; }
+  .md\:max-h-fan { max-height: 80mm; }
+  .md\:text-68pt { font-size: 68pt; line-height: 70pt; }
+  .md\:text-36pt { font-size: 36pt; line-height: 38pt; }
+  .md\:text-26pt { font-size: 26pt; line-height: 27pt; }
+  .md\:text-20pt { font-size: 20pt; line-height: 22pt; }
+  .md\:leading-70pt { line-height: 70pt; }
+  .md\:px-2cm { padding-left: 2cm; padding-right: 2cm; }
+  .md\:py-0 { padding-top: 0; padding-bottom: 0; }
+  .md\:px-0 { padding-left: 0; padding-right: 0; }
+  .md\:mt-1cm { margin-top: 1cm; }
+  .md\:mb-1cm { margin-bottom: 1cm; }
+  .md\:w-fan-sm { width: 67mm; }
+  .md\:max-h-fan-sm { max-height: 60mm; }
+  .md\:p-2rem { padding: 2rem; }
+  .md\:text-18pt { font-size: 18pt; }
+  .md\:text-24pt { font-size: 24pt; }
+  .md\:text-26pt { font-size: 26pt; }
+  .md\:text-11pt { font-size: 11pt; }
+  .md\:leading-27pt { line-height: 27pt; }
+  .md\:mb-1_5rem { margin-bottom: 1.5rem; }
+  .md\:mb-1rem { margin-bottom: 1rem; }
+  .md\:mt-2rem { margin-top: 2rem; }
+  .md\:m-0_5cm { margin: 0.5cm; }
+  .md\:max-w-18rem { max-width: 18rem; }
+  .md\:tracking-0_2rem { letter-spacing: 0.2rem; }
 }
 
-@media screen and (max-width: 480px) {
-  .xs\:px-1cm { padding-left: 1cm; padding-right: 1cm; }
-  .xs\:text-28pt { font-size: 28pt; line-height: 30pt; }
-  .xs\:text-18pt { font-size: 18pt; line-height: 20pt; }
-  .xs\:text-16pt { font-size: 16pt; }
-  .xs\:text-11pt { font-size: 11pt; }
-  .xs\:text-9pt { font-size: 9pt; }
-  .xs\:max-w-10rem { max-width: 10rem; }
+/* Desktop and up */
+@media (min-width: 1024px) {
+  .lg\:w-fan { width: 180mm; }
+  .lg\:max-h-fan { max-height: 80mm; }
+  .lg\:text-68pt { font-size: 68pt; line-height: 70pt; }
+  .lg\:text-36pt { font-size: 36pt; }
 }
 
-/* Blockquotes */
+/* Mobile-first blockquote base styles */
 blockquote {
   background-color: #f6efe6;
-  padding: 0.1rem 2.2rem;
   font-style: italic;
 }
 
-/* Print styles */
-@media print {
-  .print\:w-a4 { width: 210mm; }
-  .print\:h-a4 { height: 297mm; }
+/* Mobile-first content typography */
+body p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
-/* Mobile responsive blockquotes */
-@media screen and (max-width: 768px) {
+/* Override small text for better mobile readability */
+.text-10pt {
+  font-size: 12px;
+}
+
+/* Desktop content typography overrides */
+@media (min-width: 768px) {
+  .text-10pt {
+    font-size: 10pt;
+  }
+}
+
+body h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+body h3 {
+  font-size: 16px;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+body ul, body ol {
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+}
+
+body li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Desktop content typography */
+@media (min-width: 768px) {
+  body p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  body h3 {
+    font-size: 18px;
+  }
+
+  body ul, body ol {
+    padding-left: 1.5rem;
+  }
+}
+
+/* Mobile-first blockquotes */
+blockquote {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+
+/* Larger screen blockquotes */
+@media (min-width: 769px) {
   blockquote {
-    padding: 0.5rem 1rem;
-    margin: 1rem 0;
+    padding: 0.1rem 2.2rem;
   }
 }
