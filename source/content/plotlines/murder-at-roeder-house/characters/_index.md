@@ -1,5 +1,5 @@
 ---
-title: "Character Packs"
+title: "Characters"
 layout: "character-packs"
 ---
 

@@ -4,8 +4,6 @@ plot_key: "murder-at-roeder-house"
 layout: "single"
 ---
 
-**[Character Packs](character-packs/)** - Print one pack per guest and distribute at the beginning of the game.
-
 ## Arrival and Introductions
 
 ### Arrival
