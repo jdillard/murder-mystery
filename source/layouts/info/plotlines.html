@@ -43,6 +43,7 @@
         {{ if in $data.characters.list $key }}
         <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
           <strong class="no-underline text-black text-12pt font-700"><a href="/info/characters/{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.title }}</a></strong>
+          <p class="mt-0_5rem mb-0 text-10pt leading-12pt">{{ $character.description }}</p>
         </li>
         {{ end }}
       {{ end }}
