@@ -23,7 +23,6 @@
   <div class="w-full px-1rem md:max-w-content md:px-2cm">
     {{ $plotlineData := index .Site.Data.plotlines .Params.plot_key }}
 
-    {{ if $plotlineData }}
     <h2 class="font-deco text-18pt tracking-0_1rem text-center mb-1rem mt-1rem md:text-24pt md:tracking-0_2rem md:mb-1_5rem md:mt-2rem">{{ $plotlineData.title }}</h2>
 
     <p>{{ $plotlineData.description }}</p>
@@ -33,10 +32,6 @@
         <li><strong>Setting</strong>: {{ $plotlineData.setting }}</li>
         <li><strong>Set</strong>: {{ $plotlineData.location }}</li>
     </ul>
-    {{ else }}
-    <h2 class="font-deco text-18pt tracking-0_1rem text-center mb-1rem mt-1rem md:text-24pt md:tracking-0_2rem md:mb-1_5rem md:mt-2rem">{{ .Title }}</h2>
-    <p>NO DATA FOUND</p>
-    {{ end }}
 
     {{ .Content }}
 

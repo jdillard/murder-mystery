@@ -1,8 +1,7 @@
 ---
 title: "Murder at Roeder House"
+plot_key: "murder-at-roeder-house"
+layout: "single"
 ---
 
-## Game Resources
-
-- **[Info](info/)** - General information about the murder mystery
-- **[Host Guide](host/)** - Complete hosting instructions and game flow
+**[Host information](host/)** - Information for hosts only
