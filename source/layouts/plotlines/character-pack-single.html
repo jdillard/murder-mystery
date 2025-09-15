@@ -67,6 +67,26 @@
     {{ if $characterData }}
       <h1 class="font-deco text-18pt tracking-0_2rem text-center mb-1rem mt-1rem md:text-24pt md:mb-1_5rem md:mt-2rem">{{ $characterData.title }}</h1>
 
+      <p>{{ $characterData.description }}</p>
+
+      <h2>Historical Inspiration</h2>
+
+      <p>{{ $characterData.historical_inspiration }}</p>
+
+      <h3>More resources</h3>
+      <ul class="pl-12pt text-10pt">
+        {{ range $characterData.resources }}
+        <li class="mb-2pt">
+          {{ if .url }}
+            <a href="{{ .url }}" rel="nofollow" class="text-dark hover:underline">{{ if .title }}{{ .title }}{{ else }}{{ .url }}{{ end }}</a>
+          {{ else }}
+            {{ .title }}
+          {{ end }}
+          {{ if .note }}<br><em class="text-9pt">{{ .note }}</em>{{ end }}
+        </li>
+        {{ end }}
+      </ul>
+
       {{ partial "clue-distribution-info.html" . }}
 
       <div class="section">

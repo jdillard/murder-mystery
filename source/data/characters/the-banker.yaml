@@ -1,5 +1,4 @@
 title: "The Banker"
-subtitle: ""
 inspiration: "James J. Donovan"
 portrait_image: "James_Donovan.jpg"
 portrait_alignment: "29%"
@@ -20,5 +19,16 @@ hidden_secrets:
   - item: "They have quietly invested in the Railroad Baron's projects, creating divided loyalties."
 resources:
   - url: "https://en.m.wikipedia.org/wiki/J._J._Donovan"
+    title: "J._J._Donovan"
+    note: ""
+  - url: "https://www.livebellinghamnow.com/blog/bellingham-then-now-jj-donovan-house/af40b50d-030d-45d4-afbb-e2c626bfe2db"
+    title: "Bellingham Then & Now: J.J. Donovan House"
+    note: ""
+  - url:
+    title: "Bellingham Centennial: Exploring the Foundations of Our Community"
+    note: "Academic research collection available at Western Libraries Archives & Special Collections"
+  - url: ""
+    title: "Selected Writings of Ella Higginson: Inventing Pacific Northwest Literature Edited by Laura Laffrado"
+    note: "Published by Whatcom County Historical Society, includes historical context of Donovan's era"
 historical_inspiration: "James J. Donovan was a lawyer, politician, and developer who rose to prominence during the push to unify Whatcom County's four competing towns — Fairhaven, Whatcom, Sehome, and Bellingham — into a single city. As mayor of Fairhaven and later a Washington State senator, he was a key player in the political maneuvering of the time. His blend of law, politics, and real estate made him one of the county's most influential power brokers."
 description: "A smooth-talking financial power broker who operates at the intersection of law, politics, and money. This character built their influence through strategic loans, political connections, and real estate deals. Their charm masks a calculating nature and deep fear of financial ruin."
