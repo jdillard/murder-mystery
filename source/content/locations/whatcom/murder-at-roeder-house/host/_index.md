@@ -38,17 +38,17 @@ During appetizers/soup **[RANDOMLY SELECTED CHARACTER]** makes an announcement o
 
 > "My dear friends, I've been asked by the Roeder family to speak on their behalf this evening, as they're dealing with some family matters at the moment.
 >
-> You are all gathered here tonight to celebrate Bellingham's remarkable recent consolidation and the successes that have followed. We all remember the struggles of recent years — the boom times having cooled, the competition between Whatcom, Sehome, Bellingham, and Fairhaven was holding our entire region back. We were weakening ourselves through division.
+> Tonight we celebrate Bellingham's recent consolidation and its successes. This house marking their confluence -- _just look at that terrible intersection outside_. We all remember the struggles: after the boom faded, rivalry among Whatcom, Sehome, Bellingham, and Fairhaven only weakened us through division.
 >
-> But look what we accomplished through unity! The consolidation of our communities into the great city of Bellingham has proven the wisdom of setting aside petty rivalries. By unifying our resources and strengthening our collective appeal to industry, we have created something far greater than the sum of its parts.
+> But look at what we've accomplished through unity! The consolidation of our communities into the great city of Bellingham has proven the wisdom of setting aside petty rivalries. By unifying our resources and strengthening our collective appeal to industry, we have created something far greater than the sum of its parts.
 >
-> Each of you has played a vital role in this transformation. The Banker advocating for cooperation between our communities, Railroad Baron who saw the potential to create great communities around our bay, Farmer's Daughter whose family's timber interests have flourished in this unified market. The Roeder family wanted to personally honor these partnerships and celebrate our shared prosperity.
->
-> The opportunities ahead of us are tremendous. With our unified city, we can attract greater investment, expand our industries, and secure Bellingham's position as the premier destination on Puget Sound. Some of you may find upcoming changes in our business arrangements... challenging, but progress demands adaptation from all of us. Those who embrace this new direction will prosper beyond their wildest dreams.
+> Each of you has played a vital role in this transformation. Banker advocating for cooperation between our communities, Railroad Baron who saw the potential to create great communities around our bay, Landowner whose family's timber interests have flourished in this unified market.
+
+> The Roeder family wanted to personally honor these partnerships and celebrate our shared prosperity.
 >
 > *[Raises glass with a confident smile]*
 >
-> To Bellingham's bright future, and to those wise enough to seize the opportunities before us!"
+> To Bellingham's bright future, and to those wise enough to seize the opportunities before us!
 
 At this point, you slip short secret notes/cards (see clue packs) to each character — little rumors or discoveries they can use later
 
