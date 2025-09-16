@@ -1,0 +1,241 @@
+@prefix mm: <http://murder-mystery.example.org/ontology#> .
+@prefix mmd: <http://murder-mystery.example.org/data#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Location Data
+mmd:whatcom a mm:Location ;
+    mm:title "Whatcom County" ;
+    mm:description "Early Twentieth Century Pacific Northwest location" ;
+    mm:timeperiod "early 1900s" .
+
+mmd:bellingham a mm:Location ;
+    mm:title "Bellingham" ;
+    mm:description "Historic city in Whatcom County" ;
+    mm:locatedIn mmd:whatcom .
+
+mmd:roeder-house a mm:Location ;
+    mm:title "Roeder House" ;
+    mm:description "The Larrabee residence" ;
+    mm:locatedIn mmd:bellingham .
+
+# Plotline Data
+mmd:murder-at-roeder-house a mm:Plotline ;
+    mm:title "Murder at Roeder House" ;
+    mm:description "This immersive murder mystery dinner experience takes place in the historic setting of early 1900s Bellingham, centered around the tragic death of C.X. Larrabee at the Roeder House. Guests will enjoy a multi-course meal while investigating clues, questioning suspects, and working to solve the mystery before the evening concludes." ;
+    mm:duration "About 2.5–3 hours" ;
+    mm:setting "Food courses with clue rounds naturally built in" ;
+    mm:takesPlaceIn mmd:roeder-house ;
+    mm:timeperiod "Early 1900s" ;
+    mm:ageRecommendation "15+" ;
+    mm:totalCharacters 8 ;
+    mm:murdererCount 1 ;
+    mm:suspectCount 7 .
+
+# Historical People
+mmd:james-donovan a mm:HistoricalPerson ;
+    mm:title "James J. Donovan" ;
+    mm:description "Lawyer, politician, and developer during Whatcom County unification" .
+
+mmd:cx-larrabee a mm:HistoricalPerson ;
+    mm:title "C.X. Larrabee" ;
+    mm:description "Copper magnate and philanthropist who moved to Fairhaven in 1890" .
+
+mmd:frances-larrabee a mm:HistoricalPerson ;
+    mm:title "Frances Larrabee" ;
+    mm:description "Wife of C.X., social leader and advocate for education, arts, and public parks" .
+
+# Characters
+mmd:banker a mm:Suspect ;
+    mm:title "Banker" ;
+    mm:inspiredBy mmd:james-donovan ;
+    mm:portraitImage "James_Donovan.jpg" ;
+    mm:portraitAlignment "29%" ;
+    mm:portraitZoom "100%" ;
+    mm:introduction "The Banker, at your service. As a lawyer and developer, I've been fortunate to help guide Bellingham's path toward incorporation and prosperity. I keep one foot in politics and the other in business — some say that's dangerous footing, but it has served me well." ;
+    mm:personalityTrait "Charming, smooth-talking and outwardly trustworthy, calculating, slippery. You always keep your options open. Known as a man of connections and money." ;
+    mm:roleplayingTip "Play smooth and diplomatic, but let moments of defensiveness slip when pressed. Try to redirect blame to rivals." ;
+    mm:description "A smooth-talking financial power broker who operates at the intersection of law, politics, and money. This character built their influence through strategic loans, political connections, and real estate deals. Their charm masks a calculating nature and deep fear of financial ruin." ;
+    mm:historicalInspiration "James J. Donovan was a lawyer, politician, and developer who rose to prominence during the push to unify Whatcom County's four competing towns — Fairhaven, Whatcom, Sehome, and Bellingham — into a single city. As mayor of Fairhaven and later a Washington State senator, he was a key player in the political maneuvering of the time. His blend of law, politics, and real estate made him one of the county's most influential power brokers." ;
+    mm:participatesIn mmd:murder-at-roeder-house .
+
+mmd:magnate a mm:Victim ;
+    mm:title "Magnate" ;
+    mm:inspiredBy mmd:cx-larrabee ;
+    mm:portraitImage "cx_larrabee.jpg" ;
+    mm:portraitAlignment "33%" ;
+    mm:portraitZoom "100%" ;
+    mm:introduction "I am the Magnate of this county. Fairhaven's growth has been my life's work — from copper mines to railroads, I've invested heavily in Whatcom County's future. Tonight I'll share plans for a project that may change this city forever." ;
+    mm:personalityTrait "Proud, polished, decisive, charming, confident, ruthlessness in business. You like to dominate a room." ;
+    mm:roleplayingTip "Be confident, hint at a big announcement, and play up your importance. When 'killed,' you can either become an observer or pass secret notes as a 'ghostly whisper.'" ;
+    mm:description "A commanding industrial titan who built their fortune through copper mines, real estate speculation, and civic investments. This character projects confidence and vision while harboring dangerous financial secrets that could destroy everything they've built." ;
+    mm:historicalInspiration "Charles Xavier Larrabee was a copper magnate and philanthropist who moved to Fairhaven in 1890. With his brother Samuel, he invested heavily in mines, real estate, and civic projects, leaving a lasting mark on Bellingham. He and his wife Frances donated land that became Larrabee State Park — Washington's first state park. Known as both generous and ambitious, Larrabee embodied the boomtown energy of early 20th-century Whatcom County." ;
+    mm:participatesIn mmd:murder-at-roeder-house .
+
+mmd:partner a mm:Suspect ;
+    mm:title "Partner" ;
+    mm:inspiredBy mmd:frances-larrabee ;
+    mm:portraitImage "Frances_Larrabee.jpg" ;
+    mm:portraitAlignment "31%" ;
+    mm:portraitZoom "100%" ;
+    mm:introduction "I am the Partner, proud to call Fairhaven my home. My spouse and I have devoted ourselves to this community, especially through Larrabee Park. I only hope their business pursuits don't overshadow the charitable causes dearest to me." ;
+    mm:personalityTrait "Calm, observant, dignified. Not flashy, but strong when pressed." ;
+    mm:roleplayingTip "Speak warmly of your charitable work, but hint at unease about the business squabbles. Drop subtle suspicions without seeming confrontational." ;
+    mm:description "The devoted partner of a powerful industrialist, this character balances public grace with private concerns. They are deeply invested in community welfare, charitable causes, and cultural development, often serving as the conscience when business ambitions go too far. Behind their dignified exterior lies someone who knows where the bodies are buried." ;
+    mm:historicalInspiration "Frances Payne Larrabee, wife of C.X., was one of the city's most respected social leaders. Beyond her role as hostess, she advocated for education, the arts, and public parks. After her husband's death, she carried forward his legacy, ensuring the donation of 20 acres of land that became the core of Larrabee State Park. She represents the quieter but deeply influential civic contributions of women in the region's history." ;
+    mm:participatesIn mmd:murder-at-roeder-house .
+
+# Additional Characters (placeholders for the remaining characters)
+mmd:cannery-executive a mm:Suspect ;
+    mm:title "Cannery Executive" ;
+    mm:participatesIn mmd:murder-at-roeder-house .
+
+mmd:landowner a mm:Suspect ;
+    mm:title "Landowner" ;
+    mm:participatesIn mmd:murder-at-roeder-house .
+
+mmd:lumberman a mm:Suspect ;
+    mm:title "Lumberman" ;
+    mm:participatesIn mmd:murder-at-roeder-house .
+
+mmd:poet a mm:Suspect ;
+    mm:title "Poet" ;
+    mm:participatesIn mmd:murder-at-roeder-house .
+
+mmd:railroad-baron a mm:Suspect ;
+    mm:title "Railroad Baron" ;
+    mm:participatesIn mmd:murder-at-roeder-house .
+
+# Relationships
+mmd:partner mm:isPartnerOf mmd:magnate .
+mmd:magnate mm:owesMoneyTo mmd:banker .
+mmd:banker mm:hasLeverageOver mmd:magnate .
+mmd:magnate mm:isRivalOf mmd:railroad-baron .
+
+# Clues
+mmd:clue-banker-1 a mm:Clue ;
+    mm:clueText "You overhear Railroad Baron speaking sharply to the Magnate about debts." ;
+    mm:pointsTo mmd:railroad-baron .
+
+mmd:clue-banker-2 a mm:Clue ;
+    mm:clueText "In the Magnate's files, you see a note referencing a meeting with Railroad Baron the night before." ;
+    mm:pointsTo mmd:railroad-baron .
+
+mmd:clue-banker-3 a mm:Clue ;
+    mm:clueText "You spot Railroad Baron near the study around the time of the murder." ;
+    mm:pointsTo mmd:railroad-baron .
+
+mmd:clue-magnate-1 a mm:Clue ;
+    mm:clueText "I will announce a major new project tonight — some of you will not like it." .
+
+mmd:clue-magnate-2 a mm:Clue ;
+    mm:clueText "A spilled note near my study reads: 'Railroad Baron will regret doubting me.'" ;
+    mm:pointsTo mmd:railroad-baron .
+
+mmd:clue-magnate-3 a mm:Clue ;
+    mm:clueText "Fragments of a letter hint at secret meetings with Railroad Baron in the past week." ;
+    mm:pointsTo mmd:railroad-baron .
+
+mmd:clue-partner-1 a mm:Clue ;
+    mm:clueText "You heard your partner and Railroad Baron arguing privately today." ;
+    mm:pointsTo mmd:railroad-baron .
+
+mmd:clue-partner-2 a mm:Clue ;
+    mm:clueText "You notice a faint smudge of Railroad Baron's ink on a cancelled contract in your partner's study." ;
+    mm:pointsTo mmd:railroad-baron .
+
+mmd:clue-partner-3 a mm:Clue ;
+    mm:clueText "Someone mentions seeing Railroad Baron leave the study just before the scream." ;
+    mm:pointsTo mmd:railroad-baron .
+
+# Banker's clues
+mmd:banker mm:hasClue mmd:clue-banker-1 .
+mmd:banker mm:hasClue mmd:clue-banker-2 .
+mmd:banker mm:hasClue mmd:clue-banker-3 .
+
+# Magnate's clues
+mmd:magnate mm:hasClue mmd:clue-magnate-1 .
+mmd:magnate mm:hasClue mmd:clue-magnate-2 .
+mmd:magnate mm:hasClue mmd:clue-magnate-3 .
+
+# Partner's clues
+mmd:partner mm:hasClue mmd:clue-partner-1 .
+mmd:partner mm:hasClue mmd:clue-partner-2 .
+mmd:partner mm:hasClue mmd:clue-partner-3 .
+
+# Secrets
+mmd:secret-banker-1 a mm:Secret ;
+    mm:secretText "The Magnate owes their bank a significant loan and has been missing payments." .
+
+mmd:secret-banker-2 a mm:Secret ;
+    mm:secretText "If the Magnate defaults, the Banker's reputation — and fortune — could crumble." .
+
+mmd:secret-banker-3 a mm:Secret ;
+    mm:secretText "They have quietly invested in the Railroad Baron's projects, creating divided loyalties." .
+
+mmd:secret-magnate-1 a mm:Secret ;
+    mm:secretText "They're secretly bankrupt in several ventures — the copper market is unstable, and their debts are deep." .
+
+mmd:secret-magnate-2 a mm:Secret ;
+    mm:secretText "They've made enemies by foreclosing on smaller business people and outmaneuvering partners." .
+
+mmd:secret-magnate-3 a mm:Secret ;
+    mm:secretText "Rumors swirl of infidelity and deals with questionable characters." .
+
+mmd:secret-partner-1 a mm:Secret ;
+    mm:secretText "Resents their partner's absences and rumored affairs." .
+
+mmd:secret-partner-2 a mm:Secret ;
+    mm:secretText "Fears their partner's financial ruin will also ruin their standing in society." .
+
+mmd:secret-partner-3 a mm:Secret ;
+    mm:secretText "Recently discovered that their partner mortgaged one of their inherited properties without telling them." .
+
+# Banker's secrets
+mmd:banker mm:hasSecret mmd:secret-banker-1 .
+mmd:banker mm:hasSecret mmd:secret-banker-2 .
+mmd:banker mm:hasSecret mmd:secret-banker-3 .
+
+# Magnate's secrets
+mmd:magnate mm:hasSecret mmd:secret-magnate-1 .
+mmd:magnate mm:hasSecret mmd:secret-magnate-2 .
+mmd:magnate mm:hasSecret mmd:secret-magnate-3 .
+
+# Partner's secrets
+mmd:partner mm:hasSecret mmd:secret-partner-1 .
+mmd:partner mm:hasSecret mmd:secret-partner-2 .
+mmd:partner mm:hasSecret mmd:secret-partner-3 .
+
+# Motives (inferred from secrets and relationships)
+mmd:motive-banker-financial a mm:Motive ;
+    mm:description "Fear of financial ruin if Magnate defaults on loan" .
+
+mmd:motive-partner-betrayal a mm:Motive ;
+    mm:description "Anger over partner's affairs and secret financial dealings" .
+
+mmd:banker mm:hasMotive mmd:motive-banker-financial .
+mmd:partner mm:hasMotive mmd:motive-partner-betrayal .
+
+# Resources
+mmd:resource-donovan-wiki a mm:Resource ;
+    mm:url <https://en.m.wikipedia.org/wiki/J._J._Donovan> ;
+    mm:title "J._J._Donovan" .
+
+mmd:resource-donovan-house a mm:Resource ;
+    mm:url <https://www.livebellinghamnow.com/blog/bellingham-then-now-jj-donovan-house/af40b50d-030d-45d4-afbb-e2c626bfe2db> ;
+    mm:title "Bellingham Then & Now: J.J. Donovan House" .
+
+mmd:resource-larrabee-wiki a mm:Resource ;
+    mm:url <https://en.m.wikipedia.org/wiki/C._X._Larrabee> ;
+    mm:title "C._X._Larrabee" .
+
+mmd:resource-frances-edge a mm:Resource ;
+    mm:url <https://edgemoorneighborhood.com/who-was-frances-larrabee/> ;
+    mm:title "Who was Frances Larrabee?" .
+
+# Resource associations
+mmd:banker mm:hasResource mmd:resource-donovan-wiki .
+mmd:banker mm:hasResource mmd:resource-donovan-house .
+mmd:magnate mm:hasResource mmd:resource-larrabee-wiki .
+mmd:partner mm:hasResource mmd:resource-frances-edge .

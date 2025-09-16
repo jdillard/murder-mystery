@@ -1,0 +1,317 @@
+@prefix mm: <http://murder-mystery.example.org/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+# Ontology Definition
+mm: a owl:Ontology ;
+    rdfs:label "Murder Mystery Ontology" ;
+    rdfs:comment "An ontology for describing murder mystery scenarios, characters, locations, and relationships" ;
+    dc:creator "Murder Mystery System" ;
+    dc:date "2025-09-16" .
+
+# Classes
+
+## Core Entity Classes
+mm:Character a owl:Class ;
+    rdfs:label "Character" ;
+    rdfs:comment "A person involved in the murder mystery scenario" .
+
+mm:Location a owl:Class ;
+    rdfs:label "Location" ;
+    rdfs:comment "A geographical location where events take place" .
+
+mm:Plotline a owl:Class ;
+    rdfs:label "Plotline" ;
+    rdfs:comment "A murder mystery scenario or storyline" .
+
+mm:HistoricalPerson a owl:Class ;
+    rdfs:label "Historical Person" ;
+    rdfs:comment "A real historical person who inspires a character" .
+
+mm:Evidence a owl:Class ;
+    rdfs:label "Evidence" ;
+    rdfs:comment "Clues, secrets, or information relevant to solving the mystery" .
+
+mm:Resource a owl:Class ;
+    rdfs:label "Resource" ;
+    rdfs:comment "External reference materials or sources" .
+
+## Character Role Classes
+mm:Suspect a owl:Class ;
+    rdfs:subClassOf mm:Character ;
+    rdfs:label "Suspect" ;
+    rdfs:comment "A character who could be the murderer" .
+
+mm:Victim a owl:Class ;
+    rdfs:subClassOf mm:Character ;
+    rdfs:label "Victim" ;
+    rdfs:comment "The character who was murdered" .
+
+mm:Murderer a owl:Class ;
+    rdfs:subClassOf mm:Suspect ;
+    rdfs:label "Murderer" ;
+    rdfs:comment "The character who committed the murder" .
+
+## Evidence Types
+mm:Clue a owl:Class ;
+    rdfs:subClassOf mm:Evidence ;
+    rdfs:label "Clue" ;
+    rdfs:comment "Observable evidence that players can discover" .
+
+mm:Secret a owl:Class ;
+    rdfs:subClassOf mm:Evidence ;
+    rdfs:label "Secret" ;
+    rdfs:comment "Hidden information about a character's motivations or past" .
+
+mm:Motive a owl:Class ;
+    rdfs:subClassOf mm:Evidence ;
+    rdfs:label "Motive" ;
+    rdfs:comment "A reason why a character might commit murder" .
+
+# Object Properties
+
+## Relationship Properties
+mm:hasRelationshipWith a owl:ObjectProperty ;
+    rdfs:label "has relationship with" ;
+    rdfs:comment "General relationship between two characters" ;
+    rdfs:domain mm:Character ;
+    rdfs:range mm:Character .
+
+mm:isPartnerOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf mm:hasRelationshipWith ;
+    rdfs:label "is partner of" ;
+    rdfs:comment "Business or romantic partnership" ;
+    owl:inverseOf mm:isPartnerOf .
+
+mm:isRivalOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf mm:hasRelationshipWith ;
+    rdfs:label "is rival of" ;
+    rdfs:comment "Adversarial relationship" ;
+    owl:inverseOf mm:isRivalOf .
+
+mm:owesMoneyTo a owl:ObjectProperty ;
+    rdfs:subPropertyOf mm:hasRelationshipWith ;
+    rdfs:label "owes money to" ;
+    rdfs:comment "Financial debt relationship" .
+
+mm:hasLeverageOver a owl:ObjectProperty ;
+    rdfs:subPropertyOf mm:hasRelationshipWith ;
+    rdfs:label "has leverage over" ;
+    rdfs:comment "Has compromising information about another character" .
+
+## Location Properties
+mm:locatedIn a owl:ObjectProperty ;
+    rdfs:label "located in" ;
+    rdfs:comment "Physical location relationship" ;
+    rdfs:range mm:Location .
+
+mm:takesPlaceIn a owl:ObjectProperty ;
+    rdfs:label "takes place in" ;
+    rdfs:comment "Where a plotline occurs" ;
+    rdfs:domain mm:Plotline ;
+    rdfs:range mm:Location .
+
+## Evidence Properties
+mm:hasClue a owl:ObjectProperty ;
+    rdfs:label "has clue" ;
+    rdfs:comment "Associates a character with discoverable evidence" ;
+    rdfs:domain mm:Character ;
+    rdfs:range mm:Clue .
+
+mm:hasSecret a owl:ObjectProperty ;
+    rdfs:label "has secret" ;
+    rdfs:comment "Associates a character with hidden information" ;
+    rdfs:domain mm:Character ;
+    rdfs:range mm:Secret .
+
+mm:hasMotive a owl:ObjectProperty ;
+    rdfs:label "has motive" ;
+    rdfs:comment "Associates a character with a reason to commit murder" ;
+    rdfs:domain mm:Character ;
+    rdfs:range mm:Motive .
+
+mm:pointsTo a owl:ObjectProperty ;
+    rdfs:label "points to" ;
+    rdfs:comment "Evidence that implicates a character" ;
+    rdfs:domain mm:Evidence ;
+    rdfs:range mm:Character .
+
+## Inspiration Properties
+mm:inspiredBy a owl:ObjectProperty ;
+    rdfs:label "inspired by" ;
+    rdfs:comment "Character inspired by a historical person" ;
+    rdfs:domain mm:Character ;
+    rdfs:range mm:HistoricalPerson .
+
+mm:hasResource a owl:ObjectProperty ;
+    rdfs:label "has resource" ;
+    rdfs:comment "Reference materials or sources" ;
+    rdfs:range mm:Resource .
+
+## Plotline Properties
+mm:participatesIn a owl:ObjectProperty ;
+    rdfs:label "participates in" ;
+    rdfs:comment "Character takes part in a plotline" ;
+    rdfs:domain mm:Character ;
+    rdfs:range mm:Plotline .
+
+# Data Properties
+
+## Basic Information
+mm:title a owl:DatatypeProperty ;
+    rdfs:label "title" ;
+    rdfs:comment "The title or name" ;
+    rdfs:range xsd:string .
+
+mm:description a owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:comment "Descriptive text" ;
+    rdfs:range xsd:string .
+
+mm:introduction a owl:DatatypeProperty ;
+    rdfs:label "introduction" ;
+    rdfs:comment "Character's self-introduction" ;
+    rdfs:domain mm:Character ;
+    rdfs:range xsd:string .
+
+## Visual Properties
+mm:portraitImage a owl:DatatypeProperty ;
+    rdfs:label "portrait image" ;
+    rdfs:comment "Image file for character portrait" ;
+    rdfs:domain mm:Character ;
+    rdfs:range xsd:string .
+
+mm:portraitAlignment a owl:DatatypeProperty ;
+    rdfs:label "portrait alignment" ;
+    rdfs:comment "CSS alignment for portrait display" ;
+    rdfs:domain mm:Character ;
+    rdfs:range xsd:string .
+
+mm:portraitZoom a owl:DatatypeProperty ;
+    rdfs:label "portrait zoom" ;
+    rdfs:comment "Zoom level for portrait display" ;
+    rdfs:domain mm:Character ;
+    rdfs:range xsd:string .
+
+## Temporal Properties
+mm:timeperiod a owl:DatatypeProperty ;
+    rdfs:label "time period" ;
+    rdfs:comment "Historical time period" ;
+    rdfs:range xsd:string .
+
+mm:duration a owl:DatatypeProperty ;
+    rdfs:label "duration" ;
+    rdfs:comment "How long the mystery experience lasts" ;
+    rdfs:domain mm:Plotline ;
+    rdfs:range xsd:string .
+
+## Scenario Properties
+mm:setting a owl:DatatypeProperty ;
+    rdfs:label "setting" ;
+    rdfs:comment "The scenario setting description" ;
+    rdfs:domain mm:Plotline ;
+    rdfs:range xsd:string .
+
+mm:ageRecommendation a owl:DatatypeProperty ;
+    rdfs:label "age recommendation" ;
+    rdfs:comment "Recommended age range" ;
+    rdfs:domain mm:Plotline ;
+    rdfs:range xsd:string .
+
+mm:totalCharacters a owl:DatatypeProperty ;
+    rdfs:label "total characters" ;
+    rdfs:comment "Number of characters in the scenario" ;
+    rdfs:domain mm:Plotline ;
+    rdfs:range xsd:int .
+
+mm:murdererCount a owl:DatatypeProperty ;
+    rdfs:label "murderer count" ;
+    rdfs:comment "Number of murderers in the scenario" ;
+    rdfs:domain mm:Plotline ;
+    rdfs:range xsd:int .
+
+mm:suspectCount a owl:DatatypeProperty ;
+    rdfs:label "suspect count" ;
+    rdfs:comment "Number of suspects in the scenario" ;
+    rdfs:domain mm:Plotline ;
+    rdfs:range xsd:int .
+
+## Character Properties
+mm:personalityTrait a owl:DatatypeProperty ;
+    rdfs:label "personality trait" ;
+    rdfs:comment "Character personality description" ;
+    rdfs:domain mm:Character ;
+    rdfs:range xsd:string .
+
+mm:roleplayingTip a owl:DatatypeProperty ;
+    rdfs:label "roleplaying tip" ;
+    rdfs:comment "Guidance for playing the character" ;
+    rdfs:domain mm:Character ;
+    rdfs:range xsd:string .
+
+mm:historicalInspiration a owl:DatatypeProperty ;
+    rdfs:label "historical inspiration" ;
+    rdfs:comment "Information about the historical person who inspired this character" ;
+    rdfs:domain mm:Character ;
+    rdfs:range xsd:string .
+
+## Evidence Properties
+mm:clueText a owl:DatatypeProperty ;
+    rdfs:label "clue text" ;
+    rdfs:comment "The text content of a clue" ;
+    rdfs:domain mm:Clue ;
+    rdfs:range xsd:string .
+
+mm:secretText a owl:DatatypeProperty ;
+    rdfs:label "secret text" ;
+    rdfs:comment "The text content of a secret" ;
+    rdfs:domain mm:Secret ;
+    rdfs:range xsd:string .
+
+## Resource Properties
+mm:url a owl:DatatypeProperty ;
+    rdfs:label "URL" ;
+    rdfs:comment "Web address for a resource" ;
+    rdfs:domain mm:Resource ;
+    rdfs:range xsd:anyURI .
+
+mm:note a owl:DatatypeProperty ;
+    rdfs:label "note" ;
+    rdfs:comment "Additional notes about a resource" ;
+    rdfs:domain mm:Resource ;
+    rdfs:range xsd:string .
+
+# Ontology Rules and Constraints
+
+## Cardinality Constraints
+mm:Plotline rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty mm:murdererCount ;
+    owl:minCardinality 1
+] .
+
+mm:Character rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty mm:title ;
+    owl:cardinality 1
+] .
+
+## Logical Rules
+# If a character owes money to another, they have a potential motive
+[
+    (?char1 mm:owesMoneyTo ?char2)
+    ->
+    (?char1 mm:hasMotive "Financial desperation")
+]
+
+# If a character has leverage over another, the leveraged character has a potential motive
+[
+    (?char1 mm:hasLeverageOver ?char2)
+    ->
+    (?char2 mm:hasMotive "Silencing blackmailer")
+]
