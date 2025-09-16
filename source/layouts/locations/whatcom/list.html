@@ -8,7 +8,7 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- Tailwind CSS -->
+<!-- Local CSS -->
 <link rel="stylesheet" href="/css/tailwind.css">
 </head>
 <body class="m-0 p-0 w-screen h-auto min-h-screen font-garamond text-dark md:w-a4 md:h-a4">
@@ -22,16 +22,25 @@
   </div>
   <div class="w-full px-1rem md:max-w-content md:px-2cm">
     <h2 class="font-deco text-18pt tracking-0_1rem text-center mb-1rem mt-1rem md:text-24pt md:tracking-0_2rem md:mb-1_5rem md:mt-2rem">{{ .Title }}</h2>
-
+    
     {{ .Content }}
 
     <ul class="list-none p-0">
-      {{ range .Site.Data.characters }}
+      {{ range $key, $plotline := .Site.Data.locations.whatcom.plotlines }}
       <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
-        <strong class="no-underline text-black text-12pt font-700"><a href="{{ $.RelPermalink }}{{ .title | lower | replaceRE " " "-" | replaceRE "the-" "" }}" class="no-underline text-black hover:underline">{{ .title }}</a></strong>
+        <a href="/locations/whatcom/plotlines/{{ $key }}/" class="no-underline text-black text-12pt font-700 hover:underline">{{ $plotline.title }}</a>
+        <div class="mt-0_5rem">
+          <div class="text-10pt text-gray mb-0_25rem">{{ $plotline.description }}</div>
+          <div class="text-9pt text-gray">
+            <span class="font-600">Duration:</span> {{ $plotline.duration }} |
+            <span class="font-600">Characters:</span> 4 - {{ len $plotline.characters }} |
+            <span class="font-600">Ages:</span> {{ $plotline.ages }}
+          </div>
+        </div>
       </li>
       {{ end }}
     </ul>
+
   </div>
 </body>
 </html>

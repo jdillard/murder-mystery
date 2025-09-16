@@ -8,7 +8,7 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- Tailwind CSS -->
+<!-- Local CSS -->
 <link rel="stylesheet" href="/css/tailwind.css">
 </head>
 <body class="m-0 p-0 w-screen h-auto min-h-screen font-garamond text-dark md:w-a4 md:h-a4">
@@ -26,12 +26,16 @@
     {{ .Content }}
 
     <ul class="list-none p-0">
-      {{ range .Site.Data.characters }}
+      {{ range .Pages }}
       <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
-        <strong class="no-underline text-black text-12pt font-700"><a href="{{ $.RelPermalink }}{{ .title | lower | replaceRE " " "-" | replaceRE "the-" "" }}" class="no-underline text-black hover:underline">{{ .title }}</a></strong>
+        <a href="{{ .RelPermalink }}" class="no-underline text-black text-12pt font-700 hover:underline">{{ .Title }}</a>
+        <div class="mt-0_5rem">
+          <div class="text-10pt text-gray mb-0_25rem">{{ .Summary }}</div>
+        </div>
       </li>
       {{ end }}
     </ul>
+
   </div>
 </body>
 </html>

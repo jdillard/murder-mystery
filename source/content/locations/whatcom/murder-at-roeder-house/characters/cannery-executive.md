@@ -1,5 +1,6 @@
 ---
 title: "Cannery Executive"
-layout: "character-pack-single"
 character_key: "cannery-executive"
+layout: character-pack-single
+type: _default
 ---

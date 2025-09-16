@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Murder Mystery A4 Page</title>
+  <title>{{ .Title }} - Murder Mystery</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
@@ -18,8 +18,24 @@
 
   <div>
     <h2 class="font-deco text-24pt text-center m-0_5cm tracking-1pt">Early Twentieth Century</h2>
-    <h1 class="font-cinzel text-36pt leading-38pt text-center mt-0_5rem mb-0_5rem font-500 md:text-68pt md:leading-70pt md:mt-1cm md:mb-1cm">Murder Mysteries</h1>
-    <div class="text-center"><a href="locations/" class="font-deco text-17pt text-center m-0_5cm tracking-1pt no-underline text-dark font-900 mx-1rem">locations</a></div>
+    <h1 class="font-cinzel text-36pt leading-38pt text-center mt-0_5rem mb-0_5rem font-500 md:text-68pt md:leading-70pt md:mt-1cm md:mb-1cm">Whatcom Murder Mystery</h1>
+
+    <div class="text-center max-w-2xl mx-auto px-4">
+      {{ .Content }}
+
+      <div class="mt-8">
+        <h3 class="font-deco text-20pt mb-4">Available Plotlines</h3>
+        {{ range .Site.Pages }}
+          {{ if and (eq .Parent.RelPermalink "/locations/whatcom/") (ne .File.LogicalName "_index.md") }}
+            {{ if hasPrefix .File.Dir "locations/whatcom/plotlines/" }}
+              <div class="mb-4">
+                <a href="{{ .RelPermalink }}" class="font-deco text-17pt no-underline text-dark font-900 hover:underline">{{ .Title }}</a>
+              </div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
   </div>
 
   <!-- Bottom Fan Motif -->

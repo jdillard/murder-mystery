@@ -1,5 +1,6 @@
 ---
 title: "Lumberman"
-layout: "character-pack-single"
 character_key: "lumberman"
+layout: character-pack-single
+type: _default
 ---

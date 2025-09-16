@@ -1,5 +1,6 @@
 ---
 title: "Magnate"
-layout: "character-pack-single"
 character_key: "magnate"
+layout: character-pack-single
+type: _default
 ---

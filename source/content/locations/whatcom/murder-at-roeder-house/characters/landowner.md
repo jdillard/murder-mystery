@@ -1,5 +1,6 @@
 ---
 title: "Landowner"
-layout: "character-pack-single"
 character_key: "landowner"
+layout: character-pack-single
+type: _default
 ---

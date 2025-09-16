@@ -23,10 +23,10 @@
   <div class="w-full px-1rem md:max-w-content md:px-2cm">
     <h2 class="font-deco text-18pt tracking-0_1rem text-center mb-1rem mt-1rem md:text-24pt md:tracking-0_2rem md:mb-1_5rem md:mt-2rem">{{ .Title }}</h2>
 
-    {{ .Content }}
+    {{ .Content }} fffff
 
     <ul class="list-none p-0">
-      {{ range .Site.Data.characters }}
+      {{ range .Site.Data.locations.whatcom.characters }}
       <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
         <strong class="no-underline text-black text-12pt font-700"><a href="{{ $.RelPermalink }}{{ .title | lower | replaceRE " " "-" | replaceRE "the-" "" }}" class="no-underline text-black hover:underline">{{ .title }}</a></strong>
       </li>
