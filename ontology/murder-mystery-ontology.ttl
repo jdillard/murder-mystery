@@ -300,18 +300,3 @@ mm:Character rdfs:subClassOf [
     owl:onProperty mm:title ;
     owl:cardinality 1
 ] .
-
-## Logical Rules
-# If a character owes money to another, they have a potential motive
-[
-    (?char1 mm:owesMoneyTo ?char2)
-    ->
-    (?char1 mm:hasMotive "Financial desperation")
-]
-
-# If a character has leverage over another, the leveraged character has a potential motive
-[
-    (?char1 mm:hasLeverageOver ?char2)
-    ->
-    (?char2 mm:hasMotive "Silencing blackmailer")
-]
