@@ -1,8 +1,6 @@
 title: "Banker"
 inspiration: "James J. Donovan"
 portrait_image: "James_Donovan.jpg"
-portrait_alignment: "29%"
-portrait_zoom: "100%"
 clue_pack:
   clue_1: "You overhear Railroad Baron speaking sharply to the Magnate about debts."
   clue_2: "In the Magnate's files, you see a note referencing a meeting with Railroad Baron the night before."
