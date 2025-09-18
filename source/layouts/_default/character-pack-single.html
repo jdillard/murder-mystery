@@ -42,7 +42,53 @@
       background-color: #fff5f5;
       border-left: 4px solid #DC143C;
     }
+
+    .content-with-portrait {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .main-content {
+      flex: 1;
+    }
+
+    .portrait-container {
+      flex: 0 0 200px;
+      text-align: center;
+    }
+
+    .portrait-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .portrait-container .caption {
+      font-size: 9pt;
+      font-style: italic;
+      margin-top: 0.5rem;
+      color: #666;
+    }
+
     /* Mobile-first responsive styles */
+    @media (max-width: 767px) {
+      .content-with-portrait {
+        flex-direction: column;
+      }
+
+      .portrait-container {
+        flex: none;
+        order: -1;
+        margin-bottom: 1rem;
+      }
+
+      .portrait-container img {
+        max-width: 200px;
+      }
+    }
+
     @media (min-width: 768px) {
       .section {
         padding: 1.5em;
@@ -71,7 +117,20 @@
 
       <h2>Historical Inspiration</h2>
 
-      <p>{{ $characterData.historical_inspiration }}</p>
+      <div class="content-with-portrait">
+        <div class="main-content">
+          <p>{{ $characterData.historical_inspiration }}</p>
+        </div>
+
+        {{ if $characterData.portrait_image }}
+        <div class="portrait-container">
+          <img src="/images/portraits/{{ $characterData.portrait_image }}" alt="A Portrait of {{ $characterData.inspiration }}">
+          {{ if $characterData.inspiration }}
+          <div class="caption">{{ $characterData.inspiration }}</div>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
 
       <h3>More resources</h3>
       <ul class="pl-12pt text-10pt">
