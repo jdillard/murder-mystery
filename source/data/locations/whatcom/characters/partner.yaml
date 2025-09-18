@@ -1,20 +1,8 @@
 title: "Partner"
+description: "The devoted partner of a powerful industrialist, this character balances public grace with private concerns. They are deeply invested in community welfare, charitable causes, and cultural development, often serving as the conscience when business ambitions go too far. Behind their dignified exterior lies someone who knows where the bodies are buried."
+historical_inspiration: "Frances Payne Larrabee, wife of C.X., was one of the city's most respected social leaders. Beyond her role as hostess, she advocated for education, the arts, and public parks. After her husband's death, she carried forward his legacy, ensuring the donation of 20 acres of land that became the core of Larrabee State Park. She represents the quieter but deeply influential civic contributions of women in the region's history."
 inspiration: "Frances Larrabee"
 portrait_image: "Frances_Larrabee.jpg"
-clue_pack:
-  clue_1: "You heard your partner and Railroad Baron arguing privately today."
-  clue_2: "You notice a faint smudge of Railroad Baron's ink on a cancelled contract in your partner's study."
-  clue_3: "Someone mentions seeing Railroad Baron leave the study just before the scream."
-character_card:
-  - item: "**How You See Yourself:** A gracious member of society, but also the true steward of your partner's legacy. You believe culture, charity, and beauty matter more than money."
-  - item: "**Personality Traits:** Calm, observant, dignified. Not flashy, but strong when pressed."
-  - item: "**Motives/Secrets:** You secretly worry your partner's ambitions have gone too far. You resent their obsession with business over family and the community's softer needs."
-  - item: "**Roleplaying Tips:** Speak warmly of your charitable work, but hint at unease about the business squabbles. Drop subtle suspicions without seeming confrontational."
-introduction: "I am the Partner, proud to call Fairhaven my home. My spouse and I have devoted ourselves to this community, especially through Larrabee Park. I only hope their business pursuits don't overshadow the charitable causes dearest to me."
-hidden_secrets:
-  - item: "Resents their partner's absences and rumored affairs."
-  - item: "Fears their partner's financial ruin will also ruin their standing in society."
-  - item: "Recently discovered that their partner mortgaged one of their inherited properties without telling them."
 resources:
   - url: "https://edgemoorneighborhood.com/who-was-frances-larrabee/"
     title: "https://edgemoorneighborhood.com/who-was-frances-larrabee/"
@@ -31,5 +19,17 @@ resources:
   - url: ""
     title: "The Legacy of Frances Payne Larrabee, Community Builder, Consummate Clubwoman—and Much More (2006)"
     note: "Detailed academic profile important to anyone studying Whatcom, Bellingham or Fairhaven history"
-historical_inspiration: "Frances Payne Larrabee, wife of C.X., was one of the city's most respected social leaders. Beyond her role as hostess, she advocated for education, the arts, and public parks. After her husband's death, she carried forward his legacy, ensuring the donation of 20 acres of land that became the core of Larrabee State Park. She represents the quieter but deeply influential civic contributions of women in the region's history."
-description: "The devoted partner of a powerful industrialist, this character balances public grace with private concerns. They are deeply invested in community welfare, charitable causes, and cultural development, often serving as the conscience when business ambitions go too far. Behind their dignified exterior lies someone who knows where the bodies are buried."
+introduction: "I am the Partner, proud to call Fairhaven my home. My spouse and I have devoted ourselves to this community, especially through Larrabee Park. I only hope their business pursuits don't overshadow the charitable causes dearest to me."
+clue_pack:
+  clue_1: "You heard your partner and Railroad Baron arguing privately today."
+  clue_2: "You notice a faint smudge of Railroad Baron's ink on a cancelled contract in your partner's study."
+  clue_3: "Someone mentions seeing Railroad Baron leave the study just before the scream."
+character_card:
+  - item: "**How You See Yourself:** A gracious member of society, but also the true steward of your partner's legacy. You believe culture, charity, and beauty matter more than money."
+  - item: "**Personality Traits:** Calm, observant, dignified. Not flashy, but strong when pressed."
+  - item: "**Motives/Secrets:** You secretly worry your partner's ambitions have gone too far. You resent their obsession with business over family and the community's softer needs."
+  - item: "**Roleplaying Tips:** Speak warmly of your charitable work, but hint at unease about the business squabbles. Drop subtle suspicions without seeming confrontational."
+hidden_secrets:
+  - item: "Resents their partner's absences and rumored affairs."
+  - item: "Fears their partner's financial ruin will also ruin their standing in society."
+  - item: "Recently discovered that their partner mortgaged one of their inherited properties without telling them."
