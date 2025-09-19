@@ -1,7 +1,8 @@
 ---
 title: "Murder at Roeder House"
 plot_key: "murder-at-roeder-house"
-layout: "single"
+layout: host
+type: _default
 ---
 
 ## Arrival and Introductions
