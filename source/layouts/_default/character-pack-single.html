@@ -43,6 +43,18 @@
       border-left: 4px solid #DC143C;
     }
 
+    .important-warning {
+      background-color: #fffbf0;
+      border: 2px solid #ff8c00;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      text-align: center;
+      font-size: 1.1em;
+      color: #d2691e;
+      box-shadow: 0 2px 4px rgba(255, 140, 0, 0.1);
+    }
+
     .content-with-portrait {
       display: flex;
       gap: 2rem;
@@ -146,55 +158,59 @@
         {{ end }}
       </ul>
 
-      {{ partial "clue-distribution-info.html" . }}
+      <h2>Game overview</h2>
 
-      <div class="section">
-        <div class="section-title">Character Card</div>
-        {{ if $characterData.character_card }}
-        <ul>
-          {{ range $characterData.character_card }}
-          <li>{{ .item | markdownify }}</li>
-          {{ end }}
-        </ul>
+      {{ $root := .Site.Data.root }}
+      <p>{{ $root.game_overview }}</p>
+
+      <h2>Arrival and Introductions</h2>
+
+      <ul>
+        {{ range $characterData.character_card }}
+        <li>{{ .item | markdownify }}</li>
         {{ end }}
-      </div>
+      </ul>
 
-      <div class="section">
-        <div class="section-title">Introduction</div>
-        {{ if $characterData.introduction }}
-        <div class="introduction">"{{ $characterData.introduction }}"</div>
+      <div class="introduction">"{{ $characterData.introduction }}"</div>
+
+      <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1 starts</div>
+
+      <h2>Act I: Announcement</h2>
+
+      <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1I starts</div>
+
+      <h2>Act II: The Murder</h2>
+
+      <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1II starts</div>
+
+      <h2>Act III: Investigation and Debate</h2>
+
+      <div class="section-title">Hidden Secrets & Motives</div>
+      <ul>
+        {{ range $characterData.hidden_secrets }}
+        <li>{{ .item | markdownify }}</li>
         {{ end }}
-      </div>
+      </ul>
 
-      <div class="section hidden-content">
-        <div class="section-title">Hidden Secrets & Motives</div>
-        {{ if $characterData.hidden_secrets }}
-        <ul>
-          {{ range $characterData.hidden_secrets }}
-          <li>{{ .item | markdownify }}</li>
-          {{ end }}
-        </ul>
+      <div class="section-title">Clues</div>
+      <ul>
+        {{ if $characterData.clue_pack.clue_1 }}
+        <li><strong>Clue 1 (Act II)</strong>: {{ $characterData.clue_pack.clue_1 }}</li>
         {{ end }}
-      </div>
 
-      <div class="section hidden-content">
-        <div class="section-title">Clues</div>
-        {{ if $characterData.clue_pack }}
-        <ul>
-          {{ if $characterData.clue_pack.clue_1 }}
-          <li><strong>Clue 1 (Act II)</strong>: {{ $characterData.clue_pack.clue_1 }}</li>
-          {{ end }}
-
-          {{ if $characterData.clue_pack.clue_2 }}
-          <li><strong>Clue 2 (Act III)</strong>: {{ $characterData.clue_pack.clue_2 }}</li>
-          {{ end }}
-
-          {{ if $characterData.clue_pack.clue_3 }}
-          <li><strong>Clue 3 (Act IV)</strong>: {{ $characterData.clue_pack.clue_3 }}</li>
-          {{ end }}
-        </ul>
+        {{ if $characterData.clue_pack.clue_2 }}
+        <li><strong>Clue 2 (Act III)</strong>: {{ $characterData.clue_pack.clue_2 }}</li>
         {{ end }}
-      </div>
+
+        {{ if $characterData.clue_pack.clue_3 }}
+        <li><strong>Clue 3 (Act IV)</strong>: {{ $characterData.clue_pack.clue_3 }}</li>
+        {{ end }}
+      </ul>
+
+      <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1V starts</div>
+
+      <h2>Act IV: The Reveal</h2>
+
     {{ else }}
     <p>Character data not found.</p>
     {{ end }}
