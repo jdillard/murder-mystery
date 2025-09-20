@@ -17,6 +17,22 @@ resources:
     title: "Selected Writings of Ella Higginson: Inventing Pacific Northwest Literature Edited by Laura Laffrado"
     note: "Published by Whatcom County Historical Society, includes historical context of Donovan's era"
 introduction: "The Banker, at your service. As a lawyer and developer, I've been fortunate to help guide Bellingham's path toward incorporation and prosperity. I keep one foot in politics and the other in business — some say that's dangerous footing, but it has served me well."
+victim_relationship: "You are related to the victim by [material needed]"
+rumor: "Word is [material needed]"
+questions:
+  landowner: "Ask the landowner [material needed]"
+  lumberman: "Ask the lumberman [material needed]"
+  poet: "Ask the poet [material needed]"
+answers:
+  landowner:
+    innocent: "I'm innocent, [material needed]"
+    guilty: "I'm guilty, [material needed]"
+  lumberman:
+    innocent: "I'm innocent, [material needed]"
+    guilty: "I'm guilty, [material needed]"
+  poet:
+    innocent: "I'm innocent, [material needed]"
+    guilty: "I'm guilty, [material needed]"
 clue_pack:
   clue_1: "You overhear Railroad Baron speaking sharply to the Magnate about debts."
   clue_2: "In the Magnate's files, you see a note referencing a meeting with Railroad Baron the night before."
@@ -26,7 +42,6 @@ character_card:
   - item: "**Personality Traits:** Charming, smooth-talking and outwardly trustworthy, calculating, slippery. You always keep your options open. Known as a man of connections and money."
   - item: "**Motives/Secrets:** You've been caught in shady land deals before, and the Magnate has leverage over you. You're terrified they might expose your dealings."
   - item: "**Roleplaying Tips:** Play smooth and diplomatic, but let moments of defensiveness slip when pressed. Try to redirect blame to rivals."
-hidden_secrets:
-  - item: "The Magnate owes their bank a significant loan and has been missing payments."
-  - item: "If the Magnate defaults, the Banker's reputation — and fortune — could crumble."
-  - item: "They have quietly invested in the Railroad Baron's projects, creating divided loyalties."
+final_statement:
+  innocent: "I'm innocent, [material needed]"
+  guilty: "I'm guilty, [material needed]"

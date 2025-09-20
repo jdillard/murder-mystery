@@ -126,99 +126,146 @@
       <a href="/locations/whatcom/murder-at-roeder-house/" class="inline-block bg-vintage-cream hover:bg-gray-200 text-dark no-underline px-1rem py-0_5rem rounded-5px text-10pt font-600 transition-colors duration-200">← Back to Plotline</a>
     </div>
 
-    {{ $characterData := index .Site.Data.locations.whatcom.characters .Params.character_key }}
-    {{ if $characterData }}
-      <h1 class="font-deco text-18pt tracking-0_2rem text-center mb-1rem mt-1rem md:text-24pt md:mb-1_5rem md:mt-2rem">{{ $characterData.title }}</h1>
+    {{ $page := .Params }}
+    {{ $characterData := index .Site.Data.locations.whatcom.characters $page.character_key }}
+    <h1 class="font-deco text-18pt tracking-0_2rem text-center mb-1rem mt-1rem md:text-24pt md:mb-1_5rem md:mt-2rem">{{ $characterData.title }}</h1>
 
-      <p>{{ $characterData.description }}</p>
+    <p>{{ $characterData.description }}</p>
 
-      <h2>Historical Inspiration</h2>
+    <h2>Historical Inspiration</h2>
 
-      <div class="content-with-portrait">
-        <div class="main-content">
-          <p>{{ $characterData.historical_inspiration }}</p>
-        </div>
-
-        {{ if $characterData.portrait_image }}
-        <div class="portrait-container">
-          <img src="/images/portraits/{{ $characterData.portrait_image }}" alt="A Portrait of {{ $characterData.inspiration }}">
-          {{ if $characterData.inspiration }}
-          <div class="caption">{{ $characterData.inspiration }}</div>
-          {{ end }}
-        </div>
-        {{ end }}
+    <div class="content-with-portrait">
+      <div class="main-content">
+        <p>{{ $characterData.historical_inspiration }}</p>
       </div>
 
-      <h3>More resources</h3>
-      <ul class="pl-12pt text-10pt">
-        {{ range $characterData.resources }}
-        <li class="mb-2pt">
-          {{ if .url }}
-            <a href="{{ .url }}" rel="nofollow" class="text-dark hover:underline">{{ if .title }}{{ .title }}{{ else }}{{ .url }}{{ end }}</a>
-          {{ else }}
-            {{ .title }}
-          {{ end }}
-          {{ if .note }}<br><em class="text-9pt">{{ .note }}</em>{{ end }}
-        </li>
+      {{ if $characterData.portrait_image }}
+      <div class="portrait-container">
+        <img src="/images/portraits/{{ $characterData.portrait_image }}" alt="A Portrait of {{ $characterData.inspiration }}">
+        {{ if $characterData.inspiration }}
+        <div class="caption">{{ $characterData.inspiration }}</div>
         {{ end }}
-      </ul>
+      </div>
+      {{ end }}
+    </div>
 
-      <h2>Game overview</h2>
-
-      {{ $root := .Site.Data.root }}
-      <p>{{ $root.game_overview }}</p>
-
-      <h2>Arrival and Introductions</h2>
-
-      <ul>
-        {{ range $characterData.character_card }}
-        <li>{{ .item | markdownify }}</li>
+    <h3>More resources</h3>
+    <ul class="pl-12pt text-10pt">
+      {{ range $characterData.resources }}
+      <li class="mb-2pt">
+        {{ if .url }}
+          <a href="{{ .url }}" rel="nofollow" class="text-dark hover:underline">{{ if .title }}{{ .title }}{{ else }}{{ .url }}{{ end }}</a>
+        {{ else }}
+          {{ .title }}
         {{ end }}
-      </ul>
+        {{ if .note }}<br><em class="text-9pt">{{ .note }}</em>{{ end }}
+      </li>
+      {{ end }}
+    </ul>
 
-      <div class="introduction">"{{ $characterData.introduction }}"</div>
+    <h2>Arrival and Introductions</h2>
 
-      <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1 starts</div>
+    <p>Arrive in character, but feel free to ask any questions about the game to the host. Here are some character attributes to help you get into character:</p>
 
-      <h2>Act I: Announcement</h2>
+    <div class="section-title">Traits</div>
 
-      <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1I starts</div>
+    <ul>
+      {{ range $characterData.character_card }}
+      <li>{{ .item | markdownify }}</li>
+      {{ end }}
+    </ul>
 
-      <h2>Act II: The Murder</h2>
+    <div class="section-title">Introduction</div>
 
-      <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1II starts</div>
+    <p>During the introductions phase, give this introduction about yourself. Feel free to paraphrase, but don't stray from the core concepts:</p>
 
-      <h2>Act III: Investigation and Debate</h2>
+    <div class="introduction">"{{ $characterData.introduction }}"</div>
 
-      <div class="section-title">Hidden Secrets & Motives</div>
-      <ul>
-        {{ range $characterData.hidden_secrets }}
-        <li>{{ .item | markdownify }}</li>
-        {{ end }}
-      </ul>
+    <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1 starts</div>
 
-      <div class="section-title">Clues</div>
-      <ul>
-        {{ if $characterData.clue_pack.clue_1 }}
-        <li><strong>Clue 1 (Act II)</strong>: {{ $characterData.clue_pack.clue_1 }}</li>
-        {{ end }}
+    <h2>Act I: Announcement</h2>
 
-        {{ if $characterData.clue_pack.clue_2 }}
-        <li><strong>Clue 2 (Act III)</strong>: {{ $characterData.clue_pack.clue_2 }}</li>
-        {{ end }}
+    <p>Your relationship to the victim:</p>
 
-        {{ if $characterData.clue_pack.clue_3 }}
-        <li><strong>Clue 3 (Act IV)</strong>: {{ $characterData.clue_pack.clue_3 }}</li>
-        {{ end }}
-      </ul>
+    <p>{{ $characterData.victim_relationship }}</p>
 
-      <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1V starts</div>
+    <div class="section-title">Rumors</div>
 
-      <h2>Act IV: The Reveal</h2>
+    <p>Rumors to spread:</p>
 
-    {{ else }}
-    <p>Character data not found.</p>
+    <ul class="list-none p-0">
+    {{ range $key, $character := .Site.Data.locations.whatcom.characters }}
+      {{ if ne $key $page.character_key }}
+      <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
+        <strong class="no-underline text-black text-12pt font-700"><a href="../{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.title }}</a></strong>
+        <p class="mt-0_5rem mb-0 text-10pt leading-12pt">{{ $character.rumor }}</p>
+      </li>
+      {{ end }}
     {{ end }}
+    </ul>
+
+    <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1I starts</div>
+
+    <h2>Act II: The Murder</h2>
+
+    <div class="section-title">Questions</div>
+
+    <p>Questions to ask:</p>
+
+    <ul class="list-none p-0">
+    {{ range $key, $character := .Site.Data.locations.whatcom.characters }}
+      {{ if isset $characterData.questions $key }}
+      <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
+        <strong class="no-underline text-black text-12pt font-700"><a href="../{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.title }}</a></strong>
+        <p class="mt-0_5rem mb-0 text-10pt leading-12pt">{{ index $characterData.questions $key }}</p>
+      </li>
+      {{ end }}
+    {{ end }}
+    </ul>
+
+    <div class="section-title">Answers</div>
+
+    <p>Answers to give:</p>
+
+    <ul class="list-none p-0">
+    {{ range $key, $character := .Site.Data.locations.whatcom.characters }}
+      {{ if isset $characterData.answers $key }}
+      <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
+        <strong class="no-underline text-black text-12pt font-700"><a href="../{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.title }}</a></strong>
+        <div class="mt-0_5rem mb-0 text-10pt leading-12pt">
+          <p>{{ index (index $characterData.answers $key) "innocent" }}</p>
+          <p>{{ index (index $characterData.answers $key) "guilty" }}</p>
+        </div>
+      </li>
+      {{ end }}
+    {{ end }}
+    </ul>
+
+    <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1II starts</div>
+
+    <h2>Act III: Investigation and Debate</h2>
+
+    <div class="section-title">Clues</div>
+    <ul>
+      <li><strong>Clue 1 (Act II)</strong>: {{ $characterData.clue_pack.clue_1 }}</li>
+
+      <li><strong>Clue 2 (Act III)</strong>: {{ $characterData.clue_pack.clue_2 }}</li>
+
+      <li><strong>Clue 3 (Act IV)</strong>: {{ $characterData.clue_pack.clue_3 }}</li>
+    </ul>
+
+    <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1V starts</div>
+
+    <h2>Act IV: The Reveal</h2>
+
+    <div class="section-title">Statements</div>
+
+    <p>Give your final statements:</p>
+
+    <p>{{ $characterData.final_statement.innocent }}</p>
+
+    <p>{{ $characterData.final_statement.guilty }}</p>
+
   </div>
 </body>
 </html>

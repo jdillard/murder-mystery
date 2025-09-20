@@ -17,6 +17,22 @@ resources:
     title: "History of Whatcom County by Lotti Roeder Roth (1926)"
     note: "Includes documentation of Bennett's role in Fairhaven development and railroad construction"
 introduction: "I am the Railroad Baron — I've laid more track than anyone west of the Mississippi, and I brought the Great Northern Railroad here to Fairhaven. Some say I have rivals at this table, but business is never for the faint of heart."
+victim_relationship: "You are related to the victim by [material needed]"
+rumor: "Word is [material needed]"
+questions:
+  landowner: "Ask the landowner [material needed]"
+  lumberman: "Ask the lumberman [material needed]"
+  poet: "Ask the poet [material needed]"
+answers:
+  landowner:
+    innocent: "I'm innocent, [material needed]"
+    guilty: "I'm guilty, [material needed]"
+  lumberman:
+    innocent: "I'm innocent, [material needed]"
+    guilty: "I'm guilty, [material needed]"
+  poet:
+    innocent: "I'm innocent, [material needed]"
+    guilty: "I'm guilty, [material needed]"
 clue_pack:
   clue_1: "You are secretly furious that the Magnate cut you out of the railroad deal."
   clue_2: "You notice an opportunity during dinner — a chance to poison Larrabee's drink unnoticed."
@@ -26,7 +42,6 @@ character_card:
   - item: "**Personality Traits:** Ambitious, forward-looking, blunt, competitive, and proud. You hate losing face."
   - item: "**Motives/Secrets:** You feel the Magnate cheated you in past deals and cut you out of new opportunities. You've sworn to get even, one way or another."
   - item: "**Roleplaying Tips:** Be confident, a little arrogant. Interrupt others. Drop hints about betrayals in business. Defend yourself fiercely if accused."
-hidden_secrets:
-  - item: "Their partnership with the Magnate soured years ago; they still feel cheated."
-  - item: "They've been excluded from the Magnate's latest investment scheme, which threatens to undermine their own ventures."
-  - item: "Holds grudges easily and isn't above sabotage."
+final_statement:
+  innocent: "I'm innocent"
+  guilty: "I'm guilty"

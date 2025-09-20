@@ -26,6 +26,22 @@ resources:
     title: "History of Whatcom County by Lottie Roeder Roth (1926)"
     note: "Includes biographical material on C.X. Larrabee and his role in Whatcom County development"
 introduction: "I am the Magnate of this county. Fairhaven's growth has been my life's work — from copper mines to railroads, I've invested heavily in Whatcom County's future. Tonight I'll share plans for a project that may change this city forever."
+victim_relationship: "You are related to the victim by [material needed]"
+rumor: "Word is [material needed]"
+questions:
+  landowner: "Ask the landowner [material needed]"
+  lumberman: "Ask the lumberman [material needed]"
+  poet: "Ask the poet [material needed]"
+answers:
+  landowner:
+    innocent: "I'm innocent, [material needed]"
+    guilty: "I'm guilty, [material needed]"
+  lumberman:
+    innocent: "I'm innocent, [material needed]"
+    guilty: "I'm guilty, [material needed]"
+  poet:
+    innocent: "I'm innocent, [material needed]"
+    guilty: "I'm guilty, [material needed]"
 clue_pack:
   clue_1: "I will announce a major new project tonight — some of you will not like it."
   clue_2: "A spilled note near my study reads: 'Railroad Baron will regret doubting me.'"
@@ -35,7 +51,6 @@ character_card:
   - item: "**Personality Traits:** Proud, polished, decisive, charming, confident, ruthlessness in business. You like to dominate a room."
   - item: "**Motives/Secrets:** You've made enemies in nearly every industry by pushing your own projects forward. But you see this as the price of progress."
   - item: "**Roleplaying Tips:** Be confident, hint at a big announcement, and play up your importance. When 'killed,' you can either become an observer or pass secret notes as a 'ghostly whisper.'"
-hidden_secrets:
-  - item: "They're secretly bankrupt in several ventures — the copper market is unstable, and their debts are deep."
-  - item: "They've made enemies by foreclosing on smaller business people and outmaneuvering partners."
-  - item: "Rumors swirl of infidelity and deals with questionable characters."
+final_statement:
+  innocent: "I'm innocent"
+  guilty: "I'm guilty"

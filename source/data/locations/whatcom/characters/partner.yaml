@@ -20,6 +20,22 @@ resources:
     title: "The Legacy of Frances Payne Larrabee, Community Builder, Consummate Clubwoman—and Much More (2006)"
     note: "Detailed academic profile important to anyone studying Whatcom, Bellingham or Fairhaven history"
 introduction: "I am the Partner, proud to call Fairhaven my home. My spouse and I have devoted ourselves to this community, especially through Larrabee Park. I only hope their business pursuits don't overshadow the charitable causes dearest to me."
+victim_relationship: "You are related to the victim by [material needed]"
+rumor: "Word is [material needed]"
+questions:
+  landowner: "Ask the landowner [material needed]"
+  lumberman: "Ask the lumberman [material needed]"
+  poet: "Ask the poet [material needed]"
+answers:
+  landowner:
+    innocent: "I'm innocent, [material needed]"
+    guilty: "I'm guilty, [material needed]"
+  lumberman:
+    innocent: "I'm innocent, [material needed]"
+    guilty: "I'm guilty, [material needed]"
+  poet:
+    innocent: "I'm innocent, [material needed]"
+    guilty: "I'm guilty, [material needed]"
 clue_pack:
   clue_1: "You heard your partner and Railroad Baron arguing privately today."
   clue_2: "You notice a faint smudge of Railroad Baron's ink on a cancelled contract in your partner's study."
@@ -29,7 +45,6 @@ character_card:
   - item: "**Personality Traits:** Calm, observant, dignified. Not flashy, but strong when pressed."
   - item: "**Motives/Secrets:** You secretly worry your partner's ambitions have gone too far. You resent their obsession with business over family and the community's softer needs."
   - item: "**Roleplaying Tips:** Speak warmly of your charitable work, but hint at unease about the business squabbles. Drop subtle suspicions without seeming confrontational."
-hidden_secrets:
-  - item: "Resents their partner's absences and rumored affairs."
-  - item: "Fears their partner's financial ruin will also ruin their standing in society."
-  - item: "Recently discovered that their partner mortgaged one of their inherited properties without telling them."
+final_statement:
+  innocent: "I'm innocent"
+  guilty: "I'm guilty"

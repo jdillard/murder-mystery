@@ -34,6 +34,11 @@
         <li><strong>Set</strong>: {{ $plotlineData.location }}</li>
     </ul>
 
+    <h2>Game overview</h2>
+
+    {{ $root := .Site.Data.root }}
+    <p>{{ $root.game_overview }}</p>
+
     {{ .Content }}
 
     <h3 class="font-deco text-16pt tracking-0_1rem mb-0_5rem mt-1rem md:text-18pt md:tracking-0_2rem md:mb-1rem md:mt-2rem">Character List</h3>
