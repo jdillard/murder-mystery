@@ -11,7 +11,7 @@ resources:
     note: ""
 introduction: "I am the Poet, Bellingham's humble chronicler of the Northwest. While others at this table measure wealth in timber, fish, or copper, I measure it in words — though even poets know that power and money shape the stories that endure."
 victim_relationship: "You are related to the victim by [material needed]"
-rumor: "Word is [material needed]"
+rumor: "The Poet has been writing scathing articles about local business corruption for eastern newspapers — someone's secrets are about to be exposed nationally."
 questions:
   landowner: "Ask the landowner [material needed]"
   lumberman: "Ask the lumberman [material needed]"

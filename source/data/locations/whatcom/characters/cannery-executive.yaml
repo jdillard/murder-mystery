@@ -11,7 +11,7 @@ resources:
     note: ""
 introduction: "I am the Cannery Executive, of Pacific American Fisheries. From these waters we've built one of the world's great salmon canning empires. I know some of you scoff at fish while chasing copper and timber, but it is salmon that feeds this city and fills its coffers."
 victim_relationship: "You are related to the victim by [material needed]"
-rumor: "Word is [material needed]"
+rumor: "Workers at the cannery whisper that the Cannery Executive has been cutting corners on safety to boost profits — there was an accident last month they tried to cover up."
 questions:
   landowner: "Ask the landowner [material needed]"
   lumberman: "Ask the lumberman [material needed]"

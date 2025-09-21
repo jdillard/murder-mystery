@@ -11,7 +11,7 @@ resources:
     note: ""
 introduction: "I am the Lumberman — timber has been my business since I was young. Fairhaven and Bellingham rise on wood, and I've supplied more than most. There's profit yet in these forests, if only politicians and speculators would stay out of the way."
 victim_relationship: "You are related to the victim by [material needed]"
-rumor: "Word is [material needed]"
+rumor: "People say the Lumberman has been illegally cutting timber on disputed land, and there's a federal investigation brewing that could ruin them."
 questions:
   landowner: "Ask the landowner [material needed]"
   lumberman: "Ask the lumberman [material needed]"

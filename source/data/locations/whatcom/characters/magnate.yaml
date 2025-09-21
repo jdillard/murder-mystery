@@ -12,7 +12,7 @@ resources:
     note: ""
 introduction: "I am the Magnate of this county. Fairhaven's growth has been my life's work — from copper mines to railroads, I've invested heavily in Whatcom County's future. Tonight I'll share plans for a project that may change this city forever."
 victim_relationship: "You are related to the victim by [material needed]"
-rumor: "Word is [material needed]"
+rumor: "The Magnate's copper mine investments are failing — I heard they've been borrowing heavily to cover losses and might be facing bankruptcy."
 questions:
   landowner: "Ask the landowner [material needed]"
   lumberman: "Ask the lumberman [material needed]"

@@ -12,7 +12,7 @@ resources:
     note: ""
 introduction: "I am the Partner, proud to call Fairhaven my home. My spouse and I have devoted ourselves to this community, especially through Larrabee Park. I only hope their business pursuits don't overshadow the charitable causes dearest to me."
 victim_relationship: "You are related to the victim by [material needed]"
-rumor: "Word is [material needed]"
+rumor: "The Partner seems unusually worried lately — I've seen them arguing with their spouse about business matters, saying some dealings have 'gone too far.'"
 questions:
   landowner: "Ask the landowner [material needed]"
   lumberman: "Ask the lumberman [material needed]"

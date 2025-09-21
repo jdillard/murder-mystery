@@ -10,7 +10,7 @@ resources:
     title: "J._J._Donovan"
 introduction: "The Banker, at your service. As a lawyer and developer, I've been fortunate to help guide Bellingham's path toward incorporation and prosperity. I keep one foot in politics and the other in business — some say that's dangerous footing, but it has served me well."
 victim_relationship: "You are related to the victim by [material needed]"
-rumor: "Word is [material needed]"
+rumor: "I've heard the Banker has been quietly buying up waterfront properties under false names, possibly to corner the market before some big announcement."
 questions:
   landowner: "Ask the landowner [material needed]"
   lumberman: "Ask the lumberman [material needed]"
