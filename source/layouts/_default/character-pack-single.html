@@ -276,6 +276,7 @@
       <div class="collapsible-content collapsed">
         {{ $characterData.historical_inspiration | markdownify }}
 
+        {{ if $characterData.resources }}
         <h3>More resources</h3>
         <ul class="pl-12pt text-10pt">
           {{ range $characterData.resources }}
@@ -289,6 +290,7 @@
           </li>
           {{ end }}
         </ul>
+        {{ end }}
       </div>
     </div>
 
