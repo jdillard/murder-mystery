@@ -14,19 +14,35 @@ introduction: "I am the Partner, proud to call Fairhaven my home. My spouse and 
 victim_relationship: "You are related to the victim by [material needed]"
 rumor: "The Partner seems unusually worried lately — I've seen them arguing with their spouse about business matters, saying some dealings have 'gone too far.'"
 questions:
-  landowner: "Ask the landowner [material needed]"
-  lumberman: "Ask the lumberman [material needed]"
-  poet: "Ask the poet [material needed]"
+  banker: "I've noticed some questionable transactions in our charitable accounts. Can you explain?"
+  cannery-executive: "The working conditions at your cannery concern me. Are you treating workers fairly?"
+  landowner: "Your family's agricultural heritage is admirable. How do you balance tradition with progress?"
+  lumberman: "Environmental impact matters to our community. Are your logging practices sustainable?"
+  magnate: "Your business ambitions sometimes worry me. Are you considering the community's welfare?"
+  poet: "Your cultural commentary is insightful. Do you see hope for balancing art and industry?"
+  railroad-baron: "Transportation development affects everyone. Are you consulting with local families?"
 answers:
+  banker:
+    innocent: "I trust in honest business dealings and believe our charitable work speaks for itself."
+    guilty: "The Magnate was going to expose how I've been redirecting charity funds to environmental causes. I had to stop them."
+  cannery-executive:
+    innocent: "Social responsibility and business success should go hand in hand. I support fair labor practices."
+    guilty: "They discovered I've been sabotaging equipment to protest unsafe working conditions. I couldn't let them expose me."
   landowner:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "Preserving our community's heritage while embracing progress requires careful balance and mutual respect."
+    guilty: "The Magnate planned to destroy historical sites for development. I couldn't let such vandalism continue."
   lumberman:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "Environmental stewardship and economic development can coexist with proper planning and consideration."
+    guilty: "They threatened to expose how I've been secretly funding protests against logging operations."
+  magnate:
+    innocent: "I support my spouse's vision while advocating for community welfare and sustainable development."
+    guilty: "You've become consumed by greed, ignoring the human cost of your ambitions. I had to stop you."
   poet:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "Art and literature help us understand our community's soul beyond mere economic considerations."
+    guilty: "The Magnate was going to silence your truth-telling articles by threatening your funding. I protected free speech."
+  railroad-baron:
+    innocent: "Transportation progress should benefit everyone, not just industrial interests. Community input is essential."
+    guilty: "They planned to bulldoze the community center for a rail yard. I couldn't allow such destruction."
 clue_pack:
   clue_1: "You heard your partner and Railroad Baron arguing privately today."
   clue_2: "You notice a faint smudge of Railroad Baron's ink on a cancelled contract in your partner's study."

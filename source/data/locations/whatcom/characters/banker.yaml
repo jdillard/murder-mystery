@@ -12,19 +12,35 @@ introduction: "The Banker, at your service. As a lawyer and developer, I've been
 victim_relationship: "You are related to the victim by [material needed]"
 rumor: "I've heard the Banker has been quietly buying up waterfront properties under false names, possibly to corner the market before some big announcement."
 questions:
-  landowner: "Ask the landowner [material needed]"
-  lumberman: "Ask the lumberman [material needed]"
-  poet: "Ask the poet [material needed]"
+  cannery-executive: "Your cannery workers seem restless lately. Any labor troubles brewing?"
+  landowner: "I've heard rumors about your family's land being surveyed recently. What's that about?"
+  lumberman: "Your timber contracts with the Magnate have been rocky. Any bad blood there?"
+  magnate: "You mentioned a big announcement tonight. Care to give us bankers a preview?"
+  partner: "You seem worried about your spouse's business dealings lately. Everything alright?"
+  poet: "You've been writing some pointed pieces about local business. Anyone in particular you're targeting?"
+  railroad-baron: "I heard you've been meeting with outside investors. Planning something that affects local interests?"
 answers:
+  cannery-executive:
+    innocent: "My banking serves all industries equally. I have no special grudge against the cannery business."
+    guilty: "The Magnate was going to expose my fraudulent loans to failing businesses. I couldn't let that happen."
   landowner:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "My banking business keeps me above petty land disputes. I focus on loans and investments, not feuds."
+    guilty: "The Magnate has been threatening to foreclose on several properties I've financed. Someone had to stop them."
   lumberman:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "Business disagreements are normal. I've had no serious conflicts with anyone here tonight."
+    guilty: "The Magnate cost me a fortune in failed timber deals. I couldn't let them destroy more lives."
+  magnate:
+    innocent: "As a fellow businessman, I've always respected the Magnate's vision, even when we compete."
+    guilty: "They discovered my illegal land schemes and threatened to destroy my political career. I had no choice."
+  partner:
+    innocent: "I have great respect for both you and your spouse. Your charitable work benefits our whole community."
+    guilty: "Your spouse was getting too close to the truth about my shady dealings. I had to silence them permanently."
   poet:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "As a banker, I appreciate the arts. I've even funded some cultural projects around town."
+    guilty: "The Magnate threatened to expose my questionable land deals after your articles got too close to the truth."
+  railroad-baron:
+    innocent: "Competition is healthy for business. I harbor no ill will toward fellow entrepreneurs."
+    guilty: "The Magnate was going to reveal how I've been using insider information from railroad deals to manipulate land prices."
 clue_pack:
   clue_1: "You overhear Railroad Baron speaking sharply to the Magnate about debts."
   clue_2: "In the Magnate's files, you see a note referencing a meeting with Railroad Baron the night before."

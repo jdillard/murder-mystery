@@ -13,19 +13,35 @@ introduction: "I am the Cannery Executive, of Pacific American Fisheries. From t
 victim_relationship: "You are related to the victim by [material needed]"
 rumor: "Workers at the cannery whisper that the Cannery Executive has been cutting corners on safety to boost profits — there was an accident last month they tried to cover up."
 questions:
-  landowner: "Ask the landowner [material needed]"
-  lumberman: "Ask the lumberman [material needed]"
-  poet: "Ask the poet [material needed]"
+  banker: "I hear you've been involved in some questionable real estate deals. Care to explain?"
+  landowner: "Your family's land borders our fishing waters. Any plans to sell or develop it?"
+  lumberman: "You supply timber for our shipping crates. Have you been raising prices on us?"
+  magnate: "Your mining operations upstream could affect our salmon runs. What assurances can you give?"
+  partner: "You've been advocating for environmental protections. How does that affect our fishing rights?"
+  poet: "Your writings about working conditions seem aimed at our industry. What's your angle?"
+  railroad-baron: "Your rail lines transport our canned goods. Any plans to change shipping rates?"
 answers:
+  banker:
+    innocent: "Our cannery operates with complete financial transparency. I have no quarrels with the banking community."
+    guilty: "The Magnate discovered our safety violations and threatened to expose them. I couldn't let that destroy our empire."
   landowner:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "Pacific American Fisheries respects all property rights. We work cooperatively with neighboring landowners."
+    guilty: "The Magnate was going to block our expansion into new fishing territories. I had to eliminate the obstacle."
   lumberman:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "We have fair business relationships with all timber suppliers. Competition keeps us all honest."
+    guilty: "They threatened to reveal how we've been dumping waste into the bay. Our reputation couldn't survive that scandal."
+  magnate:
+    innocent: "I respect fellow industrialists, even when our interests compete. There's room for all of us to prosper."
+    guilty: "They were going to expose our worker safety violations and illegal fishing practices. I had to protect the business."
+  partner:
+    innocent: "Environmental stewardship and industry can coexist. I support reasonable conservation measures."
+    guilty: "The Magnate had evidence of our environmental crimes. I couldn't let them destroy everything I've built."
   poet:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "Art and industry can flourish together. I've even supported local cultural events in the past."
+    guilty: "Your spouse was gathering evidence about our labor violations. I had to stop them before they published it."
+  railroad-baron:
+    innocent: "Competition in transportation benefits everyone. I have no personal grievances with railroad interests."
+    guilty: "The Magnate was planning to build their own shipping operation to bypass us entirely. I couldn't allow that."
 clue_pack:
   clue_1: "The Magnate attempted to buy your cannery; Railroad Baron knew of the attempt."
   clue_2: "You saw Railroad Baron pacing near the study, looking tense."

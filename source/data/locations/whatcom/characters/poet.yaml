@@ -13,19 +13,35 @@ introduction: "I am the Poet, Bellingham's humble chronicler of the Northwest. W
 victim_relationship: "You are related to the victim by [material needed]"
 rumor: "The Poet has been writing scathing articles about local business corruption for eastern newspapers — someone's secrets are about to be exposed nationally."
 questions:
-  landowner: "Ask the landowner [material needed]"
-  lumberman: "Ask the lumberman [material needed]"
-  poet: "Ask the poet [material needed]"
+  banker: "Your financial dealings seem rather... creative. Do they make good material for satire?"
+  cannery-executive: "The workers' stories I hear from your cannery would make tragic poetry. Care to comment?"
+  landowner: "Your family's connection to the land inspires beautiful verse. How do you preserve it?"
+  lumberman: "The environmental cost of logging provides rich metaphors. Do you see the irony?"
+  magnate: "Power and corruption make compelling themes. Any personal experience you'd share?"
+  partner: "Your charitable mask is admirable, but what truths hide beneath such gracious appearances?"
+  railroad-baron: "The railroad cuts through everything — landscape, communities, relationships. Poetic, isn't it?"
 answers:
+  banker:
+    innocent: "Poetry and finance rarely intersect, though both deal in the currency of human nature."
+    guilty: "The Magnate discovered my articles exposing their corruption were funded by rival businesses. I couldn't let them reveal my bias."
+  cannery-executive:
+    innocent: "Art should illuminate truth, including the dignity of honest labor and fair treatment of workers."
+    guilty: "They threatened to silence my exposé of working conditions by cutting funding to literary publications."
   landowner:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "The tension between tradition and progress provides endless inspiration for those who observe carefully."
+    guilty: "The Magnate was going to destroy the historic sites that inspire my best work. I had to preserve them."
   lumberman:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
-  poet:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "Environmental themes in poetry reflect legitimate concerns about our relationship with the natural world."
+    guilty: "They planned to suppress my articles about illegal logging by threatening my publisher with lawsuits."
+  magnate:
+    innocent: "Great literature has always examined the corrupting influence of power and wealth on the human soul."
+    guilty: "You threatened to destroy my reputation unless I stopped writing about industrial corruption. I chose truth over safety."
+  partner:
+    innocent: "Behind every public figure lies a private story worth examining with both compassion and honesty."
+    guilty: "The Magnate was going to expose how I've been embellishing stories to make industrial leaders look worse."
+  railroad-baron:
+    innocent: "Transportation brings both connection and disruption — fertile ground for literary exploration of human progress."
+    guilty: "They were going to reveal that my 'investigative journalism' was actually paid propaganda from competing rail companies."
 clue_pack:
   clue_1: "Railroad Baron seemed unusually agitated when the Magnate discussed cultural funding."
   clue_2: "You see Railroad Baron holding a small vial that could contain poison near the study."

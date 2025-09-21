@@ -9,19 +9,35 @@ introduction: "I am the Railroad Baron — I've laid more track than anyone west
 victim_relationship: "You are related to the victim by [material needed]"
 rumor: "The Railroad Baron has been spotted meeting with out-of-town investors — word is they're planning to bypass Fairhaven entirely and build a competing rail line."
 questions:
-  landowner: "Ask the landowner [material needed]"
-  lumberman: "Ask the lumberman [material needed]"
-  poet: "Ask the poet [material needed]"
+  banker: "Your political connections run deep. Any favors owed that might compromise your integrity?"
+  cannery-executive: "Shipping fish requires reliable transport. Are you giving fair rates, or squeezing for profit?"
+  landowner: "My rails cross your family land. Any complaints about compensation or property rights?"
+  lumberman: "Timber transport built my fortune. Are you satisfied with our business arrangements?"
+  magnate: "We've competed fiercely over the years. Ready to discuss burying old grievances?"
+  partner: "Your charitable concerns are noted. Do you think progress requires sacrificing some traditions?"
+  poet: "Transportation brings stories together. Do you see the railroad as connecting or dividing communities?"
 answers:
+  banker:
+    innocent: "My railroad dealings are transparent. I compete hard but fairly, without resorting to underhanded tactics."
+    guilty: "The Magnate threatened to expose my bribes to government officials for favorable railroad routes. I had to silence them."
+  cannery-executive:
+    innocent: "Transportation and fishing are natural partners. I provide reliable service at competitive rates."
+    guilty: "They discovered I was sabotaging their shipments to force them to pay higher rates. I couldn't let that be exposed."
   landowner:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "I've always tried to work fairly with property owners affected by railroad development."
+    guilty: "The Magnate was going to reveal how I seized family lands through fraudulent eminent domain claims."
   lumberman:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "Railroads and timber built this region together. Despite disagreements, I respect the lumber industry."
+    guilty: "They threatened to testify about my illegal logging partnerships and kickback schemes."
+  magnate:
+    innocent: "Business competition can be fierce, but I've always maintained professional respect for worthy opponents."
+    guilty: "You cheated me out of millions in railroad deals and threatened to destroy me completely. I had to strike first."
+  partner:
+    innocent: "Progress requires balance between development and community values. I respect diverse perspectives."
+    guilty: "The Magnate was going to expose how I've been embezzling from charitable railroad funds."
   poet:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "Railroads connect people and ideas across vast distances, enriching communities through shared culture and commerce."
+    guilty: "They planned to publish articles exposing my corruption unless I stopped your funding. I chose a permanent solution."
 clue_pack:
   clue_1: "You are secretly furious that the Magnate cut you out of the railroad deal."
   clue_2: "You notice an opportunity during dinner — a chance to poison Larrabee's drink unnoticed."

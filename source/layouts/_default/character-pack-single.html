@@ -380,8 +380,9 @@
           <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
             <strong class="no-underline text-black text-12pt font-700"><a href="../{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.title }}</a></strong>
             <div class="mt-0_5rem mb-0 text-10pt leading-12pt">
-              <p>{{ index (index $characterData.answers $key) "innocent" }}</p>
-              <p>{{ index (index $characterData.answers $key) "guilty" }}</p>
+              <p><strong>Innocent: </strong> {{ index (index $characterData.answers $key) "innocent" }}</p>
+              <hr />
+              <p><strong>Guilty: </strong> {{ index (index $characterData.answers $key) "guilty" }}</p>
             </div>
           </li>
           {{ end }}

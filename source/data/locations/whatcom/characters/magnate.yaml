@@ -14,19 +14,35 @@ introduction: "I am the Magnate of this county. Fairhaven's growth has been my l
 victim_relationship: "You are related to the victim by [material needed]"
 rumor: "The Magnate's copper mine investments are failing — I heard they've been borrowing heavily to cover losses and might be facing bankruptcy."
 questions:
-  landowner: "Ask the landowner [material needed]"
-  lumberman: "Ask the lumberman [material needed]"
-  poet: "Ask the poet [material needed]"
+  banker: "I hear there are questions about your recent land acquisitions. Care to clarify?"
+  cannery-executive: "Your fishing empire is impressive, but are you expanding beyond your means?"
+  landowner: "Your family has deep roots here. Do you support progress, or cling to the past?"
+  lumberman: "The timber industry built this town. Are you planning to work with us or against us?"
+  partner: "You've been advocating for certain restrictions on business. How does that serve our community?"
+  poet: "Your cultural writings are noted, but do you understand the economic realities we face?"
+  railroad-baron: "We've competed before, but tonight I hope we can discuss mutual opportunities."
 answers:
+  banker:
+    innocent: "I conduct all business with complete transparency. My investments benefit the entire community."
+    guilty: "You discovered my fraudulent mining investments and threatened to expose me. I couldn't let you destroy everything."
+  cannery-executive:
+    innocent: "Industry competition is healthy. I respect your fishing empire and see room for cooperation."
+    guilty: "You were going to reveal how I've been illegally dumping mine waste into the bay. I had to silence you."
   landowner:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "Progress and tradition can coexist. I respect your family's legacy while building our county's future."
+    guilty: "You threatened to expose my plans to seize family lands through false debts. I couldn't allow that."
   lumberman:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "Timber is essential to our economy. Despite past disagreements, I harbor no personal animosity."
+    guilty: "You were going to testify about my illegal logging operations. I had to stop you before the federal hearing."
+  partner:
+    innocent: "Your charitable work and my business investments serve the same goal — a prosperous community."
+    guilty: "You discovered my embezzlement of charitable funds and threatened to expose me. I had no choice."
   poet:
-    innocent: "I'm innocent, [material needed]"
-    guilty: "I'm guilty, [material needed]"
+    innocent: "Art and culture elevate our community. I've always supported intellectual and artistic endeavors."
+    guilty: "Your articles were getting too close to exposing my corruption. I couldn't let you publish the truth."
+  railroad-baron:
+    innocent: "Competition has made us both stronger. I respect your achievements and see opportunities for partnership."
+    guilty: "You threatened to reveal my bribery of railroad officials. I couldn't let you destroy my reputation."
 clue_pack:
   clue_1: "I will announce a major new project tonight — some of you will not like it."
   clue_2: "A spilled note near my study reads: 'Railroad Baron will regret doubting me.'"
