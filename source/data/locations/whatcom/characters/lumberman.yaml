@@ -10,7 +10,7 @@ resources:
     title: "John P. de Mattos"
     note: ""
 introduction: "I am the Lumberman — timber has been my business since I was young. Fairhaven and Bellingham rise on wood, and I've supplied more than most. There's profit yet in these forests, if only politicians and speculators would stay out of the way."
-victim_relationship: "You are related to the victim by [material needed]"
+victim_relationship: "The Magnate is your biggest competitor and the wealthy elite who's been systematically undermining your timber business. Their copper money and political connections have allowed them to secure prime logging contracts that should have been yours. They've also been lobbying for conservation restrictions that would hurt working-class lumbermen while protecting their own mining interests. You see them as representing everything wrong with corrupt capitalism destroying honest working folks."
 rumor: "People say the Lumberman has been illegally cutting timber on disputed land, and there's a federal investigation brewing that could ruin them."
 questions:
   banker: "You been buying up timber rights behind folks' backs? That ain't right."

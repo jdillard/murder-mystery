@@ -9,7 +9,7 @@ resources:
   - url: "https://en.m.wikipedia.org/wiki/J._J._Donovan"
     title: "J._J._Donovan"
 introduction: "The Banker, at your service. As a lawyer and developer, I've been fortunate to help guide Bellingham's path toward incorporation and prosperity. I keep one foot in politics and the other in business — some say that's dangerous footing, but it has served me well."
-victim_relationship: "You are related to the victim by [material needed]"
+victim_relationship: "The Magnate is your most dangerous business rival and the one person who knows too much about your questionable land deals. As fellow power brokers in Whatcom County, you've competed for the same political connections and investment opportunities. They hold evidence that could destroy your banking career and political aspirations, making them both your greatest threat and grudging collaborator in shaping the county's future."
 rumor: "I've heard the Banker has been quietly buying up waterfront properties under false names, possibly to corner the market before some big announcement."
 questions:
   cannery-executive: "Your cannery workers seem restless lately. Any labor troubles brewing?"

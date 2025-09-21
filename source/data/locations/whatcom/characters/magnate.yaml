@@ -11,7 +11,7 @@ resources:
     title: "https://en.m.wikipedia.org/wiki/C._X._Larrabee"
     note: ""
 introduction: "I am the Magnate of this county. Fairhaven's growth has been my life's work — from copper mines to railroads, I've invested heavily in Whatcom County's future. Tonight I'll share plans for a project that may change this city forever."
-victim_relationship: "You are related to the victim by [material needed]"
+victim_relationship: "You are the victim. As the most powerful industrialist in Whatcom County, you've made enemies across every sector - from your devoted but increasingly troubled spouse, to business rivals who resent your success, to working families whose land you've acquired for development. Your copper fortune and real estate empire have given you immense influence, but your ruthless business tactics and knowledge of others' secrets have made you a target. Tonight, someone at this dinner party will ensure you never announce your mysterious new project."
 rumor: "The Magnate's copper mine investments are failing — I heard they've been borrowing heavily to cover losses and might be facing bankruptcy."
 questions:
   banker: "I hear there are questions about your recent land acquisitions. Care to clarify?"

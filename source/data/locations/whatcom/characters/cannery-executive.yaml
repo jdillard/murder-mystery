@@ -10,7 +10,7 @@ resources:
     title: "https://fairhavenhistory.com/west/pacific-american-fisheries-paf/"
     note: ""
 introduction: "I am the Cannery Executive, of Pacific American Fisheries. From these waters we've built one of the world's great salmon canning empires. I know some of you scoff at fish while chasing copper and timber, but it is salmon that feeds this city and fills its coffers."
-victim_relationship: "You are related to the victim by [material needed]"
+victim_relationship: "The Magnate is a major investor in Pacific American Fisheries and sits on your board of directors. While their copper fortune helped finance your cannery expansion, their mining operations upstream threaten your salmon runs. Recently, they've been pressuring you to cut costs and worker safety to maximize profits. You depend on their investment but fear their environmental recklessness could destroy the fishing industry that built your empire."
 rumor: "Workers at the cannery whisper that the Cannery Executive has been cutting corners on safety to boost profits — there was an accident last month they tried to cover up."
 questions:
   banker: "I hear you've been involved in some questionable real estate deals. Care to explain?"

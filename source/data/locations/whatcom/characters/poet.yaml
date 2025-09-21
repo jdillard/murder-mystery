@@ -10,7 +10,7 @@ resources:
     title: "https://en.wikipedia.org/wiki/Ella_Rhoads_Higginson"
     note: ""
 introduction: "I am the Poet, Bellingham's humble chronicler of the Northwest. While others at this table measure wealth in timber, fish, or copper, I measure it in words — though even poets know that power and money shape the stories that endure."
-victim_relationship: "You are related to the victim by [material needed]"
+victim_relationship: "The Magnate is both your cultural patron and your greatest literary antagonist. While their wealth has funded some of Bellingham's artistic endeavors, they've consistently dismissed your work as frivolous decoration for their industrial empire. More troubling, you've discovered evidence of their corruption through your investigative journalism, but they've threatened to withdraw all cultural funding if you publish these exposés. They represent the tension between artistic truth and financial survival."
 rumor: "The Poet has been writing scathing articles about local business corruption for eastern newspapers — someone's secrets are about to be exposed nationally."
 questions:
   banker: "Your financial dealings seem rather... creative. Do they make good material for satire?"
