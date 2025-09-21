@@ -52,5 +52,5 @@ character_card:
   - item: "**Motives/Secrets:** You're anxious that Larrabee's waterfront interests could undercut PAF. Worse — he might have evidence of questionable practices at the cannery."
   - item: "**Roleplaying Tips:** Talk about 'feeding the world' with salmon. Downplay problems but look uneasy when the cannery's integrity is questioned."
 final_statement:
-  innocent: "I'm innocent"
-  guilty: "I'm guilty"
+  innocent: "Pacific American Fisheries has always operated with integrity. I've dedicated my life to feeding the world through honest labor and fair business practices. The Magnate's death saddens me, but I had no reason to harm a fellow industrialist."
+  guilty: "I confess — I poisoned the Magnate. They threatened to expose our safety violations and environmental crimes, which would have destroyed the world's largest salmon operation. I couldn't let one person's meddling ruin an empire that feeds thousands."

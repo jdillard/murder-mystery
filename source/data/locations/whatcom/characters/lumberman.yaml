@@ -52,5 +52,5 @@ character_card:
   - item: "**Motives/Secrets:** Larrabee has interfered with your lumber rights before, costing you money. You're still bitter about it."
   - item: "**Roleplaying Tips:** Keep your words short and sharp. Accuse others openly. Don't bother with diplomacy. You're here to defend your reputation."
 final_statement:
-  innocent: "I'm innocent"
-  guilty: "I'm guilty"
+  innocent: "I built my business through hard work and honest dealing. Been cutting timber since I was a boy, and I've never needed to hurt anyone to make my way. The Magnate's death is bad for all of us in business."
+  guilty: "Damn right I killed 'em! The Magnate cost me everything with their meddling and interference. A working man's got to protect what's his. They pushed too far, and I pushed back — permanently."

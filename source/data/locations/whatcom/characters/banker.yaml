@@ -51,5 +51,5 @@ character_card:
   - item: "**Motives/Secrets:** You've been caught in shady land deals before, and the Magnate has leverage over you. You're terrified they might expose your dealings."
   - item: "**Roleplaying Tips:** Play smooth and diplomatic, but let moments of defensiveness slip when pressed. Try to redirect blame to rivals."
 final_statement:
-  innocent: "I'm innocent, [material needed]"
-  guilty: "I'm guilty, [material needed]"
+  innocent: "I've spent my career building this community through honest banking and sound investments. The Magnate's death is a tragic loss for Whatcom County, but I had no part in it. My focus has always been on legal, profitable ventures that benefit everyone."
+  guilty: "Yes, I killed the Magnate. They discovered my fraudulent land schemes and threatened to destroy my political career and banking reputation. I couldn't let decades of work be ruined by one person's meddling. Sometimes business requires difficult decisions."

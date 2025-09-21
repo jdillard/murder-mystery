@@ -52,5 +52,5 @@ character_card:
   - item: "**Motives/Secrets:** You suspect the Magnate is eyeing your family's land. You may lose everything if they succeed."
   - item: "**Roleplaying Tips:** Let your emotions show — frustration, indignation, even tears. Insist your family's land is sacred. Use passion as both shield and sword."
 final_statement:
-  innocent: "I'm innocent"
-  guilty: "I'm guilty"
+  innocent: "My family has farmed this land for generations with honor and integrity. We've never resorted to violence to solve our problems. The Magnate's death is a tragedy, but I had nothing to do with it. I fight with words and law, not poison."
+  guilty: "Yes, I killed them! The Magnate was going to destroy everything my family built — our land, our heritage, our very graves. When industry threatens to bulldoze your ancestors' resting place, sometimes you have to take desperate measures to protect what's sacred."

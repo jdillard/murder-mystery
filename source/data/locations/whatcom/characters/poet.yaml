@@ -52,5 +52,5 @@ character_card:
   - item: "**Motives/Secrets:** You feel slighted by the industrial moguls — especially the Magnate, who dismissed your art as trivial. But you also know how to read people better than they realize."
   - item: "**Roleplaying Tips:** Speak in witty remarks and metaphors. Ask questions others overlook. Make observations that unsettle people — half-poem, half-accusation."
 final_statement:
-  innocent: "I'm innocent"
-  guilty: "I'm guilty"
+  innocent: "Words are my weapons, not poison. I've dedicated my life to truth through art and literature. While I may have written critically about industrial excess, I would never resort to murder. My pen is mightier than any sword."
+  guilty: "I confess with poetic justice — I killed the Magnate. They threatened to silence my voice and destroy the truth I've worked to expose. When corruption tries to murder free speech, sometimes speech must murder corruption first."

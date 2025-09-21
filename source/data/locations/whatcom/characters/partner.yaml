@@ -53,5 +53,5 @@ character_card:
   - item: "**Motives/Secrets:** You secretly worry your partner's ambitions have gone too far. You resent their obsession with business over family and the community's softer needs."
   - item: "**Roleplaying Tips:** Speak warmly of your charitable work, but hint at unease about the business squabbles. Drop subtle suspicions without seeming confrontational."
 final_statement:
-  innocent: "I'm innocent"
-  guilty: "I'm guilty"
+  innocent: "I've devoted my life to charitable works and community building. Violence goes against everything I believe in. My spouse and I have always worked to improve lives, not destroy them. I'm deeply saddened by this tragedy."
+  guilty: "I killed my own spouse. They had become consumed by greed and ambition, destroying everything we once stood for. When someone you love becomes a monster threatening innocent people, sometimes love requires the ultimate sacrifice."

@@ -48,5 +48,5 @@ character_card:
   - item: "**Motives/Secrets:** You feel the Magnate cheated you in past deals and cut you out of new opportunities. You've sworn to get even, one way or another."
   - item: "**Roleplaying Tips:** Be confident, a little arrogant. Interrupt others. Drop hints about betrayals in business. Defend yourself fiercely if accused."
 final_statement:
-  innocent: "I'm innocent"
-  guilty: "I'm guilty"
+  innocent: "I built the railroad that made Fairhaven possible. Competition is fierce in business, but I've never needed murder to succeed. The Magnate and I had our differences, but I respected them as a worthy opponent."
+  guilty: "Yes, I poisoned the Magnate! They cheated me out of millions and threatened to destroy everything I built. When someone steals your life's work and tries to ruin you completely, you fight back with everything you have."
