@@ -166,6 +166,26 @@
         font-size: 1.5em;
       }
     }
+
+    /* Expand/Collapse All button - styled like back to plotline */
+    .expand-all-btn {
+      display: inline-block;
+      background-color: #f5f5dc;
+      color: #333;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 10pt;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .expand-all-btn:hover {
+      background-color: #e5e5e5;
+    }
   </style>
 </head>
 <body class="m-0 p-0 w-screen h-auto min-h-screen font-garamond text-dark md:w-a4 md:h-a4">
@@ -183,7 +203,47 @@
         header.classList.add('collapsed');
         toggle.textContent = '▶';
       }
+
+      updateExpandAllButton();
     }
+
+    function toggleAllSections() {
+      const button = document.getElementById('expandAllBtn');
+      const allContents = document.querySelectorAll('.collapsible-content');
+      const allHeaders = document.querySelectorAll('.collapsible-header');
+      const allToggles = document.querySelectorAll('.collapsible-toggle');
+
+      const allExpanded = Array.from(allContents).every(content => !content.classList.contains('collapsed'));
+
+      if (allExpanded) {
+        // Collapse all
+        allContents.forEach(content => content.classList.add('collapsed'));
+        allHeaders.forEach(header => header.classList.add('collapsed'));
+        allToggles.forEach(toggle => toggle.textContent = '▶');
+        button.textContent = 'Expand All';
+      } else {
+        // Expand all
+        allContents.forEach(content => content.classList.remove('collapsed'));
+        allHeaders.forEach(header => header.classList.remove('collapsed'));
+        allToggles.forEach(toggle => toggle.textContent = '▼');
+        button.textContent = 'Collapse All';
+      }
+    }
+
+    function updateExpandAllButton() {
+      const button = document.getElementById('expandAllBtn');
+      const allContents = document.querySelectorAll('.collapsible-content');
+
+      if (!button || allContents.length === 0) return;
+
+      const allExpanded = Array.from(allContents).every(content => !content.classList.contains('collapsed'));
+      button.textContent = allExpanded ? 'Collapse All' : 'Expand All';
+    }
+
+    // Initialize button text on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      updateExpandAllButton();
+    });
   </script>
   <div class="w-full bg-vintage-cream flex items-center justify-center relative p-1rem header-clip mb-0_4cm md:p-2rem">
     <img src="/images/fan_motif.svg" class="absolute w-40mm max-h-35mm left-0 top-1_2 fan-transform-left md:w-fan-sm md:max-h-fan-sm" alt="Left Fan">
@@ -205,6 +265,9 @@
 
     <p>{{ $characterData.description }}</p>
 
+    <div class="mb-1_5rem text-center">
+        <a href="#" id="expandAllBtn" class="inline-block bg-vintage-cream hover:bg-gray-200 text-dark no-underline px-1rem py-0_5rem rounded-5px text-10pt font-600 transition-colors duration-200" onclick="toggleAllSections(); return false;">Expand All</a>
+    </div>
     <div class="collapsible-section">
       <div class="collapsible-header collapsed" onclick="toggleSection(this)">
         <h2>Historical Inspiration</h2>
