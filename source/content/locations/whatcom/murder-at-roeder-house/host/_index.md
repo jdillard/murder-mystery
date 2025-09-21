@@ -44,7 +44,7 @@ During appetizers/soup **[RANDOMLY SELECTED CHARACTER]** makes an announcement o
 > But look at what we've accomplished through unity! The consolidation of our communities into the great city of Bellingham has proven the wisdom of setting aside petty rivalries. By unifying our resources and strengthening our collective appeal to industry, we have created something far greater than the sum of its parts.
 >
 > Each of you has played a vital role in this transformation. Banker advocating for cooperation between our communities, Railroad Baron who saw the potential to create great communities around our bay, Landowner whose family's timber interests have flourished in this unified market.
-
+>
 > The Roeder family wanted to personally honor these partnerships and celebrate our shared prosperity.
 >
 > *[Raises glass with a confident smile]*
