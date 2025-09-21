@@ -26,11 +26,11 @@
     {{ .Content }}
 
     <ul class="list-none p-0">
-      {{ range .Pages }}
+      {{ range $locationName, $locationData := .Site.Data.locations }}
       <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
-        <a href="{{ .RelPermalink }}" class="no-underline text-black text-12pt font-700 hover:underline">{{ .Title }}</a>
+        <a href="/locations/{{ $locationName }}/" class="no-underline text-black text-12pt font-700 hover:underline">{{ $locationData.metadata.title }}</a>
         <div class="mt-0_5rem">
-          <div class="text-10pt text-gray mb-0_25rem">{{ .Summary }}</div>
+          <div class="text-10pt text-gray mb-0_25rem">{{ $locationData.metadata.description | truncate 200 }}</div>
         </div>
       </li>
       {{ end }}

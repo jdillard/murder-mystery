@@ -23,7 +23,9 @@
   <div class="w-full px-1rem md:max-w-content md:px-2cm">
     <h2 class="font-deco text-18pt tracking-0_1rem text-center mb-1rem mt-1rem md:text-24pt md:tracking-0_2rem md:mb-1_5rem md:mt-2rem">{{ .Title }}</h2>
 
-    {{ .Content }}
+    {{ .Site.Data.locations.whatcom.metadata.description | markdownify }}
+
+    <h2>Plotlines</h2>
 
     <ul class="list-none p-0">
       {{ range $key, $plotline := .Site.Data.locations.whatcom.plotlines }}
