@@ -37,7 +37,7 @@
     <h2>Game overview</h2>
 
     {{ $root := .Site.Data.root }}
-    <p>{{ $root.game_overview }}</p>
+    {{ $root.game_overview | markdownify }}
 
     {{ .Content }}
 
