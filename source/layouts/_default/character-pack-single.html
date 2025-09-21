@@ -274,20 +274,7 @@
         <span class="collapsible-toggle">▶</span>
       </div>
       <div class="collapsible-content collapsed">
-        <div class="content-with-portrait">
-          <div class="main-content">
-            <p>{{ $characterData.historical_inspiration }}</p>
-          </div>
-
-          {{ if $characterData.portrait_image }}
-          <div class="portrait-container">
-            <img src="/images/portraits/{{ $characterData.portrait_image }}" alt="A Portrait of {{ $characterData.inspiration }}">
-            {{ if $characterData.inspiration }}
-            <div class="caption">{{ $characterData.inspiration }}</div>
-            {{ end }}
-          </div>
-          {{ end }}
-        </div>
+        {{ $characterData.historical_inspiration | markdownify }}
 
         <h3>More resources</h3>
         <ul class="pl-12pt text-10pt">

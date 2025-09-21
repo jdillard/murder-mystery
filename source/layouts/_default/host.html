@@ -25,13 +25,13 @@
     <div class="mb-1_5rem text-center">
       <a href="/locations/whatcom/murder-at-roeder-house/" class="inline-block bg-vintage-cream hover:bg-gray-200 text-dark no-underline px-1rem py-0_5rem rounded-5px text-10pt font-600 transition-colors duration-200">← Back to Plotline</a>
     </div>
-    
+
     {{ if .Params.plot_key }}
     {{ $plotlineData := index .Site.Data.locations.whatcom.plotlines .Params.plot_key }}
 
     <h2 class="font-deco text-18pt tracking-0_1rem text-center mb-1rem mt-1rem md:text-24pt md:tracking-0_2rem md:mb-1_5rem md:mt-2rem">{{ $plotlineData.title }}</h2>
 
-    <p>{{ $plotlineData.description }}</p>
+    <p>{{ $plotlineData.description | markdownify }}</p>
 
     <ul>
         <li><strong>Duration</strong>: {{ $plotlineData.duration }}</li>
@@ -40,7 +40,6 @@
     </ul>
 
     {{ .Content }}
-
     {{ end }}
 
   </div>

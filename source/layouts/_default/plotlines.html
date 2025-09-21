@@ -32,7 +32,7 @@
       <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
         <a href="/locations/whatcom/{{ $key }}/" class="no-underline text-black text-12pt font-700 hover:underline">{{ $plotline.title }}</a>
         <div class="mt-0_5rem">
-          <div class="text-10pt text-gray mb-0_25rem">{{ $plotline.description }}</div>
+          <div class="text-10pt text-gray mb-0_25rem">{{ $plotline.description | truncate 200 }}</div>
           <div class="text-9pt text-gray">
             <span class="font-600">Duration:</span> {{ $plotline.duration }} |
             <span class="font-600">Characters:</span> 4 - {{ len $plotline.characters }} |

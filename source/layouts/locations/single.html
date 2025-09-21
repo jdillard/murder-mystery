@@ -26,7 +26,7 @@
 
     <h2 class="font-deco text-18pt tracking-0_1rem text-center mb-1rem mt-1rem md:text-24pt md:tracking-0_2rem md:mb-1_5rem md:mt-2rem">{{ $plotlineData.title }}</h2>
 
-    <p>{{ $plotlineData.description }}</p>
+    <p>{{ $plotlineData.description | markdownify }}</p>
 
     <ul>
         <li><strong>Duration</strong>: {{ $plotlineData.duration }}</li>

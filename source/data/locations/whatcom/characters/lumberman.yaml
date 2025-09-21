@@ -1,8 +1,10 @@
 title: "Lumberman"
 description: "A rough-and-tumble lumber industry mogul who built their fortune from the ground up through hard work and shrewd business. This character represents the working-class backbone of the economy, unafraid to speak bluntly and fight for their interests against more refined competitors."
-historical_inspiration: "John P. de Mattos was a timber baron who played a major role in shaping Bellingham's lumber trade. Timber was the backbone of Whatcom County's economy, supplying mills, railroads, and shipping. De Mattos built a fortune in lumber, representing both the opportunities and controversies of the resource-driven economy — where fortunes were made at great environmental and social cost."
+historical_inspiration: |
+  John P. de Mattos was a timber baron who played a major role in shaping Bellingham's lumber trade.
+  Timber was the backbone of Whatcom County's economy, supplying mills, railroads, and shipping.
+  De Mattos built a fortune in lumber, representing both the opportunities and controversies of the resource-driven economy — where fortunes were made at great environmental and social cost.
 inspiration: "John de Mattos"
-portrait_image: "whatcom/John_de_Mattos.jpeg"
 resources:
   - url: "https://www.historylink.org/File/22507"
     title: "https://www.historylink.org/File/22507"
