@@ -259,6 +259,15 @@
       <a href="/locations/whatcom/murder-at-roeder-house/" class="inline-block bg-vintage-cream hover:bg-gray-200 text-dark no-underline px-1rem py-0_5rem rounded-5px text-10pt font-600 transition-colors duration-200">← Back to Plotline</a>
     </div>
 
+    {{ $plotlineData := index .Site.Data.locations.whatcom.plotlines .Params.plot_key }}
+    <p>{{ $plotlineData.description | markdownify }}</p>
+
+    <ul>
+        <li><strong>Duration</strong>: {{ $plotlineData.duration }}</li>
+        <li><strong>Setting</strong>: {{ $plotlineData.setting }}</li>
+        <li><strong>Set</strong>: {{ $plotlineData.location }}</li>
+    </ul>
+
     {{ $page := .Params }}
     {{ $characterData := index .Site.Data.locations.whatcom.characters $page.character_key }}
     <h1 class="font-deco text-18pt tracking-0_2rem text-center mb-1rem mt-1rem md:text-24pt md:mb-1_5rem md:mt-2rem">{{ $characterData.archetype }}</h1>
