@@ -1,18 +1,18 @@
-title: "Cannery Executive"
+archetype: "Cannery Executive"
 description: "A pragmatic industrial executive who built a maritime empire through the salmon canning trade. This character believes in feeding the world through efficient resource extraction, balancing pride in their industry with anxiety about competitors threatening their dominance."
+gender: M
+quirk: ""
 historical_inspiration: |
   Everett B. Deming helped lead [Pacific American Fisheries (PAF)](https://fairhavenhistory.com/west/pacific-american-fisheries-paf/), which grew into the world's largest salmon canning operation, headquartered in Fairhaven.
   PAF's massive network of canneries, ships, and workers transformed Bellingham into a hub of the global salmon trade.
   No single industry had a greater impact on the economy of Fairhaven than Pacific American Fisheries.
-inspiration: "Everett B. Deming"
 resources:
   - url: "https://fairhavenhistory.com/west/pacific-american-fisheries-paf/"
     title: "https://fairhavenhistory.com/west/pacific-american-fisheries-paf/"
     note: ""
 introduction: "I am the Cannery Executive, of Pacific American Fisheries. From these waters we've built one of the world's great salmon canning empires. I know some of you scoff at fish while chasing copper and timber, but it is salmon that feeds this city and fills its coffers."
-victim_relationship: "The Magnate is a major investor in Pacific American Fisheries and sits on your board of directors. While their copper fortune helped finance your cannery expansion, their mining operations upstream threaten your salmon runs. Recently, they've been pressuring you to cut costs and worker safety to maximize profits. You depend on their investment but fear their environmental recklessness could destroy the fishing industry that built your empire."
-rumor: "Workers at the cannery whisper that the Cannery Executive has been cutting corners on safety to boost profits — there was an accident last month they tried to cover up."
-questions:
+gossip: "Workers at the cannery whisper that the Cannery Executive has been cutting corners on safety to boost profits — there was an accident last month they tried to cover up."
+motive_questions:
   banker: "I hear you've been involved in some questionable real estate deals. Care to explain?"
   landowner: "Your family's land borders our fishing waters. Any plans to sell or develop it?"
   lumberman: "You supply timber for our shipping crates. Have you been raising prices on us?"
@@ -20,7 +20,7 @@ questions:
   partner: "You've been advocating for environmental protections. How does that affect our fishing rights?"
   poet: "Your writings about working conditions seem aimed at our industry. What's your angle?"
   railroad-baron: "Your rail lines transport our canned goods. Any plans to change shipping rates?"
-answers:
+motive_answers:
   banker:
     innocent: "Our cannery operates with complete financial transparency. I have no quarrels with the banking community."
     guilty: "The Magnate discovered our safety violations and threatened to expose them. I couldn't let that destroy our empire."
@@ -42,15 +42,36 @@ answers:
   railroad-baron:
     innocent: "Competition in transportation benefits everyone. I have no personal grievances with railroad interests."
     guilty: "The Magnate was planning to build their own shipping operation to bypass us entirely. I couldn't allow that."
-clue_pack:
-  clue_1: "The Magnate attempted to buy your cannery; Railroad Baron knew of the attempt."
-  clue_2: "You saw Railroad Baron pacing near the study, looking tense."
-  clue_3: "A diary fragment mentions a 'heated conversation' between Railroad Baron and the Magnate."
-character_card:
-  - item: "**How You See Yourself:** A wealthy and practical businessman, the proud powerhouse behind Pacific American Fisheries one of the world's largest salmon canning operations. The salmon trade is the backbone of Bellingham, and you control it."
-  - item: "**Personality Traits:** Practical, prideful, hardworking. You believe industry is survival."
-  - item: "**Motives/Secrets:** You're anxious that Larrabee's waterfront interests could undercut PAF. Worse — he might have evidence of questionable practices at the cannery."
-  - item: "**Roleplaying Tips:** Talk about 'feeding the world' with salmon. Downplay problems but look uneasy when the cannery's integrity is questioned."
+alibi_questions:
+  banker: "I hear you've been involved in some questionable real estate deals. Care to explain?"
+  landowner: "Your family's land borders our fishing waters. Any plans to sell or develop it?"
+  lumberman: "You supply timber for our shipping crates. Have you been raising prices on us?"
+  magnate: "Your mining operations upstream could affect our salmon runs. What assurances can you give?"
+  partner: "You've been advocating for environmental protections. How does that affect our fishing rights?"
+  poet: "Your writings about working conditions seem aimed at our industry. What's your angle?"
+  railroad-baron: "Your rail lines transport our canned goods. Any plans to change shipping rates?"
+alibi_answers:
+  banker:
+    innocent: "Our cannery operates with complete financial transparency. I have no quarrels with the banking community."
+    guilty: "The Magnate discovered our safety violations and threatened to expose them. I couldn't let that destroy our empire."
+  landowner:
+    innocent: "Pacific American Fisheries respects all property rights. We work cooperatively with neighboring landowners."
+    guilty: "The Magnate was going to block our expansion into new fishing territories. I had to eliminate the obstacle."
+  lumberman:
+    innocent: "We have fair business relationships with all timber suppliers. Competition keeps us all honest."
+    guilty: "They threatened to reveal how we've been dumping waste into the bay. Our reputation couldn't survive that scandal."
+  magnate:
+    innocent: "I respect fellow industrialists, even when our interests compete. There's room for all of us to prosper."
+    guilty: "They were going to expose our worker safety violations and illegal fishing practices. I had to protect the business."
+  partner:
+    innocent: "Environmental stewardship and industry can coexist. I support reasonable conservation measures."
+    guilty: "The Magnate had evidence of our environmental crimes. I couldn't let them destroy everything I've built."
+  poet:
+    innocent: "Art and industry can flourish together. I've even supported local cultural events in the past."
+    guilty: "Your spouse was gathering evidence about our labor violations. I had to stop them before they published it."
+  railroad-baron:
+    innocent: "Competition in transportation benefits everyone. I have no personal grievances with railroad interests."
+    guilty: "The Magnate was planning to build their own shipping operation to bypass us entirely. I couldn't allow that."
 final_statement:
   innocent: "Pacific American Fisheries has always operated with integrity. I've dedicated my life to feeding the world through honest labor and fair business practices. The Magnate's death saddens me, but I had no reason to harm a fellow industrialist."
   guilty: "I confess — I poisoned the Magnate. They threatened to expose our safety violations and environmental crimes, which would have destroyed the world's largest salmon operation. I couldn't let one person's meddling ruin an empire that feeds thousands."

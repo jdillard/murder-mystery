@@ -1,19 +1,19 @@
-title: "Magnate"
+archetype: "Magnate"
 description: "A commanding industrial titan who built their fortune through copper mines, real estate speculation, and civic investments. This character projects confidence and vision while harboring dangerous financial secrets that could destroy everything they've built."
+gender: M
+quirk: ""
 historical_inspiration: |
   [Charles Xavier Larrabee](https://en.m.wikipedia.org/wiki/C._X._Larrabee) was a copper magnate and philanthropist who moved to Fairhaven in 1890.
   With his brother Samuel, he invested heavily in mines, real estate, and civic projects, leaving a lasting mark on Bellingham.
   He and his wife Frances donated land that became Larrabee State Park — Washington's first state park.
   Known as both generous and ambitious, Larrabee embodied the boomtown energy of early 20th-century Whatcom County."
-inspiration: "C.X. Larrabee"
 resources:
   - url: "https://en.m.wikipedia.org/wiki/C._X._Larrabee"
     title: "https://en.m.wikipedia.org/wiki/C._X._Larrabee"
     note: ""
 introduction: "I am the Magnate of this county. Fairhaven's growth has been my life's work — from copper mines to railroads, I've invested heavily in Whatcom County's future. Tonight I'll share plans for a project that may change this city forever."
-victim_relationship: "You are the victim. As the most powerful industrialist in Whatcom County, you've made enemies across every sector - from your devoted but increasingly troubled spouse, to business rivals who resent your success, to working families whose land you've acquired for development. Your copper fortune and real estate empire have given you immense influence, but your ruthless business tactics and knowledge of others' secrets have made you a target. Tonight, someone at this dinner party will ensure you never announce your mysterious new project."
-rumor: "The Magnate's copper mine investments are failing — I heard they've been borrowing heavily to cover losses and might be facing bankruptcy."
-questions:
+gossip: "The Magnate's copper mine investments are failing — I heard they've been borrowing heavily to cover losses and might be facing bankruptcy."
+motive_questions:
   banker: "I hear there are questions about your recent land acquisitions. Care to clarify?"
   cannery-executive: "Your fishing empire is impressive, but are you expanding beyond your means?"
   landowner: "Your family has deep roots here. Do you support progress, or cling to the past?"
@@ -21,7 +21,7 @@ questions:
   partner: "You've been advocating for certain restrictions on business. How does that serve our community?"
   poet: "Your cultural writings are noted, but do you understand the economic realities we face?"
   railroad-baron: "We've competed before, but tonight I hope we can discuss mutual opportunities."
-answers:
+motive_answers:
   banker:
     innocent: "I conduct all business with complete transparency. My investments benefit the entire community."
     guilty: "You discovered my fraudulent mining investments and threatened to expose me. I couldn't let you destroy everything."
@@ -43,15 +43,36 @@ answers:
   railroad-baron:
     innocent: "Competition has made us both stronger. I respect your achievements and see opportunities for partnership."
     guilty: "You threatened to reveal my bribery of railroad officials. I couldn't let you destroy my reputation."
-clue_pack:
-  clue_1: "I will announce a major new project tonight — some of you will not like it."
-  clue_2: "A spilled note near my study reads: 'Railroad Baron will regret doubting me.'"
-  clue_3: "Fragments of a letter hint at secret meetings with Railroad Baron in the past week."
-character_card:
-  - item: "**How You See Yourself:** A self-made man who brings vision and order to Whatcom County. You believe your investments are shaping a prosperous future."
-  - item: "**Personality Traits:** Proud, polished, decisive, charming, confident, ruthlessness in business. You like to dominate a room."
-  - item: "**Motives/Secrets:** You've made enemies in nearly every industry by pushing your own projects forward. But you see this as the price of progress."
-  - item: "**Roleplaying Tips:** Be confident, hint at a big announcement, and play up your importance. When 'killed,' you can either become an observer or pass secret notes as a 'ghostly whisper.'"
+alibi_questions:
+  banker: "I hear there are questions about your recent land acquisitions. Care to clarify?"
+  cannery-executive: "Your fishing empire is impressive, but are you expanding beyond your means?"
+  landowner: "Your family has deep roots here. Do you support progress, or cling to the past?"
+  lumberman: "The timber industry built this town. Are you planning to work with us or against us?"
+  partner: "You've been advocating for certain restrictions on business. How does that serve our community?"
+  poet: "Your cultural writings are noted, but do you understand the economic realities we face?"
+  railroad-baron: "We've competed before, but tonight I hope we can discuss mutual opportunities."
+alibi_answers:
+  banker:
+    innocent: "I conduct all business with complete transparency. My investments benefit the entire community."
+    guilty: "You discovered my fraudulent mining investments and threatened to expose me. I couldn't let you destroy everything."
+  cannery-executive:
+    innocent: "Industry competition is healthy. I respect your fishing empire and see room for cooperation."
+    guilty: "You were going to reveal how I've been illegally dumping mine waste into the bay. I had to silence you."
+  landowner:
+    innocent: "Progress and tradition can coexist. I respect your family's legacy while building our county's future."
+    guilty: "You threatened to expose my plans to seize family lands through false debts. I couldn't allow that."
+  lumberman:
+    innocent: "Timber is essential to our economy. Despite past disagreements, I harbor no personal animosity."
+    guilty: "You were going to testify about my illegal logging operations. I had to stop you before the federal hearing."
+  partner:
+    innocent: "Your charitable work and my business investments serve the same goal — a prosperous community."
+    guilty: "You discovered my embezzlement of charitable funds and threatened to expose me. I had no choice."
+  poet:
+    innocent: "Art and culture elevate our community. I've always supported intellectual and artistic endeavors."
+    guilty: "Your articles were getting too close to exposing my corruption. I couldn't let you publish the truth."
+  railroad-baron:
+    innocent: "Competition has made us both stronger. I respect your achievements and see opportunities for partnership."
+    guilty: "You threatened to reveal my bribery of railroad officials. I couldn't let you destroy my reputation."
 final_statement:
   innocent: "I've dedicated my life to building Whatcom County's prosperity through vision and investment. My projects have created jobs and opportunity for thousands. I would never resort to murder — progress speaks louder than violence."
   guilty: "The irony is perfect — I, the victim, confess to my own murder. In a sense, my ruthless ambition killed the person I used to be. My greed and corruption destroyed so many lives that someone was bound to seek justice eventually."

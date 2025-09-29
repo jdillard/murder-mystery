@@ -261,7 +261,7 @@
 
     {{ $page := .Params }}
     {{ $characterData := index .Site.Data.locations.whatcom.characters $page.character_key }}
-    <h1 class="font-deco text-18pt tracking-0_2rem text-center mb-1rem mt-1rem md:text-24pt md:mb-1_5rem md:mt-2rem">{{ $characterData.title }}</h1>
+    <h1 class="font-deco text-18pt tracking-0_2rem text-center mb-1rem mt-1rem md:text-24pt md:mb-1_5rem md:mt-2rem">{{ $characterData.archetype }}</h1>
 
     <p>{{ $characterData.description }}</p>
 
@@ -296,50 +296,29 @@
 
     <div class="collapsible-section">
       <div class="collapsible-header" onclick="toggleSection(this)">
-        <h2>Arrival and Introductions</h2>
+        <h2>ACT 1: Arrival and Introductions</h2>
         <span class="collapsible-toggle">▶</span>
       </div>
       <div class="collapsible-content">
         <p>Arrive in character, but feel free to ask any questions about the game to the host. Here are some character attributes to help you get into character:</p>
-
-        <div class="section-title">Traits</div>
-
         <ul>
           {{ range $characterData.character_card }}
           <li>{{ .item | markdownify }}</li>
           {{ end }}
         </ul>
 
-        <div class="section-title">Introduction</div>
-
+        <div class="section-title">Introductions</div>
         <p>During the introductions phase, give this introduction about yourself. Feel free to paraphrase, but don't stray from the core concepts:</p>
-
         <div class="introduction">"{{ $characterData.introduction }}"</div>
-      </div>
-    </div>
 
-    <div class="collapsible-section">
-      <div class="collapsible-header collapsed" onclick="toggleSection(this)">
-        <h2>Act I: Announcement</h2>
-        <span class="collapsible-toggle">▶</span>
-      </div>
-      <div class="collapsible-content collapsed">
-        <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1 starts</div>
-
-        <p>Your relationship to the victim:</p>
-
-        <p>{{ $characterData.victim_relationship }}</p>
-
-        <div class="section-title">Rumors</div>
-
-        <p>Rumors to spread:</p>
-
+        <div class="section-title">Gossip</div>
+        <p>Split into small groups and spread this gossip about the other character that are not in earshot:</p>
         <ul class="list-none p-0">
         {{ range $key, $character := .Site.Data.locations.whatcom.characters }}
           {{ if ne $key $page.character_key }}
           <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
-            <strong class="no-underline text-black text-12pt font-700"><a href="../{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.title }}</a></strong>
-            <p class="mt-0_5rem mb-0 text-10pt leading-12pt">{{ $character.rumor }}</p>
+            <strong class="no-underline text-black text-12pt font-700"><a href="../{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.archetype }}</a></strong>
+            <p class="mt-0_5rem mb-0 text-10pt leading-12pt">{{ $character.gossip }}</p>
           </li>
           {{ end }}
         {{ end }}
@@ -349,22 +328,63 @@
 
     <div class="collapsible-section">
       <div class="collapsible-header collapsed" onclick="toggleSection(this)">
-        <h2>Act II: The Murder</h2>
+        <h2>Act II: First Clue</h2>
         <span class="collapsible-toggle">▶</span>
       </div>
       <div class="collapsible-content collapsed">
-        <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1I starts</div>
+        <div class="important-warning"><strong>Important:</strong> Don't read below until Act II starts</div>
 
-        <div class="section-title">Questions</div>
+        <div class="section-title">Motives</div>
+
+        <p>Ask each person a question about where they were on the night of the murder:</p>
+
+        <ul class="list-none p-0">
+        {{ range $key, $character := .Site.Data.locations.whatcom.characters }}
+          {{ if isset $characterData.motive_questions $key }}
+          <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
+            <strong class="no-underline text-black text-12pt font-700"><a href="../{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.archetype }}</a></strong>
+            <p class="mt-0_5rem mb-0 text-10pt leading-12pt">{{ index $characterData.motive_questions $key }}</p>
+          </li>
+          {{ end }}
+        {{ end }}
+        </ul>
+
+        <p>Answers to give:</p>
+
+        <ul class="list-none p-0">
+        {{ range $key, $character := .Site.Data.locations.whatcom.characters }}
+          {{ if isset $characterData.motive_answers $key }}
+          <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
+            <strong class="no-underline text-black text-12pt font-700"><a href="../{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.archetype }}</a></strong>
+            <div class="mt-0_5rem mb-0 text-10pt leading-12pt">
+              <p><strong>Innocent: </strong> {{ index (index $characterData.motive_answers $key) "innocent" }}</p>
+              <hr />
+              <p><strong>Guilty: </strong> {{ index (index $characterData.motive_answers $key) "guilty" }}</p>
+            </div>
+          </li>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="collapsible-section">
+      <div class="collapsible-header collapsed" onclick="toggleSection(this)">
+        <h2>Act III: Evidence Found</h2>
+        <span class="collapsible-toggle">▶</span>
+      </div>
+      <div class="collapsible-content collapsed">
+        <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1II starts</div>
+
+        <div class="section-title">Alibis</div>
 
         <p>Questions to ask:</p>
 
         <ul class="list-none p-0">
         {{ range $key, $character := .Site.Data.locations.whatcom.characters }}
-          {{ if isset $characterData.questions $key }}
+          {{ if isset $characterData.alibi_questions $key }}
           <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
-            <strong class="no-underline text-black text-12pt font-700"><a href="../{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.title }}</a></strong>
-            <p class="mt-0_5rem mb-0 text-10pt leading-12pt">{{ index $characterData.questions $key }}</p>
+            <strong class="no-underline text-black text-12pt font-700"><a href="../{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.archetype }}</a></strong>
+            <p class="mt-0_5rem mb-0 text-10pt leading-12pt">{{ index $characterData.alibi_questions $key }}</p>
           </li>
           {{ end }}
         {{ end }}
@@ -376,13 +396,13 @@
 
         <ul class="list-none p-0">
         {{ range $key, $character := .Site.Data.locations.whatcom.characters }}
-          {{ if isset $characterData.answers $key }}
+          {{ if isset $characterData.alibi_answers $key }}
           <li class="mt-1rem mb-1rem p-1rem bg-vintage-cream rounded-5px">
-            <strong class="no-underline text-black text-12pt font-700"><a href="../{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.title }}</a></strong>
+            <strong class="no-underline text-black text-12pt font-700"><a href="../{{ $key }}/" class="no-underline text-black hover:underline">{{ $character.archetype }}</a></strong>
             <div class="mt-0_5rem mb-0 text-10pt leading-12pt">
-              <p><strong>Innocent: </strong> {{ index (index $characterData.answers $key) "innocent" }}</p>
+              <p><strong>Innocent: </strong> {{ index (index $characterData.alibi_answers $key) "innocent" }}</p>
               <hr />
-              <p><strong>Guilty: </strong> {{ index (index $characterData.answers $key) "guilty" }}</p>
+              <p><strong>Guilty: </strong> {{ index (index $characterData.alibi_answers $key) "guilty" }}</p>
             </div>
           </li>
           {{ end }}
@@ -393,35 +413,47 @@
 
     <div class="collapsible-section">
       <div class="collapsible-header collapsed" onclick="toggleSection(this)">
-        <h2>Act III: Investigation and Debate</h2>
+        <h2>Act IV: Code Given</h2>
         <span class="collapsible-toggle">▶</span>
       </div>
       <div class="collapsible-content collapsed">
 
-        <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1II starts</div>
+        <div class="important-warning"><strong>Important:</strong> Don't read below until Act IV starts</div>
 
-        <div class="section-title">Clues</div>
-        <ul>
-          <li><strong>Clue 1 (Act II)</strong>: {{ $characterData.clue_pack.clue_1 }}</li>
-
-          <li><strong>Clue 2 (Act III)</strong>: {{ $characterData.clue_pack.clue_2 }}</li>
-
-          <li><strong>Clue 3 (Act IV)</strong>: {{ $characterData.clue_pack.clue_3 }}</li>
-        </ul>
+        <div class="section-title">TDB</div>
       </div>
     </div>
 
     <div class="collapsible-section">
       <div class="collapsible-header collapsed" onclick="toggleSection(this)">
-        <h2>Act IV: The Reveal</h2>
+        <h2>Act V: Discussion</h2>
         <span class="collapsible-toggle">▶</span>
       </div>
       <div class="collapsible-content collapsed">
-        <div class="important-warning"><strong>Important:</strong> Don't read below until Act 1V starts</div>
+        <div class="important-warning"><strong>Important:</strong> Don't read below until Act V starts</div>
+
+        <div class="section-title">Discussion</div>
+
+        <p>Talk amongst yourselves to try and gather theories. This is unstructured time.</p>
+
+        <div class="section-title">Vote</div>
+
+        <p>Once you have your theory, vote.</p>
+
+      </div>
+    </div>
+
+    <div class="collapsible-section">
+      <div class="collapsible-header collapsed" onclick="toggleSection(this)">
+        <h2>Act VI: The Reveal</h2>
+        <span class="collapsible-toggle">▶</span>
+      </div>
+      <div class="collapsible-content collapsed">
+        <div class="important-warning"><strong>Important:</strong> Don't read below until Act VI starts</div>
 
         <div class="section-title">Statements</div>
 
-        <p>Give your final statements:</p>
+        <p>If called upon, give your final statement:</p>
 
         <p><strong>Innocent: </strong> {{ $characterData.final_statement.innocent }}</p>
         <hr />

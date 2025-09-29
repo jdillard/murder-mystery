@@ -1,14 +1,14 @@
-title: "Railroad Baron"
+archetype: "Railroad Baron"
 description: "A powerful railroad magnate who built an empire through steel rails and ruthless ambition. This character embodies the aggressive entrepreneurial spirit that shaped the American West, wielding influence through transportation networks and business deals. Known for cutthroat competition and an unforgiving memory for perceived betrayals."
+gender: M
+quirk: ""
 historical_inspiration: |
   [Nelson Bennett](https://en.m.wikipedia.org/wiki/Nelson_Bennett) was a Canadian-born railroad builder and businessman who played a central role in developing Fairhaven in the late 1800s.
   He was instrumental in bringing the Great Northern Railway to town, fueling hopes that Fairhaven would become the region's great port.
   Though those dreams faded, Bennett remained a symbol of ambition and hard-nosed competition — especially against rivals like the Larrabees.
-inspiration: "Nelson Bennett"
 introduction: "I am the Railroad Baron — I've laid more track than anyone west of the Mississippi, and I brought the Great Northern Railroad here to Fairhaven. Some say I have rivals at this table, but business is never for the faint of heart."
-victim_relationship: "The Magnate is your former business partner turned bitter rival. You both brought the Great Northern Railway to Fairhaven and initially shared dreams of making it the Pacific Northwest's greatest port. However, the Magnate's copper money and real estate speculation eventually overshadowed your railroad empire. They've since cut you out of major deals and publicly dismissed your contributions to Fairhaven's development, fueling a personal vendetta that's consumed you for years."
-rumor: "The Railroad Baron has been spotted meeting with out-of-town investors — word is they're planning to bypass Fairhaven entirely and build a competing rail line."
-questions:
+gossip: "The Railroad Baron has been spotted meeting with out-of-town investors — word is they're planning to bypass Fairhaven entirely and build a competing rail line."
+motive_questions:
   banker: "Your political connections run deep. Any favors owed that might compromise your integrity?"
   cannery-executive: "Shipping fish requires reliable transport. Are you giving fair rates, or squeezing for profit?"
   landowner: "My rails cross your family land. Any complaints about compensation or property rights?"
@@ -16,7 +16,7 @@ questions:
   magnate: "We've competed fiercely over the years. Ready to discuss burying old grievances?"
   partner: "Your charitable concerns are noted. Do you think progress requires sacrificing some traditions?"
   poet: "Transportation brings stories together. Do you see the railroad as connecting or dividing communities?"
-answers:
+motive_answers:
   banker:
     innocent: "My railroad dealings are transparent. I compete hard but fairly, without resorting to underhanded tactics."
     guilty: "The Magnate threatened to expose my bribes to government officials for favorable railroad routes. I had to silence them."
@@ -38,15 +38,36 @@ answers:
   poet:
     innocent: "Railroads connect people and ideas across vast distances, enriching communities through shared culture and commerce."
     guilty: "They planned to publish articles exposing my corruption unless I stopped your funding. I chose a permanent solution."
-clue_pack:
-  clue_1: "You are secretly furious that the Magnate cut you out of the railroad deal."
-  clue_2: "You notice an opportunity during dinner — a chance to poison Larrabee's drink unnoticed."
-  clue_3: "Later, you must keep your composure while subtly redirecting suspicion onto others."
-character_card:
-  - item: "**How You See Yourself:** A self-made railroad tycoon, builder of empires, and co-developer of Fairhaven with the Magnate — no one knows railroads like you. Without you, Fairhaven would never have mattered."
-  - item: "**Personality Traits:** Ambitious, forward-looking, blunt, competitive, and proud. You hate losing face."
-  - item: "**Motives/Secrets:** You feel the Magnate cheated you in past deals and cut you out of new opportunities. You've sworn to get even, one way or another."
-  - item: "**Roleplaying Tips:** Be confident, a little arrogant. Interrupt others. Drop hints about betrayals in business. Defend yourself fiercely if accused."
+alibi_questions:
+  banker: "Your political connections run deep. Any favors owed that might compromise your integrity?"
+  cannery-executive: "Shipping fish requires reliable transport. Are you giving fair rates, or squeezing for profit?"
+  landowner: "My rails cross your family land. Any complaints about compensation or property rights?"
+  lumberman: "Timber transport built my fortune. Are you satisfied with our business arrangements?"
+  magnate: "We've competed fiercely over the years. Ready to discuss burying old grievances?"
+  partner: "Your charitable concerns are noted. Do you think progress requires sacrificing some traditions?"
+  poet: "Transportation brings stories together. Do you see the railroad as connecting or dividing communities?"
+alibi_answers:
+  banker:
+    innocent: "My railroad dealings are transparent. I compete hard but fairly, without resorting to underhanded tactics."
+    guilty: "The Magnate threatened to expose my bribes to government officials for favorable railroad routes. I had to silence them."
+  cannery-executive:
+    innocent: "Transportation and fishing are natural partners. I provide reliable service at competitive rates."
+    guilty: "They discovered I was sabotaging their shipments to force them to pay higher rates. I couldn't let that be exposed."
+  landowner:
+    innocent: "I've always tried to work fairly with property owners affected by railroad development."
+    guilty: "The Magnate was going to reveal how I seized family lands through fraudulent eminent domain claims."
+  lumberman:
+    innocent: "Railroads and timber built this region together. Despite disagreements, I respect the lumber industry."
+    guilty: "They threatened to testify about my illegal logging partnerships and kickback schemes."
+  magnate:
+    innocent: "Business competition can be fierce, but I've always maintained professional respect for worthy opponents."
+    guilty: "You cheated me out of millions in railroad deals and threatened to destroy me completely. I had to strike first."
+  partner:
+    innocent: "Progress requires balance between development and community values. I respect diverse perspectives."
+    guilty: "The Magnate was going to expose how I've been embezzling from charitable railroad funds."
+  poet:
+    innocent: "Railroads connect people and ideas across vast distances, enriching communities through shared culture and commerce."
+    guilty: "They planned to publish articles exposing my corruption unless I stopped your funding. I chose a permanent solution."
 final_statement:
   innocent: "I built the railroad that made Fairhaven possible. Competition is fierce in business, but I've never needed murder to succeed. The Magnate and I had our differences, but I respected them as a worthy opponent."
   guilty: "Yes, I poisoned the Magnate! They cheated me out of millions and threatened to destroy everything I built. When someone steals your life's work and tries to ruin you completely, you fight back with everything you have."

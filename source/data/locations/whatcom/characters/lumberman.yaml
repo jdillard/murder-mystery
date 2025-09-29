@@ -1,18 +1,18 @@
-title: "Lumberman"
+archetype: "Lumberman"
 description: "A rough-and-tumble lumber industry mogul who built their fortune from the ground up through hard work and shrewd business. This character represents the working-class backbone of the economy, unafraid to speak bluntly and fight for their interests against more refined competitors."
+gender: M
+quirk: ""
 historical_inspiration: |
   [John P. de Mattos](https://www.historylink.org/File/22507) was a timber baron who played a major role in shaping Bellingham's lumber trade.
   Timber was the backbone of Whatcom County's economy, supplying mills, railroads, and shipping.
   De Mattos built a fortune in lumber, representing both the opportunities and controversies of the resource-driven economy — where fortunes were made at great environmental and social cost.
-inspiration: "John de Mattos"
 resources:
   - url: "https://www.historylink.org/File/22507"
     title: "John P. de Mattos"
     note: ""
 introduction: "I am the Lumberman — timber has been my business since I was young. Fairhaven and Bellingham rise on wood, and I've supplied more than most. There's profit yet in these forests, if only politicians and speculators would stay out of the way."
-victim_relationship: "The Magnate is your biggest competitor and the wealthy elite who's been systematically undermining your timber business. Their copper money and political connections have allowed them to secure prime logging contracts that should have been yours. They've also been lobbying for conservation restrictions that would hurt working-class lumbermen while protecting their own mining interests. You see them as representing everything wrong with corrupt capitalism destroying honest working folks."
-rumor: "People say the Lumberman has been illegally cutting timber on disputed land, and there's a federal investigation brewing that could ruin them."
-questions:
+gossip: "People say the Lumberman has been illegally cutting timber on disputed land, and there's a federal investigation brewing that could ruin them."
+motive_questions:
   banker: "You been buying up timber rights behind folks' backs? That ain't right."
   cannery-executive: "Your operations need our wood for shipping. You trying to cut us out?"
   landowner: "Your family's got good timber land. You planning to sell, or we got a problem?"
@@ -20,7 +20,7 @@ questions:
   partner: "You talk about preserving forests. That's bad for business, ain't it?"
   poet: "You writing articles about logging being bad for the environment? Who's paying you?"
   railroad-baron: "Your railroads haul our timber. You raising rates or cutting deals with competitors?"
-answers:
+motive_answers:
   banker:
     innocent: "I run an honest timber business. Don't need fancy banking tricks to make my living."
     guilty: "The Magnate was gonna expose my illegal logging operations. Had to shut them up permanent."
@@ -42,15 +42,36 @@ answers:
   railroad-baron:
     innocent: "Transportation's important for timber. I work with whoever gives fair rates."
     guilty: "They were gonna build a new rail line that'd put my logging operation out of business."
-clue_pack:
-  clue_1: "Railroad Baron had spoken privately with the Magnate about timber contracts."
-  clue_2: "You noticed Railroad Baron leaving the room with their hands slightly ink-stained."
-  clue_3: "Someone whispers that Railroad Baron has long held a grudge against the Magnate."
-character_card:
-  - item: "**How You See Yourself:** An immigrant who made their fortune in timber and local businesses — straightforward, hardworking, and indispensable."
-  - item: "**Personality Traits:** Jovial, blunt, gruff, no-nonsense. You speak like a lumberjack, not a poet. Respected in the working-class community, proud of your rise."
-  - item: "**Motives/Secrets:** Larrabee has interfered with your lumber rights before, costing you money. You're still bitter about it."
-  - item: "**Roleplaying Tips:** Keep your words short and sharp. Accuse others openly. Don't bother with diplomacy. You're here to defend your reputation."
+alibi_questions:
+  banker: "You been buying up timber rights behind folks' backs? That ain't right."
+  cannery-executive: "Your operations need our wood for shipping. You trying to cut us out?"
+  landowner: "Your family's got good timber land. You planning to sell, or we got a problem?"
+  magnate: "You been interfering with my logging contracts. What's your game?"
+  partner: "You talk about preserving forests. That's bad for business, ain't it?"
+  poet: "You writing articles about logging being bad for the environment? Who's paying you?"
+  railroad-baron: "Your railroads haul our timber. You raising rates or cutting deals with competitors?"
+alibi_answers:
+  banker:
+    innocent: "I run an honest timber business. Don't need fancy banking tricks to make my living."
+    guilty: "The Magnate was gonna expose my illegal logging operations. Had to shut them up permanent."
+  cannery-executive:
+    innocent: "Timber and fishing can work together. I got no beef with honest fishermen."
+    guilty: "They threatened to block my timber shipments unless I paid bribes. Couldn't let that stand."
+  landowner:
+    innocent: "I respect property rights. Always have. Your family's land is your business."
+    guilty: "The Magnate was gonna help you sue me for cutting trees on disputed land. Had to stop that."
+  magnate:
+    innocent: "Business is business. Sometimes we compete, but I bear no personal grudges."
+    guilty: "You cost me a fortune with your interference. Someone had to teach you a lesson."
+  partner:
+    innocent: "I got nothing against charity work. Just don't want it hurting honest working folks."
+    guilty: "Your spouse was gonna get the government to shut down my operations. Couldn't allow that."
+  poet:
+    innocent: "Art's fine, I guess. Just don't like when city folks bad-mouth working people."
+    guilty: "The Magnate was feeding you lies about my business for your articles. Had to silence them both."
+  railroad-baron:
+    innocent: "Transportation's important for timber. I work with whoever gives fair rates."
+    guilty: "They were gonna build a new rail line that'd put my logging operation out of business."
 final_statement:
   innocent: "I built my business through hard work and honest dealing. Been cutting timber since I was a boy, and I've never needed to hurt anyone to make my way. The Magnate's death is bad for all of us in business."
   guilty: "Damn right I killed 'em! The Magnate cost me everything with their meddling and interference. A working man's got to protect what's his. They pushed too far, and I pushed back — permanently."

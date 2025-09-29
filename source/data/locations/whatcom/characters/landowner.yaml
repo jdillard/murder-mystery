@@ -1,18 +1,18 @@
-title: "Landowner"
+archetype: "Landowner"
 description: "A passionate heir to a pioneer farming family whose ancestral lands are threatened by industrial expansion. This character fights fiercely to preserve family legacy and agricultural values against the encroachment of corporate interests, representing the tension between old settlers and new money."
+gender: M
+quirk: ""
 historical_inspiration: |
   [Lottie Roth](https://en.wikipedia.org/wiki/Lottie_Roth_Block) was part of the Roth family, early settlers and businesspeople who were deeply tied to Whatcom County's land and timber industries.
   Though less publicly known than some of her male contemporaries, she represented the families who gained and lost fortunes as timber speculation reshaped the local economy.
   As an heiress and landholder, she stood at the intersection of old pioneer claims and the new industrial order.
-inspiration: "Lottie Roth"
 resources:
   - url: "https://en.wikipedia.org/wiki/Lottie_Roth_Block"
     title: "Lottie Roth Block - Wikipedia"
     note: "Historic building named in her honor, listed on National Register of Historic Places"
 introduction: "I am the Landowner of a pioneer family whose lands stretch deep into Whatcom's timber country. My concern is that the industrial moguls take too much, too fast — leaving little for the families who've lived here for generations."
-victim_relationship: "The Magnate is the industrial titan threatening to destroy your family's agricultural legacy. Their copper mining and real estate speculation has already claimed neighboring farms, and you know your family's ancestral land is next on their acquisition list. They've made increasingly aggressive offers to buy your property, hinting at eminent domain proceedings if you refuse. Your family's pioneer heritage means nothing to them compared to mineral rights and development potential."
-rumor: "The Landowner has been seen meeting with a lawyer from Seattle — supposedly about challenging some old timber claims that could affect several people's properties."
-questions:
+gossip: "The Landowner has been seen meeting with a lawyer from Seattle — supposedly about challenging some old timber claims that could affect several people's properties."
+motive_questions:
   banker: "I've heard you've been financing some questionable land deals. Is that true?"
   cannery-executive: "Your fishing operations run right through our watershed. Are you polluting our water?"
   lumberman: "You've been cutting timber on disputed land. What gives you the right?"
@@ -20,7 +20,7 @@ questions:
   partner: "You talk about conservation, but your spouse's business is destroying the environment. Explain that."
   poet: "Your articles about land preservation — are you specifically targeting certain industrialists?"
   railroad-baron: "Your train routes cut right through family farmland. Did you compensate people fairly?"
-answers:
+motive_answers:
   banker:
     innocent: "My family has owned this land for generations. We don't get involved in banking schemes or speculation."
     guilty: "The Magnate was going to seize our family land through fraudulent foreclosure. I couldn't let that happen."
@@ -42,15 +42,36 @@ answers:
   railroad-baron:
     innocent: "Transportation development and farming can work together when done thoughtfully and fairly."
     guilty: "They planned to run a rail line right through our family graveyard. I couldn't allow such desecration."
-clue_pack:
-  clue_1: "You overheard Railroad Baron remarking to someone about 'putting the Magnate in their place.'"
-  clue_2: "Railroad Baron was near your family's land documents earlier; suspicious."
-  clue_3: "You see Railroad Baron acting nervous after the scream."
-character_card:
-  - item: "**How You See Yourself:** Heir to a prominent Ferndale family of immigrant farmers, underestimated because of your agricultural background. You are determined to prove you can handle business and protect your family's legacy."
-  - item: "**Personality Traits:** Intelligent, practical, defensive, passionate, outspoken. You fight for your family's place in history and represent the hardworking agricultural backbone of the county."
-  - item: "**Motives/Secrets:** You suspect the Magnate is eyeing your family's land. You may lose everything if they succeed."
-  - item: "**Roleplaying Tips:** Let your emotions show — frustration, indignation, even tears. Insist your family's land is sacred. Use passion as both shield and sword."
+alibi_questions:
+  banker: "I've heard you've been financing some questionable land deals. Is that true?"
+  cannery-executive: "Your fishing operations run right through our watershed. Are you polluting our water?"
+  lumberman: "You've been cutting timber on disputed land. What gives you the right?"
+  magnate: "Your mining operations could destroy our agricultural soil. How do you justify that?"
+  partner: "You talk about conservation, but your spouse's business is destroying the environment. Explain that."
+  poet: "Your articles about land preservation — are you specifically targeting certain industrialists?"
+  railroad-baron: "Your train routes cut right through family farmland. Did you compensate people fairly?"
+alibi_answers:
+  banker:
+    innocent: "My family has owned this land for generations. We don't get involved in banking schemes or speculation."
+    guilty: "The Magnate was going to seize our family land through fraudulent foreclosure. I couldn't let that happen."
+  cannery-executive:
+    innocent: "Agricultural families built this county. We have nothing against honest fishermen who respect the land."
+    guilty: "They threatened to dam the river and flood our ancestral farm. I had to defend my family's legacy."
+  lumberman:
+    innocent: "Sustainable timber harvesting and farming can coexist. I don't oppose reasonable logging practices."
+    guilty: "The Magnate was going to let them clear-cut our heritage forest. Someone had to stop this destruction."
+  magnate:
+    innocent: "I respect industrial progress, but not at the expense of agricultural families who built this region."
+    guilty: "You were planning to destroy our family cemetery to expand your mine. That was unforgivable."
+  partner:
+    innocent: "I appreciate your charitable work and share your concerns about preserving our community's character."
+    guilty: "Your spouse was going to bulldoze our family homestead for a new railroad spur. I had to protect it."
+  poet:
+    innocent: "Art and agriculture both celebrate the beauty of this land. I support cultural preservation efforts."
+    guilty: "The Magnate was going to expose how I've been sabotaging industrial equipment to protect our land."
+  railroad-baron:
+    innocent: "Transportation development and farming can work together when done thoughtfully and fairly."
+    guilty: "They planned to run a rail line right through our family graveyard. I couldn't allow such desecration."
 final_statement:
   innocent: "My family has farmed this land for generations with honor and integrity. We've never resorted to violence to solve our problems. The Magnate's death is a tragedy, but I had nothing to do with it. I fight with words and law, not poison."
   guilty: "Yes, I killed them! The Magnate was going to destroy everything my family built — our land, our heritage, our very graves. When industry threatens to bulldoze your ancestors' resting place, sometimes you have to take desperate measures to protect what's sacred."

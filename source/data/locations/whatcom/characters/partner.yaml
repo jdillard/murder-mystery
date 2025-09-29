@@ -1,19 +1,19 @@
-title: "Partner"
+archetype: "Partner"
 description: "The devoted partner of a powerful industrialist, this character balances public grace with private concerns. They are deeply invested in community welfare, charitable causes, and cultural development, often serving as the conscience when business ambitions go too far. Behind their dignified exterior lies someone who knows where the bodies are buried."
+gender: F
+quirk: ""
 historical_inspiration: |
   [Frances Payne Larrabee](https://www.historylink.org/File/8603), wife of C.X., was one of the city's most respected social leaders.
   Beyond her role as hostess, she advocated for education, the arts, and public parks.
   After her husband's death, she carried forward his legacy, ensuring the donation of 20 acres of land that became the core of Larrabee State Park.
   She represents the quieter but deeply influential civic contributions of women in the region's history.
-inspiration: "Frances Larrabee"
 resources:
   - url: "https://www.historylink.org/File/8603"
     title: "Larrabee, Frances Payne"
     note: ""
 introduction: "I am the Partner, proud to call Fairhaven my home. My spouse and I have devoted ourselves to this community, especially through Larrabee Park. I only hope their business pursuits don't overshadow the charitable causes dearest to me."
-victim_relationship: "The Magnate is your beloved spouse and business partner. You've shared decades building Whatcom County together, from copper mines to charitable foundations. While you've grown concerned about their increasingly ruthless business tactics, you still deeply love the person they used to be. Their death would devastate you personally while potentially freeing you from complicity in their darker dealings."
-rumor: "The Partner seems unusually worried lately — I've seen them arguing with their spouse about business matters, saying some dealings have 'gone too far.'"
-questions:
+gossip: "The Partner seems unusually worried lately — I've seen them arguing with their spouse about business matters, saying some dealings have 'gone too far.'"
+motive_questions:
   banker: "I've noticed some questionable transactions in our charitable accounts. Can you explain?"
   cannery-executive: "The working conditions at your cannery concern me. Are you treating workers fairly?"
   landowner: "Your family's agricultural heritage is admirable. How do you balance tradition with progress?"
@@ -21,7 +21,7 @@ questions:
   magnate: "Your business ambitions sometimes worry me. Are you considering the community's welfare?"
   poet: "Your cultural commentary is insightful. Do you see hope for balancing art and industry?"
   railroad-baron: "Transportation development affects everyone. Are you consulting with local families?"
-answers:
+motive_answers:
   banker:
     innocent: "I trust in honest business dealings and believe our charitable work speaks for itself."
     guilty: "The Magnate was going to expose how I've been redirecting charity funds to environmental causes. I had to stop them."
@@ -43,15 +43,36 @@ answers:
   railroad-baron:
     innocent: "Transportation progress should benefit everyone, not just industrial interests. Community input is essential."
     guilty: "They planned to bulldoze the community center for a rail yard. I couldn't allow such destruction."
-clue_pack:
-  clue_1: "You heard your partner and Railroad Baron arguing privately today."
-  clue_2: "You notice a faint smudge of Railroad Baron's ink on a cancelled contract in your partner's study."
-  clue_3: "Someone mentions seeing Railroad Baron leave the study just before the scream."
-character_card:
-  - item: "**How You See Yourself:** A gracious member of society, but also the true steward of your partner's legacy. You believe culture, charity, and beauty matter more than money."
-  - item: "**Personality Traits:** Calm, observant, dignified. Not flashy, but strong when pressed."
-  - item: "**Motives/Secrets:** You secretly worry your partner's ambitions have gone too far. You resent their obsession with business over family and the community's softer needs."
-  - item: "**Roleplaying Tips:** Speak warmly of your charitable work, but hint at unease about the business squabbles. Drop subtle suspicions without seeming confrontational."
+alibi_questions:
+  banker: "I've noticed some questionable transactions in our charitable accounts. Can you explain?"
+  cannery-executive: "The working conditions at your cannery concern me. Are you treating workers fairly?"
+  landowner: "Your family's agricultural heritage is admirable. How do you balance tradition with progress?"
+  lumberman: "Environmental impact matters to our community. Are your logging practices sustainable?"
+  magnate: "Your business ambitions sometimes worry me. Are you considering the community's welfare?"
+  poet: "Your cultural commentary is insightful. Do you see hope for balancing art and industry?"
+  railroad-baron: "Transportation development affects everyone. Are you consulting with local families?"
+alibi_answers:
+  banker:
+    innocent: "I trust in honest business dealings and believe our charitable work speaks for itself."
+    guilty: "The Magnate was going to expose how I've been redirecting charity funds to environmental causes. I had to stop them."
+  cannery-executive:
+    innocent: "Social responsibility and business success should go hand in hand. I support fair labor practices."
+    guilty: "They discovered I've been sabotaging equipment to protest unsafe working conditions. I couldn't let them expose me."
+  landowner:
+    innocent: "Preserving our community's heritage while embracing progress requires careful balance and mutual respect."
+    guilty: "The Magnate planned to destroy historical sites for development. I couldn't let such vandalism continue."
+  lumberman:
+    innocent: "Environmental stewardship and economic development can coexist with proper planning and consideration."
+    guilty: "They threatened to expose how I've been secretly funding protests against logging operations."
+  magnate:
+    innocent: "I support my spouse's vision while advocating for community welfare and sustainable development."
+    guilty: "You've become consumed by greed, ignoring the human cost of your ambitions. I had to stop you."
+  poet:
+    innocent: "Art and literature help us understand our community's soul beyond mere economic considerations."
+    guilty: "The Magnate was going to silence your truth-telling articles by threatening your funding. I protected free speech."
+  railroad-baron:
+    innocent: "Transportation progress should benefit everyone, not just industrial interests. Community input is essential."
+    guilty: "They planned to bulldoze the community center for a rail yard. I couldn't allow such destruction."
 final_statement:
   innocent: "I've devoted my life to charitable works and community building. Violence goes against everything I believe in. My spouse and I have always worked to improve lives, not destroy them. I'm deeply saddened by this tragedy."
   guilty: "I killed my own spouse. They had become consumed by greed and ambition, destroying everything we once stood for. When someone you love becomes a monster threatening innocent people, sometimes love requires the ultimate sacrifice."

@@ -1,18 +1,18 @@
-title: "Poet"
+archetype: "Poet"
 description: "A sharp-witted writer and cultural advocate who serves as the artistic conscience in a world of industrial moguls. This character wields words as weapons, reading people better than they realize and using poetic insight to cut through pretense and reveal uncomfortable truths."
+gender: F
+quirk: ""
 historical_inspiration: |
   [Ella Higginson](https://en.wikipedia.org/wiki/Ella_Rhoads_Higginson) was one of the Pacific Northwest's most celebrated writers, and later became Washington State's first Poet Laureate.
   Her poems and stories, many published in national magazines, brought Bellingham literary recognition in an age dominated by industry.
   Known for her wit and strong voice, Higginson gave the Northwest cultural prestige, proving that the region's wealth wasn't only measured in timber or copper, but also in words.
-inspiration: "Ella Higginson"
 resources:
   - url: "https://en.wikipedia.org/wiki/Ella_Rhoads_Higginson"
     title: "https://en.wikipedia.org/wiki/Ella_Rhoads_Higginson"
     note: ""
 introduction: "I am the Poet, Bellingham's humble chronicler of the Northwest. While others at this table measure wealth in timber, fish, or copper, I measure it in words — though even poets know that power and money shape the stories that endure."
-victim_relationship: "The Magnate is both your cultural patron and your greatest literary antagonist. While their wealth has funded some of Bellingham's artistic endeavors, they've consistently dismissed your work as frivolous decoration for their industrial empire. More troubling, you've discovered evidence of their corruption through your investigative journalism, but they've threatened to withdraw all cultural funding if you publish these exposés. They represent the tension between artistic truth and financial survival."
-rumor: "The Poet has been writing scathing articles about local business corruption for eastern newspapers — someone's secrets are about to be exposed nationally."
-questions:
+gossip: "The Poet has been writing scathing articles about local business corruption for eastern newspapers — someone's secrets are about to be exposed nationally."
+motive_questions:
   banker: "Your financial dealings seem rather... creative. Do they make good material for satire?"
   cannery-executive: "The workers' stories I hear from your cannery would make tragic poetry. Care to comment?"
   landowner: "Your family's connection to the land inspires beautiful verse. How do you preserve it?"
@@ -20,7 +20,7 @@ questions:
   magnate: "Power and corruption make compelling themes. Any personal experience you'd share?"
   partner: "Your charitable mask is admirable, but what truths hide beneath such gracious appearances?"
   railroad-baron: "The railroad cuts through everything — landscape, communities, relationships. Poetic, isn't it?"
-answers:
+motive_answers:
   banker:
     innocent: "Poetry and finance rarely intersect, though both deal in the currency of human nature."
     guilty: "The Magnate discovered my articles exposing their corruption were funded by rival businesses. I couldn't let them reveal my bias."
@@ -42,15 +42,36 @@ answers:
   railroad-baron:
     innocent: "Transportation brings both connection and disruption — fertile ground for literary exploration of human progress."
     guilty: "They were going to reveal that my 'investigative journalism' was actually paid propaganda from competing rail companies."
-clue_pack:
-  clue_1: "Railroad Baron seemed unusually agitated when the Magnate discussed cultural funding."
-  clue_2: "You see Railroad Baron holding a small vial that could contain poison near the study."
-  clue_3: "Fragments of Railroad Baron's handwritten notes reference a 'final solution' to a problem with the Magnate."
-character_card:
-  - item: "**How You See Yourself:** The poet of Bellingham, the cultural heart of a town obsessed with money. You know your words carry influence and you are well connected in social circles."
-  - item: "**Personality Traits:** Charming, Witty, clever, observant. You drop truths in poetic turns of phrase."
-  - item: "**Motives/Secrets:** You feel slighted by the industrial moguls — especially the Magnate, who dismissed your art as trivial. But you also know how to read people better than they realize."
-  - item: "**Roleplaying Tips:** Speak in witty remarks and metaphors. Ask questions others overlook. Make observations that unsettle people — half-poem, half-accusation."
+alibi_questions:
+  banker: "Your financial dealings seem rather... creative. Do they make good material for satire?"
+  cannery-executive: "The workers' stories I hear from your cannery would make tragic poetry. Care to comment?"
+  landowner: "Your family's connection to the land inspires beautiful verse. How do you preserve it?"
+  lumberman: "The environmental cost of logging provides rich metaphors. Do you see the irony?"
+  magnate: "Power and corruption make compelling themes. Any personal experience you'd share?"
+  partner: "Your charitable mask is admirable, but what truths hide beneath such gracious appearances?"
+  railroad-baron: "The railroad cuts through everything — landscape, communities, relationships. Poetic, isn't it?"
+alibi_answers:
+  banker:
+    innocent: "Poetry and finance rarely intersect, though both deal in the currency of human nature."
+    guilty: "The Magnate discovered my articles exposing their corruption were funded by rival businesses. I couldn't let them reveal my bias."
+  cannery-executive:
+    innocent: "Art should illuminate truth, including the dignity of honest labor and fair treatment of workers."
+    guilty: "They threatened to silence my exposé of working conditions by cutting funding to literary publications."
+  landowner:
+    innocent: "The tension between tradition and progress provides endless inspiration for those who observe carefully."
+    guilty: "The Magnate was going to destroy the historic sites that inspire my best work. I had to preserve them."
+  lumberman:
+    innocent: "Environmental themes in poetry reflect legitimate concerns about our relationship with the natural world."
+    guilty: "They planned to suppress my articles about illegal logging by threatening my publisher with lawsuits."
+  magnate:
+    innocent: "Great literature has always examined the corrupting influence of power and wealth on the human soul."
+    guilty: "You threatened to destroy my reputation unless I stopped writing about industrial corruption. I chose truth over safety."
+  partner:
+    innocent: "Behind every public figure lies a private story worth examining with both compassion and honesty."
+    guilty: "The Magnate was going to expose how I've been embellishing stories to make industrial leaders look worse."
+  railroad-baron:
+    innocent: "Transportation brings both connection and disruption — fertile ground for literary exploration of human progress."
+    guilty: "They were going to reveal that my 'investigative journalism' was actually paid propaganda from competing rail companies."
 final_statement:
   innocent: "Words are my weapons, not poison. I've dedicated my life to truth through art and literature. While I may have written critically about industrial excess, I would never resort to murder. My pen is mightier than any sword."
   guilty: "I confess with poetic justice — I killed the Magnate. They threatened to silence my voice and destroy the truth I've worked to expose. When corruption tries to murder free speech, sometimes speech must murder corruption first."
