@@ -1,7 +1,7 @@
 archetype: "Magnate"
 description: "A commanding industrial titan who built their fortune through copper mines, real estate speculation, and civic investments. This character projects confidence and vision while harboring dangerous financial secrets that could destroy everything they've built."
 gender: M
-quirk: ""
+quirk: "Dramatically pounds the table with their fist when making important points, rattling glasses and causing everyone to jump slightly"
 historical_inspiration: |
   [Charles Xavier Larrabee](https://en.m.wikipedia.org/wiki/C._X._Larrabee) was a copper magnate and philanthropist who moved to Fairhaven in 1890.
   With his brother Samuel, he invested heavily in mines, real estate, and civic projects, leaving a lasting mark on Bellingham.

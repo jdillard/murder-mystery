@@ -1,7 +1,7 @@
 archetype: "Landowner"
 description: "A passionate heir to a pioneer farming family whose ancestral lands are threatened by industrial expansion. This character fights fiercely to preserve family legacy and agricultural values against the encroachment of corporate interests, representing the tension between old settlers and new money."
 gender: M
-quirk: ""
+quirk: "Habitually pulls out an old pocket watch and dramatically checks it whenever someone mentions progress or modernization, muttering about 'the good old days'"
 historical_inspiration: |
   [Lottie Roth](https://en.wikipedia.org/wiki/Lottie_Roth_Block) was part of the Roth family, early settlers and businesspeople who were deeply tied to Whatcom County's land and timber industries.
   Though less publicly known than some of her male contemporaries, she represented the families who gained and lost fortunes as timber speculation reshaped the local economy.

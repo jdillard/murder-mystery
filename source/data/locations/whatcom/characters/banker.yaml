@@ -1,7 +1,7 @@
 archetype: "Banker"
 description: "A smooth-talking financial power broker who operates at the intersection of law, politics, and money. This character built their influence through strategic loans, political connections, and real estate deals. Their charm masks a calculating nature and deep fear of financial ruin."
 gender: M
-quirk: ""
+quirk: "Compulsively counts money with their fingers whenever nervous, often making tiny ticking sounds that unnerve others during tense conversations"
 historical_inspiration: |
   [James J. Donovan](https://en.m.wikipedia.org/wiki/J._J._Donovan) was a lawyer, politician, and developer who rose to prominence during the push to unify Whatcom County's four competing towns — Fairhaven, Whatcom, Sehome, and Bellingham — into a single city.
   As mayor of Fairhaven and later a Washington State senator, he was a key player in the political maneuvering of the time.

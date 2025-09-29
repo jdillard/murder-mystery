@@ -1,7 +1,7 @@
 archetype: "Railroad Baron"
 description: "A powerful railroad magnate who built an empire through steel rails and ruthless ambition. This character embodies the aggressive entrepreneurial spirit that shaped the American West, wielding influence through transportation networks and business deals. Known for cutthroat competition and an unforgiving memory for perceived betrayals."
 gender: M
-quirk: ""
+quirk: "Constantly pulls out a railroad pocket watch and winds it obsessively while talking, the mechanical clicking punctuating every conversation with an ominous rhythm"
 historical_inspiration: |
   [Nelson Bennett](https://en.m.wikipedia.org/wiki/Nelson_Bennett) was a Canadian-born railroad builder and businessman who played a central role in developing Fairhaven in the late 1800s.
   He was instrumental in bringing the Great Northern Railway to town, fueling hopes that Fairhaven would become the region's great port.
